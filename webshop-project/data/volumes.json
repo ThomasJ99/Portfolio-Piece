@@ -1,0 +1,202 @@
+{
+  "volumes": [
+    {
+      "id": 1,
+      "volume": "Volume 1",
+      "releaseDate": "2019-03-04",
+      "arc": "Introduction Arc",
+      "isLatest": false,
+      "description": "Denji merges with his chainsaw devil pet and becomes a devil hunter to escape crushing debt.",
+      "image": "https://static.wikia.nocookie.net/chainsaw-man/images/0/0f/Volume_01.png/revision/latest?cb=20230907225315"
+    },
+    {
+      "id": 2,
+      "volume": "Volume 2",
+      "releaseDate": "2019-05-02",
+      "arc": "Bat Devil Arc",
+      "isLatest": false,
+      "description": "Denji begins working for Public Safety while learning the brutal reality of devil hunting.",
+      "image": "https://static.wikia.nocookie.net/chainsaw-man/images/6/68/Volume_02.png/revision/latest?cb=20230907225636"
+    },
+    {
+      "id": 3,
+      "volume": "Volume 3",
+      "releaseDate": "2019-08-02",
+      "arc": "Eternity Devil Arc",
+      "isLatest": false,
+      "description": "New enemies emerge as Denji and his team face increasingly dangerous devils.",
+      "image": "https://static.wikia.nocookie.net/chainsaw-man/images/5/5c/Volume_03.png/revision/latest?cb=20230907225801"
+    },
+    {
+      "id": 4,
+      "volume": "Volume 4",
+      "releaseDate": "2019-10-04",
+      "arc": "Katana Man Arc",
+      "isLatest": false,
+      "description": "A deadly ambush throws the entire division into chaos and raises the stakes.",
+      "image": "https://static.wikia.nocookie.net/chainsaw-man/images/e/ef/Volume_04.png/revision/latest?cb=20230907225927"
+    },
+    {
+      "id": 5,
+      "volume": "Volume 5",
+      "releaseDate": "2020-01-04",
+      "arc": "Katana Man Arc",
+      "isLatest": false,
+      "description": "Denji confronts powerful new devils while questioning who he can really trust.",
+      "image": "https://static.wikia.nocookie.net/chainsaw-man/images/c/cf/Volume_05.png/revision/latest?cb=20230907230442"
+    },
+    {
+      "id": 6,
+      "volume": "Volume 6",
+      "releaseDate": "2020-03-04",
+      "arc": "Bomb Girl Arc",
+      "isLatest": false,
+      "description": "A strange trip reveals unsettling truths about Denji’s allies and enemies alike.",
+      "image": "https://static.wikia.nocookie.net/chainsaw-man/images/2/2e/Volume_06.png/revision/latest?cb=20230907230511"
+    },
+    {
+      "id": 7,
+      "volume": "Volume 7",
+      "releaseDate": "2020-06-04",
+      "arc": "International Assassins Arc",
+      "isLatest": false,
+      "description": "The fight intensifies as motivations clash and sacrifices are made.",
+      "image": "https://static.wikia.nocookie.net/chainsaw-man/images/3/36/Volume_07.png/revision/latest?cb=20230907230532"
+    },
+    {
+      "id": 8,
+      "volume": "Volume 8",
+      "releaseDate": "2020-08-04",
+      "arc": "International Assassins Arc",
+      "isLatest": false,
+      "description": "Denji faces a terrifying threat that pushes his limits both physically and mentally.",
+      "image": "https://static.wikia.nocookie.net/chainsaw-man/images/1/14/Volume_08.png/revision/latest?cb=20230907230549"
+    },
+    {
+      "id": 9,
+      "volume": "Volume 9",
+      "releaseDate": "2020-11-04",
+      "arc": "Gun Devil Arc",
+      "isLatest": false,
+      "description": "Long-buried secrets surface as the story takes a darker, more personal turn.",
+      "image": "https://static.wikia.nocookie.net/chainsaw-man/images/f/f3/Volume_09.png/revision/latest?cb=20230907230647"
+    },
+    {
+      "id": 10,
+      "volume": "Volume 10",
+      "releaseDate": "2021-01-04",
+      "arc": "Gun Devil Arc",
+      "isLatest": false,
+      "description": "Everything spirals toward a brutal confrontation with devastating consequences.",
+      "image": "https://static.wikia.nocookie.net/chainsaw-man/images/6/6b/Volume_10.png/revision/latest?cb=20230907230745"
+    },
+    {
+      "id": 11,
+      "volume": "Volume 11",
+      "releaseDate": "2021-03-04",
+      "arc": "Control Devil Arc",
+      "isLatest": false,
+      "description": "The first major arc concludes with shocking revelations and irreversible change.",
+      "image": "https://static.wikia.nocookie.net/chainsaw-man/images/1/1b/Volume_11.png/revision/latest?cb=20230907230755"
+    },
+    {
+      "id": 12,
+      "volume": "Volume 12",
+      "releaseDate": "2022-10-04",
+      "arc": "Academy Arc",
+      "isLatest": false,
+      "description": "A new protagonist emerges as the story shifts into its next chapter.",
+      "image": "https://static.wikia.nocookie.net/chainsaw-man/images/4/4e/Volume_12.png/revision/latest?cb=20250404011435"
+    },
+    {
+      "id": 13,
+      "volume": "Volume 13",
+      "releaseDate": "2023-01-04",
+      "arc": "Academy Arc",
+      "isLatest": false,
+      "description": "Asa Mitaka navigates school life while entangled with a dangerous devil.",
+      "image": "https://static.wikia.nocookie.net/chainsaw-man/images/b/b6/Volume_13.png/revision/latest?cb=20240406040912"
+    },
+    {
+      "id": 14,
+      "volume": "Volume 14",
+      "releaseDate": "2023-04-04",
+      "arc": "Falling Devil Arc",
+      "isLatest": false,
+      "description": "Conflicting goals collide as new devils and hunters enter the scene.",
+      "image": "https://static.wikia.nocookie.net/chainsaw-man/images/1/17/Volume_14.png/revision/latest?cb=20240406035700"
+    },
+    {
+      "id": 15,
+      "volume": "Volume 15",
+      "releaseDate": "2023-08-04",
+      "arc": "Falling Devil Arc",
+      "isLatest": false,
+      "description": "Relationships deepen and fracture amid growing supernatural threats.",
+      "image": "https://static.wikia.nocookie.net/chainsaw-man/images/4/4e/Volume_15.png/revision/latest?cb=20240406041820"
+    },
+    {
+      "id": 16,
+      "volume": "Volume 16",
+      "releaseDate": "2023-12-04",
+      "arc": "Church Arc",
+      "isLatest": false,
+      "description": "The line between normal life and devil chaos continues to blur.",
+      "image": "https://static.wikia.nocookie.net/chainsaw-man/images/4/45/Volume_16.png/revision/latest?cb=20240406042054"
+    },
+    {
+      "id": 17,
+      "volume": "Volume 17",
+      "releaseDate": "2024-04-04",
+      "arc": "Church Arc",
+      "isLatest": false,
+      "description": "A shocking turn of events forces hard choices with lasting consequences.",
+      "image": "https://static.wikia.nocookie.net/chainsaw-man/images/6/64/Volume_17.png/revision/latest?cb=20240406031839"
+    },
+    {
+      "id": 18,
+      "volume": "Volume 18",
+      "releaseDate": "2024-08-02",
+      "arc": "Apocalypse Arc",
+      "isLatest": false,
+      "description": "Old fears resurface as a massive threat begins to take shape.",
+      "image": "https://static.wikia.nocookie.net/chainsaw-man/images/a/a2/Volume_18.png/revision/latest?cb=20241205231114"
+    },
+    {
+      "id": 19,
+      "volume": "Volume 19",
+      "releaseDate": "2024-12-04",
+      "arc": "Apocalypse Arc",
+      "isLatest": false,
+      "description": "Chaos erupts as multiple forces clash with unpredictable outcomes.",
+      "image": "https://static.wikia.nocookie.net/chainsaw-man/images/c/c9/Volume_19.png/revision/latest?cb=20241206010031"
+    },
+    {
+      "id": 20,
+      "volume": "Volume 20",
+      "releaseDate": "2025-04-04",
+      "arc": "Apocalypse Arc",
+      "isLatest": false,
+      "description": "The world teeters on the edge as fear itself becomes a weapon.",
+      "image": "https://static.wikia.nocookie.net/chainsaw-man/images/3/32/Volume_20.png/revision/latest?cb=20250404015101"
+    },
+    {
+      "id": 21,
+      "volume": "Volume 21",
+      "releaseDate": "2025-07-04",
+      "arc": "Apocalypse Arc",
+      "isLatest": false,
+      "description": "Personal struggles collide with apocalyptic stakes.",
+      "image": "https://static.wikia.nocookie.net/chainsaw-man/images/a/a6/Volume_21.png/revision/latest?cb=20250704230800"
+    },
+    {
+      "id": 22,
+      "volume": "Volume 22",
+      "releaseDate": "2025-09-04",
+      "arc": "Apocalypse Arc",
+      "isLatest": true,
+      "description": "The story accelerates toward a tense and uncertain future.",
+      "image": "https://static.wikia.nocookie.net/chainsaw-man/images/5/5e/Volume_22.png/revision/latest?cb=20250904173911"
+    }
+  ]
+}
