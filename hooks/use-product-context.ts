@@ -5,10 +5,9 @@ export default function useProductContext(
   defaultMin: number,
   defaultMax: number,
 ) {
-  const [priceValues, setPriceValues] = useState([defaultMin, defaultMax]); //TODO: Move these outside of price slider dual :)
+  const [priceValues, setPriceValues] = useState([defaultMin, defaultMax]);
 
   function setValueOfIndex(newValue: number, index: number) {
-    //TODO: Move these outside of price slider dual :)
     setPriceValues((prevValue) =>
       prevValue.map((value, indx) => {
         if (indx === index) {

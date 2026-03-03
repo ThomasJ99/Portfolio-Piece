@@ -6,7 +6,7 @@ import { useSearchParams, usePathname } from "next/navigation";
 export default function CategoryLink({ category }: { category: Category }) {
   const searchParams = useSearchParams();
 
-  //   Active check for conditional styling
+  // Active check for conditional styling
   const currentCategory = searchParams.get("category");
   const isActive = currentCategory === category.slug;
 

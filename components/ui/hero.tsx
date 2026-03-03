@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <header className="py-16 px-4 bg-linear-to-b from-orange-600  via-yellow-500 to-lime-300">
+    <header className="py-16 px-4 bg-linear-to-b from-red-600  via-blue-500 to-white">
       <section
         aria-label="Company hero section"
         className="container mx-auto px-4 grid items-center lg:grid-cols-2 gap-8 font-oswald drop-shadow-2xl"

@@ -1,5 +1,3 @@
-import data from "@/data/volumes.json";
-
 import Image from "next/image";
 import { getProduct } from "@/data/product";
 import { Metadata } from "next";
