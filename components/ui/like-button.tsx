@@ -49,7 +49,9 @@ export default function LikeButton({ pTitle }: LikeButtonProps) {
       type="button"
     >
       <svg
-        className={`w-7 h-7 text-black fill-red-50 transition-all duration-200 ease-in  ${hasLiked ? "fill-red-500 scale-110" : "fill-red-50 scale-100"}`}
+        className={
+          `w-7 h-7 text-black fill-red-50 transition-all duration-200 ease-in 
+          ${hasLiked ? "fill-red-500 scale-110" : "fill-red-50 scale-100"}`}
         fill="currentColor"
         stroke="currentColor"
         strokeWidth="2"
@@ -58,7 +60,5 @@ export default function LikeButton({ pTitle }: LikeButtonProps) {
         <path d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.6l-1-1a5.5 5.5 0 10-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 000-7.8z" />
       </svg>
     </button>
-    /* {hasLiked ? "Liked " : "Like "}
-      {likes > 0 && <span>{}</span>}  */
   );
 }

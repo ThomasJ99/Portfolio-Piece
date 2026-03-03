@@ -1,5 +1,5 @@
 "use client";
-import { ProductCtx, ProductContext } from "@/context/product-context";
+import { ProductCtx } from "@/context/product-context";
 import useProductContext from "@/hooks/use-product-context";
 
 

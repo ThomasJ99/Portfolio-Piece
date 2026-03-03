@@ -14,7 +14,7 @@ export default function Hero() {
             placeholder{" "}
           </span>
           <h1 className="text-6xl xl:text-7xl font-bold leading-tight text-balance tracking-wide grid col-auto uppercase">
-            company name
+            Company X
           </h1>
           <p className="text-white/90 text-2xl">By me </p>
         </div>

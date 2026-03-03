@@ -1,11 +1,10 @@
 "use client";
 
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { useDebouncedCallback } from "use-debounce";
 import { Slider } from "./slider";
 import { ProductCtx } from "@/context/product-context";
-import { getProducts2 } from "@/data/product";
 
 // Getter and Setter definition of the price value state
 type PriceValue = {
@@ -79,21 +78,6 @@ export default function PriceSliderDual(props: PriceSliderDualProps) {
     setPriceRange(value);
   }, 5);
 
-  // const priceChange = useDebouncedCallback(
-  //   (event: React.ChangeEvent<HTMLInputElement>) => {
-  //     const newVal = event.target.value;
-
-  //     // Clones my current URL so i dont lose it later later on if I have categories selected already
-  //     const params = new URLSearchParams(searchParams.toString());
-  //     params.set(, newVal); // TODO: NEEDS FIX
-  //     setVal(Number(newVal));
-
-  //     // Updates URL
-  //     router.push(`${pathName}?${params.toString()}`);
-  //   },
-  //   200,
-  // );
-
   return (
     <>
       <div className="my-5">
@@ -106,37 +90,7 @@ export default function PriceSliderDual(props: PriceSliderDualProps) {
           max={100000}
           step={100}
         />
-        {/*TODO: Use an object maybe*/}
         <PriceInputFields min={min} max={max} />
-        {/* <span className="border-2 p- mx-2">{val}</span>
-      <label htmlFor="slider">Price Slider</label>
-      <div>
-        <input
-          onChange={priceChange}
-          type="range"
-          id="slider"
-          list="markers"
-          name={keyName}
-          className="w-full"
-          min={0}
-          max={100000}
-          step={100}
-        />
-
-
-        <datalist id="markers" className="flex justify-between w-full">
-          <option value="0" label="0" className=" text-center"></option>
-          <option
-            value="25000"
-            label="25000"
-            className="ms-8 text-center"
-          ></option>
-          <option value="50000" label="50000"></option>
-          <option value="75000" label="75000"></option>
-          <option value="100000" label="100000"></option>
-        </datalist>
-      </div> */}
-        {/* TODO: JSX LOGIC HERE...  */}
       </div>
     </>
   );

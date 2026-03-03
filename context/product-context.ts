@@ -18,5 +18,5 @@ export type ProductContext = {
   setPriceRange: (value: number[]) => void;
 };
 
-// Component of productcontext
+// Component of ProductContext
 export const ProductCtx = createContext({} as ProductContext);
