@@ -1,44 +1,43 @@
-# Chainsaw Man
-A dark, fan-made web experience inspired by the Chainsaw Man manga.
-Built with **Next.js** and **React**, this project focuses on *modern frontend structure* and performance while channeling the series’ brutal aesthetic.
+# Company X
+
+Company X is a modern e-commerce web application built with **Next.js** and **React**.  
+The project focuses on clean architecture, scalable component design, and URL-driven filtering using the Next.js App Router.
+
+This application demonstrates dynamic product filtering, reusable UI components, and modern frontend best practices.
+
+---
 
 ## Tech Stack
 
-- Next.js
+- Next.js (App Router)
 - React
 - TypeScript
-- Tailwind
+- Tailwind CSS
+- URLSearchParams-based filtering
+- Server & Client Component architecture
 
-## Running Locally
-```bash
-npm install
-npm run dev
-```
+---
 
+## Features
 
-Open ``http://localhost:3000`` to view it in the browser.
+- Dynamic product listing
+- Category filtering
+- Price range filtering via URL parameters
+- Debounced client-side filters
+- Reusable generic components
+- Responsive layout
+- Server-side data fetching
 
-## Project Structure
-
-The project follows standard Next.js conventions:
-
-- app/ – routes, layouts, and pages
-- components/ – reusable UI components
-- public/ – static assets
-- Configuration files for TypeScript and styling
+---
 
 ## About
 
-This is a non-commercial fan project created for learning and experimentation while studying.
-All characters, names, and related content are the property of their respective owners.
+This project was created as part of frontend development practice and portfolio building, with emphasis on modern React patterns and scalable design principles.
 
-## Disclaimer
+---
 
-This is a personal, non-commercial educational project.
-Chainsaw Man images are used for illustrative purposes only.
-All characters and artwork © Tatsuki Fujimoto / Shueisha.
+## Running Locally
 
-Portions of this content are adapted from “Chainsaw Man” on Wikipedia, used under the Creative Commons Attribution-ShareAlike 4.0 License.
-Source: https://en.wikipedia.org/wiki/Chainsaw_Man
-
-License: https://creativecommons.org/licenses/by-sa/4.0/
+```bash
+npm install
+npm run dev

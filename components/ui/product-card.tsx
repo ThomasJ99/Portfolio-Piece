@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ProductCardProps } from "@/types/products";
-import LikeButton from "./LikeButton";
+import LikeButton from "./like-button";
 import ImageScroll from "./image-scroll";
 
 // My product info content thats inside a generic card-grid
