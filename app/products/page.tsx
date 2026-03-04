@@ -6,6 +6,7 @@ import { ensureString } from "@/util";
 import LimitSelect from "@/components/ui/limit-select";
 import PriceSliderDual from "@/components/ui/price-slider-dual";
 import Root from "@/components/ui/root";
+import OffsetPage from "@/components/ui/offset-page";
 
 // Component
 // This is where we call getProducts and render out the products
@@ -48,11 +49,9 @@ export default async function productPage(params: PageProps<"/">) {
           <PriceSliderDual min={minPriceNumber} max={maxPriceNumber} />
           <LimitSelect />
 
-          <div className="container mx-auto text-center grid">
-            <span>
-              Navigate to next page of products{" "}
-              <span className="opacity-50">to be implemented</span>
-            </span>
+          <div className="container mx-auto flex justify-center">
+
+              <OffsetPage />
           </div>
         </section>
 
