@@ -1,6 +1,5 @@
 "use client";
 
-import { ProductCardProps } from "@/types/products";
 import { Product } from "@/types/products-json";
 import { useState } from "react";
 

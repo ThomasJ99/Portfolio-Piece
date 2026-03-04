@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ProductCardProps } from "@/types/products";
 import LikeButton from "./like-button";
 import ImageScroll from "./image-scroll";
 import { Product } from "@/types/products-json";
