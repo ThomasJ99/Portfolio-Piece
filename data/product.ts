@@ -1,6 +1,6 @@
-import { Product } from "@/types/products";
+import { Product, ProductsResponse } from "@/types/products-json";
 
-const URL_API = "https://api.escuelajs.co/api/v1/";
+const URL_API = "http://localhost:4000/";
 
 // New version of product fetch that uses URLSearchParams instead of manually building a long query string
 // This makes the query(title) easier to read, maintain, and extend
@@ -8,33 +8,31 @@ export async function getProducts(
   limit = 4,
   offset = 0,
   category?: string,
-  title?: string,
+  query?: string,
   price_min?: number,
   price_max?: number,
-): Promise<Product[]> {
+): Promise<ProductsResponse> {
   // Initialize query parameters with required pagination values, limit/offset
   const params = new URLSearchParams({
-    limit: limit.toString(),
+    _limit: limit.toString(),
+    // Offset is depricated, TODO: use page instead
     offset: offset.toString(),
   });
 
-  // Append category/title filter only if provided
-  // Can easily add other optional filters like price/price range here
-
   if (category) {
-    params.set("categorySlug", category);
+    params.set("categoryId", category);
   }
 
-  if (title) {
-    params.set("title", title);
+  if (query) {
+    params.set("q", query);
   }
 
   if (price_min) {
-    params.set("price_min", price_min.toString());
+    params.set("price_gte", price_min.toString());
   }
 
   if (price_max) {
-    params.set("price_max", price_max.toString());
+    params.set("price_lte", price_max.toString());
   }
 
   try {

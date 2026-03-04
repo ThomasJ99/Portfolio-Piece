@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { ProductCardProps } from "@/types/products";
 import LikeButton from "./like-button";
 import ImageScroll from "./image-scroll";
+import { Product } from "@/types/products-json";
 
 // My product info content thats inside a generic card-grid
-export default function ProductCard({ product }: ProductCardProps) {
+export default function ProductCard({ product }: { product: Product }) {
   return (
     <li key={product.id} className="">
       <Link className="z-1" href={`/products/${product.id}`}>
@@ -15,7 +15,7 @@ export default function ProductCard({ product }: ProductCardProps) {
 
         <section className="pt-3 pb-5 font-semibold text-center">
           <h2 className="font-bold font-oswald">{product.title}</h2>
-          <span className="block mb-2">{product.category.name}</span>
+          <span className="block mb-2">{product.category?.name}</span>
           <span>{product.price} kr</span>
         </section>
       </Link>

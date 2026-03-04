@@ -1,9 +1,9 @@
 "use client";
 
-import { ProductCardProps } from "@/types/products";
+import { Product } from "@/types/products-json";
 import { useState } from "react";
 
-export default function ImageScroll({ product }: ProductCardProps) {
+export default function ImageScroll({ product }: {product: Product}) {
   // State with our current state and a function that updates the state
   const [currentIndex, setCurrentIndex] = useState(0);
 

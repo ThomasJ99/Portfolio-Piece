@@ -14,27 +14,30 @@ export default async function productPage(params: PageProps<"/">) {
     limit = "4",
     offset = "0",
     category,
-    title,
+    query,
     price_min = "0",
     price_max = "100000",
   } = await params.searchParams;
   const limitNumber = Number(ensureString(limit));
   const offsetNumber = Number(ensureString(offset));
   const categoryString = ensureString(category);
-  const titleString = ensureString(title);
+  const queryString = ensureString(query);
   // TODO: Maybe use effect hook to load them once per page load instead of page render.
   const minPriceNumber = Number(ensureString(price_min));
   const maxPriceNumber = Number(ensureString(price_max));
   // Things to do with limit, implement links/buttons that change the limit on the site
 
-  const products = await getProducts(
+  const { products, total, page, pages } = await getProducts(
     limitNumber,
     offsetNumber,
     categoryString,
-    titleString,
+    queryString,
     minPriceNumber,
     maxPriceNumber,
   );
+
+  console.log(total, page, pages);
+  
 
   return (
     // TODO: STUDY Root
@@ -56,13 +59,18 @@ export default async function productPage(params: PageProps<"/">) {
           </div>
         </section>
 
-        <ul>
-          <CardGrid>
-            {products.map((p) => (
-              <ProductCard key={p.title} product={p} />
-            ))}
-          </CardGrid>
-        </ul>
+        {/* Conditional rendering if products are </> than 0 */}
+        {products.length > 0 ? (
+          <ul>
+            <CardGrid>
+              {products.map((p) => (
+                <ProductCard key={p.title} product={p} />
+              ))}
+            </CardGrid>
+          </ul>
+        ) : (
+          <p>no products found &lsaquo;</p>
+        )}
       </section>
     </Root>
   );

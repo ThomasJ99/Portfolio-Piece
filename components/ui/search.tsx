@@ -9,7 +9,7 @@ export default function SearchForm() {
   const { replace } = useRouter();
   const pathName = usePathname();
   const ref = useRef<HTMLFormElement>(null); // HTMLFormElement | null
-  const title = searchParams.get("title");
+  const query = searchParams.get("query");
 
   // Clear search and remove query from URL
   // We use a ref to access the form element directly to call the reset() method
@@ -19,7 +19,7 @@ export default function SearchForm() {
       ref.current.reset();
     }
     const params = new URLSearchParams(searchParams);
-    params.delete("title");
+    params.delete("query");
     replace(`${pathName}?${params.toString()}`);
   };
 
@@ -31,12 +31,12 @@ export default function SearchForm() {
 
       <input
         id="search"
-        name="title"
+        name="query"
         placeholder="Search..."
-        defaultValue={title || ""}
+        defaultValue={query || ""}
       />
 
-      {title && (
+      {query && (
         <button type="button" onClick={handleClear}>
           Clear
         </button>
