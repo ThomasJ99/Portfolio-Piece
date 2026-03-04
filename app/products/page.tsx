@@ -42,7 +42,7 @@ export default async function productPage(params: PageProps<"/">) {
     // TODO: STUDY Root
     <Root defaultMin={minPriceNumber} defaultMax={maxPriceNumber}>
       <div className="container mx-auto">
-        <div className="grid grid-cols-4">
+        <div className="grid grid-cols-4 gap-8">
           <div className="mt-20">
             <CategoryAside />
           </div>
