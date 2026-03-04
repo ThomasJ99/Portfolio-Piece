@@ -41,17 +41,17 @@ export default async function productPage(params: PageProps<"/">) {
   return (
     // TODO: STUDY Root
     <Root defaultMin={minPriceNumber} defaultMax={maxPriceNumber}>
-      <div className="container mx-auto">
+      <div className="container mx-auto mt-10">
         <div className="grid grid-cols-4 gap-8">
-          <div className="mt-20">
+          <section>
+            <h1 className="text-4xl mt-15 mb-5 font-oswald">
+              Our sortiment
+            </h1>
             <CategoryAside />
-          </div>
+          </section>
 
           <section className="col-span-3">
-            <section className="">
-              <h1 className="text-4xl mt-15 mb-5 px-4 font-oswald upperc">
-                Our sortiment
-              </h1>
+            <section>
               <PriceSliderDual min={minPriceNumber} max={maxPriceNumber} />
               <LimitSelect />
               <span className="text-sm opacity-40">{total} products</span>
