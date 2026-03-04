@@ -65,6 +65,7 @@ export default function PriceSliderDual(props: PriceSliderDualProps) {
     const params = new URLSearchParams(searchParams.toString());
     params.set("price_min", min.toString());
     params.set("price_max", max.toString());
+    params.set("page", "1");
 
     // Updates URL
     router.push(`${pathName}?${params.toString()}`);

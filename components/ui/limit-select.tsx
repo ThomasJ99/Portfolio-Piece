@@ -21,6 +21,8 @@ export default function LimitSelect() {
     const newLimit = event.target.value;
     const params = new URLSearchParams(searchParams.toString());
     params.set("limit", newLimit);
+    params.set("page", "1");
+
     // params.set("page", "1") if pagnation
 
     router.push(`${pathName}?${params.toString()}`);
@@ -31,7 +33,7 @@ export default function LimitSelect() {
       <label className="my-5 font-oswald" htmlFor="limit-select">
         Show Products:
       </label>
-      
+
       <select
         className=""
         name="limit"

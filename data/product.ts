@@ -6,17 +6,17 @@ const URL_API = "http://localhost:4000/";
 // This makes the query(title) easier to read, maintain, and extend
 export async function getProducts(
   limit = 4,
-  offset = 0,
+  page = 1,
   category?: string,
   query?: string,
   price_min?: number,
   price_max?: number,
 ): Promise<ProductsResponse> {
-  // Initialize query parameters with required pagination values, limit/offset
+  // Initialize query parameters with required pagination values, limit/page number
   const params = new URLSearchParams({
     _limit: limit.toString(),
     // Offset is depricated, TODO: use page instead
-    offset: offset.toString(),
+    _page: page.toString(),
   });
 
   if (category) {
