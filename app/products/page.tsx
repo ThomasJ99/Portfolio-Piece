@@ -7,12 +7,13 @@ import LimitSelect from "@/components/ui/limit-select";
 import PriceSliderDual from "@/components/ui/price-slider-dual";
 import Root from "@/components/ui/root";
 import Pagination from "@/components/ui/pagination";
+import CategoryAside from "@/components/ui/category-aside";
 
 // Component
 // This is where we call getProducts and render out the products
 export default async function productPage(params: PageProps<"/">) {
   const {
-    limit = "4",
+    limit = "6",
     page = "1",
     category,
     query,
@@ -40,31 +41,38 @@ export default async function productPage(params: PageProps<"/">) {
   return (
     // TODO: STUDY Root
     <Root defaultMin={minPriceNumber} defaultMax={maxPriceNumber}>
-      <section>
-        <section className="container mx-auto">
-          <h1 className="text-4xl mt-15 mb-5 px-4 font-oswald">
-            Our sortiment
-          </h1>
-          <CategoryLinks />
-          <PriceSliderDual min={minPriceNumber} max={maxPriceNumber} />
-          <LimitSelect />
-          <span className="text-sm opacity-40">{total} products</span>
-        </section>
+      <div className="container mx-auto">
+        <div className="grid grid-cols-4 gap-8">
+          <div className="mt-20">
+            <CategoryAside />
+          </div>
 
-        {/* Conditional rendering if products are > 0 */}
-        {products.length > 0 ? (
-          <ul>
-            <CardGrid>
-              {products.map((p) => (
-                <ProductCard key={p.title} product={p} />
-              ))}
-            </CardGrid>
-          </ul>
-        ) : (
-          <p>no products found</p>
-        )}
-      </section>
-      <Pagination totalPages={pages} />
+          <section className="col-span-3">
+            <section className="">
+              <h1 className="text-4xl mt-15 mb-5 px-4 font-oswald upperc">
+                Our sortiment
+              </h1>
+              <PriceSliderDual min={minPriceNumber} max={maxPriceNumber} />
+              <LimitSelect />
+              <span className="text-sm opacity-40">{total} products</span>
+            </section>
+
+            {/* Conditional rendering if products are > 0 */}
+            {products.length > 0 ? (
+              <ul>
+                <CardGrid>
+                  {products.map((p) => (
+                    <ProductCard key={p.title} product={p} />
+                  ))}
+                </CardGrid>
+              </ul>
+            ) : (
+              <p>no products found</p>
+            )}
+            <Pagination totalPages={pages} />
+          </section>
+        </div>
+      </div>
     </Root>
   );
 }

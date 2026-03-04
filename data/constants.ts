@@ -1,1 +1,1 @@
-export const ITEMLIMITS = [4, 8, 16, 24, 32, 40];
+export const ITEMLIMITS = [6, 12, 18, 24, 36, 48];

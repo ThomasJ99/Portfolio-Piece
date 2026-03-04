@@ -5,7 +5,7 @@ const URL_API = "http://localhost:4000/";
 // New version of product fetch that uses URLSearchParams instead of manually building a long query string
 // This makes the query(title) easier to read, maintain, and extend
 export async function getProducts(
-  limit = 4,
+  limit = 6,
   page = 1,
   category?: string,
   query?: string,
