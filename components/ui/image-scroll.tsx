@@ -43,10 +43,9 @@ export default function ImageScroll({ product }: {product: Product}) {
           className={`
             absolute top-50 right-0 bg-white/90
             hover:bg-gray-300 active:bg-gray-200 text-black text-3xl cursor-pointer 
-            px-2.5 py-1 group invisible group-hover:visible transition-all duration-200 ease-in`}
+            px-3.5 py-1 group invisible group-hover:visible transition-all duration-200 ease-in`}
         >
-          {/* TODO: ADD SVG */}
-          {">"}
+          &rsaquo;
         </button>
       ) : null}
     </div>

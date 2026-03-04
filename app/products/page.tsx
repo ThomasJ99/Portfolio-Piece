@@ -6,21 +6,21 @@ import { ensureString } from "@/util";
 import LimitSelect from "@/components/ui/limit-select";
 import PriceSliderDual from "@/components/ui/price-slider-dual";
 import Root from "@/components/ui/root";
-import OffsetPage from "@/components/ui/offset-page";
+import Pagination from "@/components/ui/pagination";
 
 // Component
 // This is where we call getProducts and render out the products
 export default async function productPage(params: PageProps<"/">) {
   const {
     limit = "4",
-    offset = "0",
+    page = "1",
     category,
     query,
     price_min = "0",
     price_max = "100000",
   } = await params.searchParams;
   const limitNumber = Number(ensureString(limit));
-  const offsetNumber = Number(ensureString(offset));
+  const pageNumber = Number(ensureString(page));
   const categoryString = ensureString(category);
   const queryString = ensureString(query);
   // TODO: Maybe use effect hook to load them once per page load instead of page render.
@@ -28,17 +28,14 @@ export default async function productPage(params: PageProps<"/">) {
   const maxPriceNumber = Number(ensureString(price_max));
   // Things to do with limit, implement links/buttons that change the limit on the site
 
-  const { products, total, page, pages } = await getProducts(
+  const { products, total, pages } = await getProducts(
     limitNumber,
-    offsetNumber,
+    pageNumber,
     categoryString,
     queryString,
     minPriceNumber,
     maxPriceNumber,
   );
-
-  console.log(total, page, pages);
-  
 
   return (
     // TODO: STUDY Root
@@ -51,14 +48,10 @@ export default async function productPage(params: PageProps<"/">) {
           <CategoryLinks />
           <PriceSliderDual min={minPriceNumber} max={maxPriceNumber} />
           <LimitSelect />
-
-          <div className="container mx-auto flex justify-center">
-
-              <OffsetPage />
-          </div>
+          <span className="text-sm opacity-40">{total} products</span>
         </section>
 
-        {/* Conditional rendering if products are </> than 0 */}
+        {/* Conditional rendering if products are > 0 */}
         {products.length > 0 ? (
           <ul>
             <CardGrid>
@@ -68,9 +61,10 @@ export default async function productPage(params: PageProps<"/">) {
             </CardGrid>
           </ul>
         ) : (
-          <p>no products found &lsaquo;</p>
+          <p>no products found</p>
         )}
       </section>
+      <Pagination totalPages={pages} />
     </Root>
   );
 }

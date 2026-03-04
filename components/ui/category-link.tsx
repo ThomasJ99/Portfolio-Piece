@@ -16,11 +16,12 @@ export default function CategoryLink({ category }: { category: Category }) {
   // Allows us to change the server value, meaning we can manipulate the URL
   const params = new URLSearchParams(searchParams.toString());
   params.set("category", category.id.toString());
+  params.set("page", "1");
 
   return (
     <Link
-      className={`border-2 px-4 py-3 font-bold  hover:bg-amber-300  hover:border-white
-         hover:text-black transition-colors font-oswald uppercase my-
+      className={`border-2 px-4 py-3 font-bold hover:bg-amber-300 hover:border-white
+         hover:text-black transition-colors font-oswald uppercase
          ${isActive ? "underline scale-105 bg-amber-300 text-black border-white" : ""}`}
       key={category.id}
       aria-current={isActive ? "page" : undefined}
