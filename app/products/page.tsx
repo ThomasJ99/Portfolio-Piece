@@ -27,7 +27,7 @@ export default async function productPage(params: PageProps<"/">) {
   const maxPriceNumber = Number(ensureString(price_max));
   // Things to do with limit, implement links/buttons that change the limit on the site
 
-  const products = await getProducts(
+  const {products} = await getProducts(
     limitNumber,
     offsetNumber,
     categoryString,

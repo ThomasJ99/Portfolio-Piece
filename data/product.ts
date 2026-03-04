@@ -1,6 +1,6 @@
-import { Product } from "@/types/products";
+import { Product, ProductsResponse } from "@/types/products-json";
 
-const URL_API = "https://api.escuelajs.co/api/v1/";
+const URL_API = "http://localhost:4000/";
 
 // New version of product fetch that uses URLSearchParams instead of manually building a long query string
 // This makes the query(title) easier to read, maintain, and extend
@@ -11,7 +11,7 @@ export async function getProducts(
   title?: string,
   price_min?: number,
   price_max?: number,
-): Promise<Product[]> {
+): Promise<ProductsResponse> {
   // Initialize query parameters with required pagination values, limit/offset
   const params = new URLSearchParams({
     limit: limit.toString(),

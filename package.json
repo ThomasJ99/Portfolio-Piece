@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "mock-server": "json-server --watch server/products.json --middlewares server/middleware.js --port 4000 --host 0.0.0.0",
+    "dev:full": "concurrently \"npm run dev\" \"npm run mock-server\"",
     "build": "next build",
     "start": "next start",
     "lint": "biome check",
@@ -12,6 +14,8 @@
   "dependencies": {
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "concurrently": "^9.2.1",
+    "json-server": "^0.17.4",
     "lucide-react": "^0.574.0",
     "next": "^16.1.6",
     "radix-ui": "^1.4.3",
