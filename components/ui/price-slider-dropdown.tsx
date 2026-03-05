@@ -41,7 +41,7 @@ export default function PriceFilterDropdown({
     <div className="relative inline-block" ref={dropdownRef}>
       <button
         onClick={() => setOpen(!open)}
-        className={`border-2 px-4 py-3 font-bold hover:bg-gray-900 hover:border-white
+        className={`border-2 px-4 py-3 font-bold hover:bg-slate-800 hover:border-white
         transition-colors font-oswald uppercase z-101
         ${open ? "border-b-0" : ""}`}
       >
