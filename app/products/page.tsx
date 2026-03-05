@@ -1,10 +1,8 @@
 import CardGrid from "@/components/ui/card-grid";
 import { getProducts } from "@/data/product";
 import ProductCard from "@/components/ui/product-card";
-import CategoryLinks from "@/components/ui/category-links";
 import { ensureString } from "@/util";
 import LimitSelect from "@/components/ui/limit-select";
-import PriceSliderDual from "@/components/ui/price-slider-dual";
 import Root from "@/components/ui/root";
 import Pagination from "@/components/ui/pagination";
 import CategoryAside from "@/components/ui/category-aside";

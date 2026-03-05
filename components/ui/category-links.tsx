@@ -5,6 +5,7 @@ import CategoryLink from "./category-link";
 export default async function CategoryLinks() {
   const categories: Category[] = await getCategories();
 
+  // ***** NOT CURRENTLY USING ****** //
   return (
     <section className="flex flex-wrap gap-2 px-4">
       {categories.map((c) => (
