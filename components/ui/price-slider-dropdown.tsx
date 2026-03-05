@@ -96,6 +96,7 @@ export default function PriceFilterDropdown({
             >
               Reset
             </button>
+            
             <button
               className="p-3 border-s grow cursor-pointer bg-white text-black hover:bg-slate-800 hover:text-white"
               onClick={() => setOpen(false)}

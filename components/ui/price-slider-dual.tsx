@@ -112,6 +112,7 @@ export default function PriceSliderDual(props: PriceSliderDualProps) {
         max={100000}
         step={100}
       />
+
       <div className="flex justify-between">
         <span className="block font-bold">Deals</span>
         <div className="relative inline-block w-11 h-5">
@@ -120,6 +121,7 @@ export default function PriceSliderDual(props: PriceSliderDualProps) {
             type="checkbox"
             className="peer appearance-none w-12 h-5 border-2 border-white rounded-full checked:bg-slate-200 cursor-pointer transition-colors duration-300"
           />
+
           <label
             htmlFor="switch-component"
             className="absolute -top-1 -left-2 w-7 h-7 bg-white rounded-full border-2 border-black shadow-sm transition-transform duration-300 peer-checked:translate-x-9 peer-checked:border-slate-800 cursor-pointer"
@@ -135,6 +137,7 @@ export default function PriceSliderDual(props: PriceSliderDualProps) {
             type="checkbox"
             className="peer appearance-none w-12 h-5 border-2 border-white rounded-full checked:bg-slate-200 cursor-pointer transition-colors duration-300"
           />
+          
           <label
             htmlFor="switch-component-2"
             className="absolute -top-1 -left-2 w-7 h-7 bg-white rounded-full border-2 border-black shadow-sm transition-transform duration-300 peer-checked:translate-x-9 peer-checked:border-slate-800 cursor-pointer"
