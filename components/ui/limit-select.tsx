@@ -29,9 +29,12 @@ export default function LimitSelect() {
   };
 
   return (
-    <form className=" flex gap-6 px-8 text-2xl ">
-      <label className="my-5 font-oswald" htmlFor="limit-select">
-        Show Products:
+    <form
+      className={`border-2 px-4 py-3 font-bold hover:bg-amber-300 hover:border-white
+        hover:text-black transition-colors uppercase inline-block`}
+    >
+      <label className={`font-oswald `} htmlFor="limit-select">
+        Show:
       </label>
 
       <select
@@ -46,7 +49,7 @@ export default function LimitSelect() {
           <option
             key={`limit-select${item}`}
             value={item}
-            className="bg-black text-base"
+            className="bg-black text-base text-white"
           >
             {item}
           </option>
