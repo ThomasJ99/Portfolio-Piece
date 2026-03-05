@@ -27,11 +27,12 @@ function PriceInputFields({ min, max }: PriceInputProps) {
     <div className="flex justify-between">
       <div className="flex flex-col">
         <label
-          className="border w-25 text-xs py-1 text-center"
+          className="border border-b-0 w-25 text-xs py-1 text-center"
           htmlFor="min-text"
         >
           Lowest price
         </label>
+
         <input
           className="border-2 p-2 w-30"
           type="text"
@@ -46,11 +47,12 @@ function PriceInputFields({ min, max }: PriceInputProps) {
 
       <div className="flex flex-col">
         <label
-          className="border w-25 text-xs p-1 text-center"
+          className="border border-b-0 w-25 text-xs p-1 text-center"
           htmlFor="max-text"
         >
           Highest price
         </label>
+
         <input
           className="border-2 p-2 w-30"
           type="text"
@@ -119,7 +121,7 @@ export default function PriceSliderDual(props: PriceSliderDualProps) {
           <input
             id="switch-component"
             type="checkbox"
-            className="peer appearance-none w-12 h-5 border-2 border-white rounded-full checked:bg-slate-200 cursor-pointer transition-colors duration-300"
+            className="peer appearance-none w-12 h-5 border-2 border-slate-200 rounded-full checked:bg-slate-200 cursor-pointer transition-colors duration-300"
           />
 
           <label
@@ -135,9 +137,9 @@ export default function PriceSliderDual(props: PriceSliderDualProps) {
           <input
             id="switch-component-2"
             type="checkbox"
-            className="peer appearance-none w-12 h-5 border-2 border-white rounded-full checked:bg-slate-200 cursor-pointer transition-colors duration-300"
+            className="peer appearance-none w-12 h-5 border-2 border-slate-200 rounded-full checked:bg-slate-200 cursor-pointer transition-colors duration-300"
           />
-          
+
           <label
             htmlFor="switch-component-2"
             className="absolute -top-1 -left-2 w-7 h-7 bg-white rounded-full border-2 border-black shadow-sm transition-transform duration-300 peer-checked:translate-x-9 peer-checked:border-slate-800 cursor-pointer"

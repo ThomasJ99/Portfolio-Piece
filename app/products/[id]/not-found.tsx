@@ -10,7 +10,7 @@ export default function NotFound() {
         changed or is temporarily unavailable.
       </p>
       <Link
-        className="bg-orange-400 hover:bg-orange-500 transition-colors uppercase text-shadow-2xs font-bold px-7 py-3 rounded-4xl"
+        className="bg-slate-700 hover:bg-slate-900 transition-colors uppercase text-shadow-2xs font-bold px-7 py-3 rounded-4xl"
         href="/"
       >
         Go to homepage

@@ -20,11 +20,8 @@ export default function CategoryLink({ category }: { category: Category }) {
 
   return (
     <Link
-    /* Old style to keep for later */
-      // className={`border-2 px-4 py-3 font-bold hover:bg-amber-300 hover:border-white
-      //    hover:text-black transition-colors font-oswald uppercase
-      //    ${isActive ? "underline scale-105 bg-amber-300 text-black border-white" : ""}`}
       key={category.id}
+      className={`hover:text-slate-400 hover:underline underline-offset-2 w-[15ch] ${isActive ? " text-slate-400" : ""}`}
       aria-current={isActive ? "page" : undefined}
       href={`${pathName}?${params.toString()}`}
     >

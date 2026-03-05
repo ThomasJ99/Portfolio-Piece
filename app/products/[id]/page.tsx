@@ -76,16 +76,16 @@ export default async function ProductPage({
 
             {/* TODO: FIX TOP BUTTON TO ALSO BE GROW*/}
             <div className="">
-              <button className="mt-10 p-3 text-white/60 text-left flex border-2 cursor-pointer hover:scale-101 active:border-white ">
+              <button className="mt-10 p-3 text-white/60 text-left flex border-2 cursor-pointer hover:scale-101 active:border-slate-200 ">
                 Choose your size/model/type
               </button>
 
               <div className="flex gap-1 mb-15">
-                <button className="bg-white font-bold text-black border-2 border-white grow cursor-pointer hover:text-white hover:bg-black transition-colors">
+                <button className="bg-slate-200 font-bold text-black border-2 border-slate-200 grow cursor-pointer hover:text-white hover:bg-black transition-colors">
                   Add to bag
                 </button>
 
-                <button className="border-2 border-gray-200 p-3 cursor-pointer hover:scale-101 active:border-white">
+                <button className="border-2 border-gray-200 p-3 cursor-pointer hover:scale-101 active:border-slate-200">
                   <svg
                     className={`w-7 h-7 transition-all duration-200 ease-in}`}
                     fill="none"
