@@ -29,7 +29,7 @@ export default function LimitSelect() {
 
   return (
     <form
-      className={`border-2 px-4 py-3 font-bold hover:bg-gray-900 hover:border-white
+      className={`border-2 px-4 py-3 font-bold hover:bg-slate-800 hover:border-white
         transition-colors uppercase`}
     >
       <label className={`font-oswald `} htmlFor="limit-select">
