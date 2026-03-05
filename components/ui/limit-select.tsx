@@ -20,18 +20,20 @@ export default function LimitSelect() {
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const newLimit = event.target.value;
     const params = new URLSearchParams(searchParams.toString());
+    
     params.set("limit", newLimit);
     params.set("page", "1");
-
-    // params.set("page", "1") if pagnation
 
     router.push(`${pathName}?${params.toString()}`);
   };
 
   return (
-    <form className=" flex gap-6 px-8 text-2xl ">
-      <label className="my-5 font-oswald" htmlFor="limit-select">
-        Show Products:
+    <form
+      className={`border-2 px-4 py-3 font-bold hover:bg-gray-900 hover:border-white
+        transition-colors uppercase`}
+    >
+      <label className={`font-oswald `} htmlFor="limit-select">
+        Show:
       </label>
 
       <select
@@ -46,7 +48,7 @@ export default function LimitSelect() {
           <option
             key={`limit-select${item}`}
             value={item}
-            className="bg-black text-base"
+            className="bg-black text-base text-white"
           >
             {item}
           </option>

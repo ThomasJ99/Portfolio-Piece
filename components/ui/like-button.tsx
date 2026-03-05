@@ -45,7 +45,7 @@ export default function LikeButton({ pTitle }: LikeButtonProps) {
           e.stopPropagation(),
           toggleLike());
       }}
-      className={`z-999 absolute top-3 right-0 w-10 h-10 flex items-center justify-center bg-white cursor-pointer`}
+      className={`z-99 absolute top-3 right-0 w-10 h-10 flex items-center justify-center bg-white cursor-pointer`}
       type="button"
     >
       <svg
