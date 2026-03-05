@@ -91,14 +91,14 @@ export default function PriceFilterDropdown({
 
           <div className="flex justify-between border-t-2 p-0">
             <button
-              className="p-3 border-e grow cursor-pointer hover:bg-slate-800"
+              className="p-3 border-e grow cursor-pointer hover:bg-slate-800 font-bold"
               onClick={() => setOpen(false)}
             >
               Reset
             </button>
-            
+
             <button
-              className="p-3 border-s grow cursor-pointer bg-white text-black hover:bg-slate-800 hover:text-white"
+              className="p-3 border-s grow cursor-pointer bg-white text-black hover:bg-slate-800 hover:text-white font-bold"
               onClick={() => setOpen(false)}
             >
               Save
