@@ -84,13 +84,24 @@ export default function PriceFilterDropdown({
 
       {/* Dropdown */}
       {open && (
-        <div className="absolute left-0 w-105 bg-black border-2 border-white p-6 z-100">
-          <PriceSliderDual min={min} max={max} />
+        <div className="absolute left-0 w-85 bg-black border-2 border-white z-100">
+          <div className="p-6 ">
+            <PriceSliderDual min={min} max={max} />
+          </div>
 
-          <div>
-            <button onClick={() => setOpen(false)}>Reset</button>
-
-            <button onClick={() => setOpen(false)}>Save</button>
+          <div className="flex justify-between border-t-2 p-0">
+            <button
+              className="p-3 border-e grow cursor-pointer hover:bg-slate-800"
+              onClick={() => setOpen(false)}
+            >
+              Reset
+            </button>
+            <button
+              className="p-3 border-s grow cursor-pointer bg-white text-black hover:bg-slate-800 hover:text-white"
+              onClick={() => setOpen(false)}
+            >
+              Save
+            </button>
           </div>
         </div>
       )}
