@@ -8,6 +8,7 @@ import PriceSliderDual from "@/components/ui/price-slider-dual";
 import Root from "@/components/ui/root";
 import Pagination from "@/components/ui/pagination";
 import CategoryAside from "@/components/ui/category-aside";
+import PriceFilterDropdown from "@/components/ui/price-slider-dropdown";
 
 // Component
 // This is where we call getProducts and render out the products
@@ -44,22 +45,20 @@ export default async function productPage(params: PageProps<"/">) {
       <div className="container mx-auto mt-10">
         <div className="grid grid-cols-4 gap-8">
           <section>
-            <h1 className="text-4xl mt-15 mb-5 font-oswald">
-              Our sortiment
-            </h1>
+            <h1 className="text-4xl mt-15 mb-5 font-oswald">Our sortiment</h1>
             <CategoryAside />
           </section>
 
           <section className="col-span-3">
-            <section>
-              <PriceSliderDual min={minPriceNumber} max={maxPriceNumber} />
+            <section className="flex gap-6 mb-5">
               <LimitSelect />
-              <span className="text-sm opacity-40">{total} products</span>
+              <PriceFilterDropdown min={minPriceNumber} max={maxPriceNumber} />{" "}
             </section>
 
             {/* Conditional rendering if products are > 0 */}
             {products.length > 0 ? (
               <ul>
+                <span className="text-sm opacity-40">{total} products</span>
                 <CardGrid>
                   {products.map((p) => (
                     <ProductCard key={p.title} product={p} />
