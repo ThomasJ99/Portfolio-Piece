@@ -41,8 +41,8 @@ export default function PriceFilterDropdown({
     <div className="relative inline-block" ref={dropdownRef}>
       <button
         onClick={() => setOpen(!open)}
-        className={`border-2 px-4 py-3 font-bold hover:bg-slate-800 hover:border-white
-        transition-colors font-oswald uppercase z-101
+        className={`border-2 px-4 py-3 font-bold hover:bg-slate-800 hover:border-slate-200
+        transition-colors font-oswald uppercase
         ${open ? "border-b-0" : ""}`}
       >
         <span className="flex gap-3">
@@ -84,7 +84,7 @@ export default function PriceFilterDropdown({
 
       {/* Dropdown */}
       {open && (
-        <div className="absolute left-0 w-85 bg-black border-2 border-white z-100">
+        <div className="absolute left-0 w-85 bg-black border-2 border-slate-200 z-100">
           <div className="p-6 ">
             <PriceSliderDual min={min} max={max} />
           </div>
@@ -98,7 +98,7 @@ export default function PriceFilterDropdown({
             </button>
 
             <button
-              className="p-3 border-s grow cursor-pointer bg-white text-black hover:bg-slate-800 hover:text-white font-bold"
+              className="p-3 border-s grow cursor-pointer bg-slate-200 text-black hover:bg-slate-800 hover:text-white font-bold"
               onClick={() => setOpen(false)}
             >
               Save

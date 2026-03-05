@@ -13,22 +13,31 @@ export default function Footer() {
             collection and discover items designed to fit your everyday needs.
           </p>
           <p className="mt-3 text-white/40">
-            © {new Date().getFullYear()} Platzki. All rights reserved.
+            © {new Date().getFullYear()} All rights reserved.
           </p>
         </div>
 
         {/* Navigation */}
         <nav className="flex gap-6 text-sm text-white/70">
-          <Link href="/" className="hover:text-white transition-colors">
+          <Link
+            href="/"
+            className="hover:text-slate-400 hover:underline underline-offset-2 transition-colors"
+          >
             Home
           </Link>
 
-          <Link href="/products" className="hover:text-white transition-colors">
-            Products
+          <Link
+            href="/about"
+            className="hover:text-slate-400 hover:underline underline-offset-2 transition-colors"
+          >
+            About
           </Link>
 
-          <Link href="/about" className="hover:text-white transition-colors">
-            About
+          <Link
+            href="/products"
+            className="hover:text-slate-400 hover:underline underline-offset-2 transition-colors"
+          >
+            Products
           </Link>
         </nav>
       </div>

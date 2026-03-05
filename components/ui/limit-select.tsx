@@ -20,7 +20,7 @@ export default function LimitSelect() {
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const newLimit = event.target.value;
     const params = new URLSearchParams(searchParams.toString());
-    
+
     params.set("limit", newLimit);
     params.set("page", "1");
 
@@ -29,10 +29,10 @@ export default function LimitSelect() {
 
   return (
     <form
-      className={`border-2 px-4 py-3 font-bold hover:bg-slate-800 hover:border-white
+      className={`border-2 px-4 py-3 font-bold hover:bg-slate-800 hover:border-slate-200
         transition-colors uppercase`}
     >
-      <label className={`font-oswald `} htmlFor="limit-select">
+      <label className={`font-oswald`} htmlFor="limit-select">
         Show:
       </label>
 
