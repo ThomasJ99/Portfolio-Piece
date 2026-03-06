@@ -11,6 +11,8 @@ export async function getProducts(
   query?: string,
   price_min?: number,
   price_max?: number,
+  optionalKey?: string,
+  optionalValue?: string,
 ): Promise<ProductsResponse> {
   // Initialize query parameters with required pagination values, limit/page number
   const params = new URLSearchParams({
@@ -18,6 +20,10 @@ export async function getProducts(
     // Offset is depricated, TODO: use page instead
     _page: page.toString(),
   });
+
+  if (optionalKey && optionalValue) {
+    params.set(optionalKey, optionalValue);
+  }
 
   if (category) {
     params.set("categoryId", category);
@@ -51,8 +57,7 @@ export async function getProduct(id: number): Promise<Product> {
   // Depending on how we want to use this file we could tweak what/who has access to it by returning null
 
   // Gets our api of a single product
-  const response = await fetch(`${URL_API}products/${id}`, {
-  });
+  const response = await fetch(`${URL_API}products/${id}`, {});
 
   return await response.json();
 }
