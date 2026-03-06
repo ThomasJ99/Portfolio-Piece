@@ -4,33 +4,45 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <header className="py-16 px-4 bg-linear-to-b from-red-600  via-blue-500 to-white">
-      <section
-        aria-label="Company hero section"
-        className="container mx-auto px-4 grid items-center lg:grid-cols-2 gap-8 font-oswald drop-shadow-2xl"
-      >
-        <div>
-          <span className="text-white/95 text-2xl italic font-bold">
-            placeholder{" "}
-          </span>
-          <h1 className="text-6xl xl:text-7xl font-bold leading-tight text-balance tracking-wide grid col-auto uppercase">
-            Company X
-          </h1>
-          <p className="text-white/90 text-2xl">By me </p>
-        </div>
+    <header className="">
+      <div className="bg-gray-600">
+        <section
+          aria-label="Company hero section"
+          className="container mx-auto px-50 grid items-center lg:grid-cols-2 gap-2 font-oswald drop-shadow-2xl pt-10"
+        >
+          <div>
+            <h1 className="text-4xl xl:text-5xl font-bold leading-tight text-balance tracking-wide grid col-auto uppercase">
+              New Balance ellipse.
+            </h1>
+            <p className="text-white/90 text-2xl">
+              Fresh Foam X midsole delivers lightweight cushioning for
+              comfortable, everyday running.
+            </p>
+          </div>
 
-        <Image
-          className="border-3 border-black rounded-2xl shadow-2xl"
-          src="https://placehold.co/600x400"
-          alt="Banner image of the first volume of Chainsaw Man featuring Denji as the chainsaw devil, slaugthering zombies in stylized fashion"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          width={1500}
-          height={843}
-          preload={true}
-          loading="eager"
-          unoptimized
-        />
-      </section>
+          <div className="flex">
+            <Image
+              className="shadow-2xl"
+              src="https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/1.webp"
+              alt="Banner image of the first volume of Chainsaw Man featuring Denji as the chainsaw devil, slaugthering zombies in stylized fashion"
+              width={300}
+              height={200}
+              preload={true}
+              loading="eager"
+            />
+
+            <Image
+              className="shadow-2xl"
+              src="https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/1.webp"
+              alt="Banner image of the first volume of Chainsaw Man featuring Denji as the chainsaw devil, slaugthering zombies in stylized fashion"
+              width={300}
+              height={200}
+              preload={true}
+              loading="eager"
+            />
+          </div>
+        </section>
+      </div>
     </header>
   );
 }
