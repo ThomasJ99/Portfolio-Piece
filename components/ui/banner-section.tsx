@@ -32,10 +32,12 @@ export default function BannerSection({
         {imgSrc && (
           <div className="flex">
             {imgSrc.map((src, index) => (
-              <img
+              <Image
                 key={index}
                 src={src}
                 alt=""
+                width={600}
+                height={400}
                 className={`object-cover ${
                   imgSrc.length === 1 ? "w-150 h-100" : "w-75 h-100"
                 }`}

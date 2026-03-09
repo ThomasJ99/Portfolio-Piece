@@ -32,10 +32,12 @@ export default function Hero() {
         </div>
 
         <div>
-          {/* TODO: Swap img to Image when I find a good image */}
-          <img
-            src="https://www.shutterstock.com/shutterstock/photos/2558636193/display_1500/stock-photo-woman-shopping-bag-and-travel-for-fashion-in-street-city-and-sunglasses-for-discount-on-commute-2558636193.jpg"
+          <Image
+            src="https://plus.unsplash.com/premium_photo-1683141052679-942eb9e77760?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            width={800}
+            height={400}
             alt=""
+            className="aspect-[2] object-cover"
           />
         </div>
       </section>
