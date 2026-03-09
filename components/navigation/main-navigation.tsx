@@ -16,7 +16,6 @@ export default function MainNavigation() {
       </Link>
 
       <SearchForm />
-      {/* <ButtonGroupInput/> */}
 
       <ul className="flex gap-4">
         {menu.map((item, index) => (
