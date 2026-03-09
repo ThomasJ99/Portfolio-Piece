@@ -6,6 +6,7 @@ import { getProducts } from "@/data/product";
 import ProductCard from "@/components/ui/product-card";
 
 export default async function Home() {
+  // Fetches specific products that are later displayed below
   const { products } = await getProducts(
     4,
     undefined,
@@ -24,15 +25,27 @@ export default async function Home() {
     undefined,
     undefined,
     undefined,
-    "availabilityStatus",
-    "In Stock",
+    "categoryId",
+    "9",
   );
+
+  const { products: products3 } = await getProducts(
+    5,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    "categoryId",
+    "2",
+  );
+
 
   return (
     <main>
       <Hero />
-      
-      {/* First section */}
+
+      {/* First section - Best Selling Products */}
       <FullWidthSection className="bg-blue-600">
         <BannerSection
           title="Best Sellers"
@@ -49,7 +62,7 @@ export default async function Home() {
         </CardGrid>
       </FullWidthSection>
 
-      {/* Second section */}
+      {/* Second section - Running Shoes */}
       <FullWidthSection className="bg-slate-600">
         <BannerSection
           title="Running Essentials"
@@ -71,13 +84,13 @@ export default async function Home() {
         <BannerSection
           title="Accessories"
           description="Complete your exercise setup!"
-          alignImgRight={false}
+          alignImgRight={true}
         />
       </FullWidthSection>
 
       <FullWidthSection>
         <CardGrid>
-          {products.map((p) => (
+          {products3.slice(1).map((p) => (
             <ProductCard key={p.title} product={p} />
           ))}{" "}
         </CardGrid>

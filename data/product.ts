@@ -48,14 +48,12 @@ export async function getProducts(
     // Parse and return the JSON response
     return await response.json();
   } catch {
-    throw new Error("API is down...");
+    throw new Error("Can't find products, API is down...");
   }
 }
 
 // This file fetches data from a API and then exports that data or a error message
 export async function getProduct(id: number): Promise<Product> {
-  // Depending on how we want to use this file we could tweak what/who has access to it by returning null
-
   // Gets our api of a single product
   const response = await fetch(`${URL_API}products/${id}`, {});
 
@@ -70,9 +68,6 @@ export async function getCategories() {
 
     // Another fail check if using try/catch, both is probably a bit much, so either remove the if statement or this one
   } catch (error) {
-    // Different ways to show error
     throw new Error("Api not working...");
-    // ("Api not working...");
-    // redirect("/uykkp99uy")
   }
 }
