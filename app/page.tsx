@@ -31,14 +31,15 @@ export default async function Home() {
   return (
     <main>
       <Hero />
-
+      
       {/* First section */}
-      <BannerSection
-        title="hello"
-        description="heloohelheoehololeh"
-        className="bg-blue-700"
-        alignImgRight={true}
-      />
+      <FullWidthSection className="bg-blue-600">
+        <BannerSection
+          title="Best Sellers"
+          description="Our most popular products this spring!"
+          alignImgRight={true}
+        />
+      </FullWidthSection>
 
       <FullWidthSection className="bg-blue-500">
         <CardGrid>
@@ -49,12 +50,13 @@ export default async function Home() {
       </FullWidthSection>
 
       {/* Second section */}
-      <BannerSection
-        title="I am cool"
-        description="helooehololeh"
-        className="bg-slate-700"
-        alignImgRight={false}
-      />
+      <FullWidthSection className="bg-slate-600">
+        <BannerSection
+          title="Running Essentials"
+          description="Up your performance to the maximum with these products this spring!"
+          alignImgRight={false}
+        />
+      </FullWidthSection>
 
       <FullWidthSection className="bg-slate-500">
         <CardGrid>
@@ -65,11 +67,13 @@ export default async function Home() {
       </FullWidthSection>
 
       {/* Third section */}
-      <BannerSection
-        title="Yo"
-        description="w"
-        alignImgRight={false}
-      />
+      <FullWidthSection className="">
+        <BannerSection
+          title="Accessories"
+          description="Complete your exercise setup!"
+          alignImgRight={false}
+        />
+      </FullWidthSection>
 
       <FullWidthSection>
         <CardGrid>

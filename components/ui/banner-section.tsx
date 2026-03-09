@@ -13,16 +13,22 @@ export default function BannerSection({
 }) {
   return (
     <section
-      className={`flex ${className ?? ""} ${alignImgRight ? "md:flex-wrap bg-amber-100" : "flex-row-reverse bg-green-400"}`}
+      // alginImgRight - first option is default/true, second is false
+      className={`flex container mx-auto gap-6 items-center justify-between 
+      ${className ?? ""} 
+      ${alignImgRight ? "flex-row" : "flex-row-reverse"}`}
     >
-      <header>
-        <h2>{title}</h2>
+      <header className="space-y-10">
+        <h2 className="text-4xl font-bold font-oswald uppercase">{title}</h2>
 
-        <p>{description}</p>
+        <p className="text-lg text-white/80 max-w-lg">{description}</p>
       </header>
 
-      {/* <Image src={""} width={1} height={1} alt="" /> */}
-      <p className="bg-amber-300 p-50 block size-50">wdlajdpawhfo</p>
+      <img
+        src="https://www.shutterstock.com/shutterstock/photos/2558636193/display_1500/stock-photo-woman-shopping-bag-and-travel-for-fashion-in-street-city-and-sunglasses-for-discount-on-commute-2558636193.jpg"
+        alt=""
+        className="size-100"
+      />
     </section>
   );
 }
