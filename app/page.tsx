@@ -47,16 +47,16 @@ export default async function Home() {
       {/* First section - Best Selling Products */}
       <FullWidthSection className="bg-blue-400">
         <BannerSection
-          title="Best Sellers"
-          description="Our most popular products this spring!"
+          title="Spring Favorites"
+          description="Discover the season's most-loved styles. Our trending top picks for a fresh spring look."
           alignImgRight={true}
           imgSrc={[
-            "https://plus.unsplash.com/premium_photo-1752595826102-c2c57e8f7805?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://plus.unsplash.com/premium_photo-1769857281671-a942028ea91b?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           ]}
         />
       </FullWidthSection>
 
-      <FullWidthSection className="bg-blue-200 text-black">
+      <FullWidthSection className="bg-blue-200 text-black mb-20">
         <CardGrid>
           {products.map((p) => (
             <ProductCard key={p.title} product={p} />
@@ -76,7 +76,7 @@ export default async function Home() {
         />
       </FullWidthSection>
 
-      <FullWidthSection className="bg-yellow-200 text-black">
+      <FullWidthSection className="bg-yellow-200 text-black mb-20">
         <CardGrid>
           {products2.map((p) => (
             <ProductCard key={p.title} product={p} />
@@ -85,19 +85,19 @@ export default async function Home() {
       </FullWidthSection>
 
       {/* Third section */}
-      <FullWidthSection className="bg-green-600">
+      <FullWidthSection className="bg-teal-500">
         <BannerSection
           title="Fresh Spring Scents"
           description="Light, airy, and invigorating. Find your signature spring fragrance and carry the freshness of the breeze with you."
           alignImgRight={true}
           imgSrc={[
             "https://images.unsplash.com/photo-1650984312007-2258bc07b03e?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "https://images.unsplash.com/photo-1650984312007-2258bc07b03e?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1583710320217-6c72a6d7d2e1?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           ]}
         />
       </FullWidthSection>
 
-      <FullWidthSection className="bg-green-400 text-black">
+      <FullWidthSection className="bg-teal-300 text-black">
         <CardGrid>
           {products3.slice(1).map((p) => (
             <ProductCard key={p.title} product={p} />

@@ -6,6 +6,6 @@ export default function FullWidthSection({
   className?: string;
 }) {
   return (
-    <div className={`my-10 ${className ?? "bg-neutral-500"}`}>{children}</div>
+    <div className={`${className ?? "bg-neutral-500"}`}>{children}</div>
   );
 }

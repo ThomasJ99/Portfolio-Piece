@@ -31,7 +31,7 @@ export default function Hero() {
           </Link>
         </div>
 
-        <div className="">
+        <div>
           {/* TODO: Swap img to Image when I find a good image */}
           <img
             src="https://www.shutterstock.com/shutterstock/photos/2558636193/display_1500/stock-photo-woman-shopping-bag-and-travel-for-fashion-in-street-city-and-sunglasses-for-discount-on-commute-2558636193.jpg"

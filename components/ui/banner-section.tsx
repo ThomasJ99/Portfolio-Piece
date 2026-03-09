@@ -16,12 +16,14 @@ export default function BannerSection({
   return (
     <section
       // alginImgRight - first option is default/true, second is false
-      className={`flex container mx-auto gap-6 pt-10 items-center justify-between 
+      className={`flex sm:flex-wrap container mx-auto gap-6 pt-10 items-center justify-between 
       ${className ?? ""} 
       ${alignImgRight ? "flex-row" : "flex-row-reverse"}`}
     >
-      <header className="space-y-10">
-        <h2 className="text-4xl font-bold font-oswald text-black uppercase">{title}</h2>
+      <header className="space-y-10 mb-10">
+        <h2 className="text-4xl font-bold font-oswald text-black uppercase">
+          {title}
+        </h2>
 
         <p className="text-lg text-black/80 max-w-lg">{description}</p>
       </header>
@@ -35,13 +37,12 @@ export default function BannerSection({
                 src={src}
                 alt=""
                 className={`object-cover ${
-                  imgSrc.length === 1 ? "w-150 h-75" : "w-75 h-75"
+                  imgSrc.length === 1 ? "w-150 h-100" : "w-75 h-100"
                 }`}
               />
             ))}
           </div>
         )}
-        {/* <img src={`${imgSrc}`} alt="" className="size-125 aspect-square" /> */}
       </figure>
     </section>
   );
