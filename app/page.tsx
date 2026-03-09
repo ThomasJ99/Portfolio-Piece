@@ -40,21 +40,23 @@ export default async function Home() {
     "2",
   );
 
-
   return (
     <main>
       <Hero />
 
       {/* First section - Best Selling Products */}
-      <FullWidthSection className="bg-blue-600">
+      <FullWidthSection className="bg-blue-400">
         <BannerSection
           title="Best Sellers"
           description="Our most popular products this spring!"
           alignImgRight={true}
+          imgSrc={[
+            "https://plus.unsplash.com/premium_photo-1752595826102-c2c57e8f7805?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          ]}
         />
       </FullWidthSection>
 
-      <FullWidthSection className="bg-blue-500">
+      <FullWidthSection className="bg-blue-200 text-black">
         <CardGrid>
           {products.map((p) => (
             <ProductCard key={p.title} product={p} />
@@ -63,15 +65,18 @@ export default async function Home() {
       </FullWidthSection>
 
       {/* Second section - Running Shoes */}
-      <FullWidthSection className="bg-slate-600">
+      <FullWidthSection className="bg-yellow-400">
         <BannerSection
-          title="Running Essentials"
-          description="Up your performance to the maximum with these products this spring!"
+          title="Spring Run Performance"
+          description="Maximize your pace this spring! Discover lightweight gear designed for peak performance and ultimate comfort in the sun."
           alignImgRight={false}
+          imgSrc={[
+            "https://plus.unsplash.com/premium_photo-1663100693083-e259b2684b63?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fHNwcmluZyUyMHJ1bm5pbmclMjBzaG9lc3xlbnwwfHwwfHx8MA%3D%3D",
+          ]}
         />
       </FullWidthSection>
 
-      <FullWidthSection className="bg-slate-500">
+      <FullWidthSection className="bg-yellow-200 text-black">
         <CardGrid>
           {products2.map((p) => (
             <ProductCard key={p.title} product={p} />
@@ -80,15 +85,19 @@ export default async function Home() {
       </FullWidthSection>
 
       {/* Third section */}
-      <FullWidthSection className="">
+      <FullWidthSection className="bg-green-600">
         <BannerSection
-          title="Accessories"
-          description="Complete your exercise setup!"
+          title="Fresh Spring Scents"
+          description="Light, airy, and invigorating. Find your signature spring fragrance and carry the freshness of the breeze with you."
           alignImgRight={true}
+          imgSrc={[
+            "https://images.unsplash.com/photo-1650984312007-2258bc07b03e?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1650984312007-2258bc07b03e?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          ]}
         />
       </FullWidthSection>
 
-      <FullWidthSection>
+      <FullWidthSection className="bg-green-400 text-black">
         <CardGrid>
           {products3.slice(1).map((p) => (
             <ProductCard key={p.title} product={p} />
