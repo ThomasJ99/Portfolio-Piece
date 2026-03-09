@@ -8,10 +8,7 @@
       "discountPercentage": 10.48,
       "rating": 2.56,
       "stock": 99,
-      "tags": [
-        "beauty",
-        "mascara"
-      ],
+      "tags": ["beauty", "mascara"],
       "brand": "Essence",
       "sku": "BEA-ESS-ESS-001",
       "weight": 4,
@@ -68,10 +65,7 @@
       "discountPercentage": 18.19,
       "rating": 2.86,
       "stock": 34,
-      "tags": [
-        "beauty",
-        "eyeshadow"
-      ],
+      "tags": ["beauty", "eyeshadow"],
       "brand": "Glamour Beauty",
       "sku": "BEA-GLA-EYE-002",
       "weight": 9,
@@ -128,10 +122,7 @@
       "discountPercentage": 9.84,
       "rating": 4.64,
       "stock": 89,
-      "tags": [
-        "beauty",
-        "face powder"
-      ],
+      "tags": ["beauty", "face powder"],
       "brand": "Velvet Touch",
       "sku": "BEA-VEL-POW-003",
       "weight": 8,
@@ -188,10 +179,7 @@
       "discountPercentage": 12.16,
       "rating": 4.36,
       "stock": 91,
-      "tags": [
-        "beauty",
-        "lipstick"
-      ],
+      "tags": ["beauty", "lipstick"],
       "brand": "Chic Cosmetics",
       "sku": "BEA-CHI-LIP-004",
       "weight": 1,
@@ -248,10 +236,7 @@
       "discountPercentage": 11.44,
       "rating": 4.32,
       "stock": 79,
-      "tags": [
-        "beauty",
-        "nail polish"
-      ],
+      "tags": ["beauty", "nail polish"],
       "brand": "Nail Couture",
       "sku": "BEA-NAI-NAI-005",
       "weight": 8,
@@ -308,10 +293,7 @@
       "discountPercentage": 1.89,
       "rating": 4.37,
       "stock": 29,
-      "tags": [
-        "fragrances",
-        "perfumes"
-      ],
+      "tags": ["fragrances", "perfumes"],
       "brand": "Calvin Klein",
       "sku": "FRA-CAL-CAL-006",
       "weight": 7,
@@ -370,10 +352,7 @@
       "discountPercentage": 16.51,
       "rating": 4.26,
       "stock": 58,
-      "tags": [
-        "fragrances",
-        "perfumes"
-      ],
+      "tags": ["fragrances", "perfumes"],
       "brand": "Chanel",
       "sku": "FRA-CHA-CHA-007",
       "weight": 7,
@@ -432,10 +411,7 @@
       "discountPercentage": 14.72,
       "rating": 3.8,
       "stock": 98,
-      "tags": [
-        "fragrances",
-        "perfumes"
-      ],
+      "tags": ["fragrances", "perfumes"],
       "brand": "Dior",
       "sku": "FRA-DIO-DIO-008",
       "weight": 4,
@@ -494,10 +470,7 @@
       "discountPercentage": 0.62,
       "rating": 3.96,
       "stock": 4,
-      "tags": [
-        "fragrances",
-        "perfumes"
-      ],
+      "tags": ["fragrances", "perfumes"],
       "brand": "Dolce & Gabbana",
       "sku": "FRA-DOL-DOL-009",
       "weight": 6,
@@ -556,10 +529,7 @@
       "discountPercentage": 14.39,
       "rating": 2.74,
       "stock": 0,
-      "tags": [
-        "fragrances",
-        "perfumes"
-      ],
+      "tags": ["fragrances", "perfumes"],
       "brand": "Gucci",
       "sku": "FRA-GUC-GUC-010",
       "weight": 7,
@@ -618,10 +588,7 @@
       "discountPercentage": 8.57,
       "rating": 4.77,
       "stock": 88,
-      "tags": [
-        "furniture",
-        "beds"
-      ],
+      "tags": ["furniture", "beds"],
       "brand": "Annibale Colombo",
       "sku": "FUR-ANN-ANN-011",
       "weight": 10,
@@ -680,10 +647,7 @@
       "discountPercentage": 14.4,
       "rating": 3.92,
       "stock": 60,
-      "tags": [
-        "furniture",
-        "sofas"
-      ],
+      "tags": ["furniture", "sofas"],
       "brand": "Annibale Colombo",
       "sku": "FUR-ANN-ANN-012",
       "weight": 6,
@@ -742,10 +706,7 @@
       "discountPercentage": 19.09,
       "rating": 2.87,
       "stock": 64,
-      "tags": [
-        "furniture",
-        "bedside tables"
-      ],
+      "tags": ["furniture", "bedside tables"],
       "brand": "Furniture Co.",
       "sku": "FUR-FUR-BED-013",
       "weight": 2,
@@ -804,10 +765,7 @@
       "discountPercentage": 2.01,
       "rating": 4.88,
       "stock": 26,
-      "tags": [
-        "furniture",
-        "office chairs"
-      ],
+      "tags": ["furniture", "office chairs"],
       "brand": "Knoll",
       "sku": "FUR-KNO-KNO-014",
       "weight": 10,
@@ -866,10 +824,7 @@
       "discountPercentage": 8.8,
       "rating": 3.59,
       "stock": 7,
-      "tags": [
-        "furniture",
-        "bathroom"
-      ],
+      "tags": ["furniture", "bathroom"],
       "brand": "Bath Trends",
       "sku": "FUR-BAT-WOO-015",
       "weight": 10,
@@ -928,9 +883,7 @@
       "discountPercentage": 12.62,
       "rating": 4.19,
       "stock": 8,
-      "tags": [
-        "fruits"
-      ],
+      "tags": ["fruits"],
       "sku": "GRO-BRD-APP-016",
       "weight": 9,
       "dimensions": {
@@ -986,9 +939,7 @@
       "discountPercentage": 9.61,
       "rating": 4.47,
       "stock": 86,
-      "tags": [
-        "meat"
-      ],
+      "tags": ["meat"],
       "sku": "GRO-BRD-BEE-017",
       "weight": 10,
       "dimensions": {
@@ -1044,10 +995,7 @@
       "discountPercentage": 9.58,
       "rating": 3.13,
       "stock": 46,
-      "tags": [
-        "pet supplies",
-        "cat food"
-      ],
+      "tags": ["pet supplies", "cat food"],
       "sku": "GRO-BRD-FOO-018",
       "weight": 10,
       "dimensions": {
@@ -1103,9 +1051,7 @@
       "discountPercentage": 13.7,
       "rating": 3.19,
       "stock": 97,
-      "tags": [
-        "meat"
-      ],
+      "tags": ["meat"],
       "sku": "GRO-BRD-CHI-019",
       "weight": 1,
       "dimensions": {
@@ -1162,9 +1108,7 @@
       "discountPercentage": 9.33,
       "rating": 4.8,
       "stock": 10,
-      "tags": [
-        "cooking essentials"
-      ],
+      "tags": ["cooking essentials"],
       "sku": "GRO-BRD-COO-020",
       "weight": 5,
       "dimensions": {
@@ -1220,9 +1164,7 @@
       "discountPercentage": 0.16,
       "rating": 4.07,
       "stock": 84,
-      "tags": [
-        "vegetables"
-      ],
+      "tags": ["vegetables"],
       "sku": "GRO-BRD-CUC-021",
       "weight": 4,
       "dimensions": {
@@ -1278,10 +1220,7 @@
       "discountPercentage": 10.27,
       "rating": 4.55,
       "stock": 71,
-      "tags": [
-        "pet supplies",
-        "dog food"
-      ],
+      "tags": ["pet supplies", "dog food"],
       "sku": "GRO-BRD-FOO-022",
       "weight": 10,
       "dimensions": {
@@ -1337,9 +1276,7 @@
       "discountPercentage": 11.05,
       "rating": 2.53,
       "stock": 9,
-      "tags": [
-        "dairy"
-      ],
+      "tags": ["dairy"],
       "sku": "GRO-BRD-EGG-023",
       "weight": 2,
       "dimensions": {
@@ -1395,9 +1332,7 @@
       "discountPercentage": 4.23,
       "rating": 3.78,
       "stock": 74,
-      "tags": [
-        "seafood"
-      ],
+      "tags": ["seafood"],
       "sku": "GRO-BRD-FIS-024",
       "weight": 6,
       "dimensions": {
@@ -1453,9 +1388,7 @@
       "discountPercentage": 0.16,
       "rating": 3.25,
       "stock": 33,
-      "tags": [
-        "vegetables"
-      ],
+      "tags": ["vegetables"],
       "sku": "GRO-BRD-GRE-025",
       "weight": 2,
       "dimensions": {
@@ -1511,9 +1444,7 @@
       "discountPercentage": 1,
       "rating": 3.66,
       "stock": 3,
-      "tags": [
-        "vegetables"
-      ],
+      "tags": ["vegetables"],
       "sku": "GRO-BRD-GRE-026",
       "weight": 7,
       "dimensions": {
@@ -1569,9 +1500,7 @@
       "discountPercentage": 14.4,
       "rating": 3.97,
       "stock": 34,
-      "tags": [
-        "condiments"
-      ],
+      "tags": ["condiments"],
       "sku": "GRO-BRD-HON-027",
       "weight": 2,
       "dimensions": {
@@ -1627,9 +1556,7 @@
       "discountPercentage": 8.69,
       "rating": 3.39,
       "stock": 27,
-      "tags": [
-        "desserts"
-      ],
+      "tags": ["desserts"],
       "sku": "GRO-BRD-CRE-028",
       "weight": 1,
       "dimensions": {
@@ -1688,9 +1615,7 @@
       "discountPercentage": 12.06,
       "rating": 3.94,
       "stock": 50,
-      "tags": [
-        "beverages"
-      ],
+      "tags": ["beverages"],
       "sku": "GRO-BRD-JUI-029",
       "weight": 1,
       "dimensions": {
@@ -1746,9 +1671,7 @@
       "discountPercentage": 15.22,
       "rating": 4.93,
       "stock": 99,
-      "tags": [
-        "fruits"
-      ],
+      "tags": ["fruits"],
       "sku": "GRO-BRD-KIW-030",
       "weight": 5,
       "dimensions": {
@@ -1804,9 +1727,7 @@
       "discountPercentage": 9.7,
       "rating": 3.53,
       "stock": 31,
-      "tags": [
-        "fruits"
-      ],
+      "tags": ["fruits"],
       "sku": "GRO-BRD-LEM-031",
       "weight": 3,
       "dimensions": {
@@ -1862,9 +1783,7 @@
       "discountPercentage": 12.87,
       "rating": 4.95,
       "stock": 99,
-      "tags": [
-        "fruits"
-      ],
+      "tags": ["fruits"],
       "sku": "GRO-BRD-MUL-033",
       "weight": 5,
       "dimensions": {
@@ -1920,9 +1839,7 @@
       "discountPercentage": 5.38,
       "rating": 4.81,
       "stock": 13,
-      "tags": [
-        "vegetables"
-      ],
+      "tags": ["vegetables"],
       "sku": "GRO-BRD-POT-035",
       "weight": 9,
       "dimensions": {
@@ -1978,9 +1895,7 @@
       "discountPercentage": 7.59,
       "rating": 4.18,
       "stock": 80,
-      "tags": [
-        "health supplements"
-      ],
+      "tags": ["health supplements"],
       "sku": "GRO-BRD-PRO-036",
       "weight": 9,
       "dimensions": {
@@ -2036,9 +1951,7 @@
       "discountPercentage": 9.9,
       "rating": 4.2,
       "stock": 82,
-      "tags": [
-        "vegetables"
-      ],
+      "tags": ["vegetables"],
       "sku": "GRO-BRD-ONI-037",
       "weight": 9,
       "dimensions": {
@@ -2094,9 +2007,7 @@
       "discountPercentage": 9.29,
       "rating": 3.18,
       "stock": 59,
-      "tags": [
-        "grains"
-      ],
+      "tags": ["grains"],
       "sku": "GRO-BRD-RIC-038",
       "weight": 5,
       "dimensions": {
@@ -2152,9 +2063,7 @@
       "discountPercentage": 17.48,
       "rating": 4.75,
       "stock": 53,
-      "tags": [
-        "beverages"
-      ],
+      "tags": ["beverages"],
       "sku": "GRO-BRD-SOF-039",
       "weight": 9,
       "dimensions": {
@@ -2210,9 +2119,7 @@
       "discountPercentage": 1.12,
       "rating": 3.08,
       "stock": 46,
-      "tags": [
-        "fruits"
-      ],
+      "tags": ["fruits"],
       "sku": "GRO-BRD-STR-040",
       "weight": 1,
       "dimensions": {
@@ -2268,9 +2175,7 @@
       "discountPercentage": 13.28,
       "rating": 2.69,
       "stock": 86,
-      "tags": [
-        "household essentials"
-      ],
+      "tags": ["household essentials"],
       "sku": "GRO-BRD-TIS-041",
       "weight": 1,
       "dimensions": {
@@ -2327,9 +2232,7 @@
       "discountPercentage": 14.92,
       "rating": 4.96,
       "stock": 53,
-      "tags": [
-        "beverages"
-      ],
+      "tags": ["beverages"],
       "sku": "GRO-BRD-WAT-042",
       "weight": 4,
       "dimensions": {
@@ -2385,10 +2288,7 @@
       "discountPercentage": 10.41,
       "rating": 3.16,
       "stock": 47,
-      "tags": [
-        "home decor",
-        "swing"
-      ],
+      "tags": ["home decor", "swing"],
       "sku": "HOM-BRD-DEC-043",
       "weight": 4,
       "dimensions": {
@@ -2446,10 +2346,7 @@
       "discountPercentage": 14.87,
       "rating": 4.53,
       "stock": 77,
-      "tags": [
-        "home decor",
-        "photo frame"
-      ],
+      "tags": ["home decor", "photo frame"],
       "sku": "HOM-BRD-FAM-044",
       "weight": 1,
       "dimensions": {
@@ -2505,10 +2402,7 @@
       "discountPercentage": 7.46,
       "rating": 4.67,
       "stock": 28,
-      "tags": [
-        "home decor",
-        "artificial plants"
-      ],
+      "tags": ["home decor", "artificial plants"],
       "sku": "HOM-BRD-HOU-045",
       "weight": 8,
       "dimensions": {
@@ -2566,10 +2460,7 @@
       "discountPercentage": 6.84,
       "rating": 3.01,
       "stock": 59,
-      "tags": [
-        "home decor",
-        "plant accessories"
-      ],
+      "tags": ["home decor", "plant accessories"],
       "sku": "HOM-BRD-PLA-046",
       "weight": 9,
       "dimensions": {
@@ -2628,10 +2519,7 @@
       "discountPercentage": 7.09,
       "rating": 3.55,
       "stock": 9,
-      "tags": [
-        "home decor",
-        "lighting"
-      ],
+      "tags": ["home decor", "lighting"],
       "sku": "HOM-BRD-TAB-047",
       "weight": 4,
       "dimensions": {
@@ -2687,10 +2575,7 @@
       "discountPercentage": 15.65,
       "rating": 4.46,
       "stock": 75,
-      "tags": [
-        "drinkware",
-        "cups"
-      ],
+      "tags": ["drinkware", "cups"],
       "sku": "KIT-BRD-BLA-049",
       "weight": 7,
       "dimensions": {
@@ -2747,10 +2632,7 @@
       "discountPercentage": 8.03,
       "rating": 3.7,
       "stock": 14,
-      "tags": [
-        "kitchen tools",
-        "cutting boards"
-      ],
+      "tags": ["kitchen tools", "cutting boards"],
       "sku": "KIT-BRD-CHO-053",
       "weight": 2,
       "dimensions": {
@@ -2806,10 +2688,7 @@
       "discountPercentage": 12.1,
       "rating": 4.63,
       "stock": 22,
-      "tags": [
-        "kitchen tools",
-        "juicers"
-      ],
+      "tags": ["kitchen tools", "juicers"],
       "sku": "KIT-BRD-CIT-054",
       "weight": 2,
       "dimensions": {
@@ -2865,10 +2744,7 @@
       "discountPercentage": 14.76,
       "rating": 3.09,
       "stock": 40,
-      "tags": [
-        "kitchen tools",
-        "slicers"
-      ],
+      "tags": ["kitchen tools", "slicers"],
       "sku": "KIT-BRD-SLI-055",
       "weight": 2,
       "dimensions": {
@@ -2924,10 +2800,7 @@
       "discountPercentage": 14.04,
       "rating": 4.11,
       "stock": 21,
-      "tags": [
-        "kitchen appliances",
-        "cooktops"
-      ],
+      "tags": ["kitchen appliances", "cooktops"],
       "sku": "KIT-BRD-ELE-056",
       "weight": 5,
       "dimensions": {
@@ -2986,10 +2859,7 @@
       "discountPercentage": 3.5,
       "rating": 3.04,
       "stock": 85,
-      "tags": [
-        "kitchen tools",
-        "strainers"
-      ],
+      "tags": ["kitchen tools", "strainers"],
       "sku": "KIT-BRD-FIN-057",
       "weight": 9,
       "dimensions": {
@@ -3045,10 +2915,7 @@
       "discountPercentage": 8.07,
       "rating": 3.11,
       "stock": 7,
-      "tags": [
-        "kitchen tools",
-        "utensils"
-      ],
+      "tags": ["kitchen tools", "utensils"],
       "sku": "KIT-BRD-FOR-058",
       "weight": 9,
       "dimensions": {
@@ -3104,10 +2971,7 @@
       "discountPercentage": 7.92,
       "rating": 4.02,
       "stock": 46,
-      "tags": [
-        "drinkware",
-        "glasses"
-      ],
+      "tags": ["drinkware", "glasses"],
       "sku": "KIT-BRD-GLA-059",
       "weight": 10,
       "dimensions": {
@@ -3163,10 +3027,7 @@
       "discountPercentage": 3.56,
       "rating": 3.21,
       "stock": 84,
-      "tags": [
-        "kitchen tools",
-        "graters"
-      ],
+      "tags": ["kitchen tools", "graters"],
       "sku": "KIT-BRD-GRA-060",
       "weight": 3,
       "dimensions": {
@@ -3222,10 +3083,7 @@
       "discountPercentage": 17.02,
       "rating": 3.86,
       "stock": 84,
-      "tags": [
-        "kitchen appliances",
-        "blenders"
-      ],
+      "tags": ["kitchen appliances", "blenders"],
       "sku": "KIT-BRD-HAN-061",
       "weight": 5,
       "dimensions": {
@@ -3281,10 +3139,7 @@
       "discountPercentage": 0.63,
       "rating": 4.71,
       "stock": 13,
-      "tags": [
-        "kitchen tools",
-        "ice cube trays"
-      ],
+      "tags": ["kitchen tools", "ice cube trays"],
       "sku": "KIT-BRD-CUB-062",
       "weight": 3,
       "dimensions": {
@@ -3340,10 +3195,7 @@
       "discountPercentage": 18.91,
       "rating": 3.09,
       "stock": 68,
-      "tags": [
-        "kitchen tools",
-        "strainers"
-      ],
+      "tags": ["kitchen tools", "strainers"],
       "sku": "KIT-BRD-KIT-063",
       "weight": 5,
       "dimensions": {
@@ -3399,10 +3251,7 @@
       "discountPercentage": 18.86,
       "rating": 3.26,
       "stock": 7,
-      "tags": [
-        "kitchen tools",
-        "cutlery"
-      ],
+      "tags": ["kitchen tools", "cutlery"],
       "sku": "KIT-BRD-KNI-064",
       "weight": 3,
       "dimensions": {
@@ -3458,10 +3307,7 @@
       "discountPercentage": 10.34,
       "rating": 4.93,
       "stock": 94,
-      "tags": [
-        "kitchen tools",
-        "storage"
-      ],
+      "tags": ["kitchen tools", "storage"],
       "sku": "KIT-BRD-LUN-065",
       "weight": 9,
       "dimensions": {
@@ -3517,10 +3363,7 @@
       "discountPercentage": 12.13,
       "rating": 4.82,
       "stock": 59,
-      "tags": [
-        "kitchen appliances",
-        "microwaves"
-      ],
+      "tags": ["kitchen appliances", "microwaves"],
       "sku": "KIT-BRD-MIC-066",
       "weight": 9,
       "dimensions": {
@@ -3579,10 +3422,7 @@
       "discountPercentage": 9.25,
       "rating": 2.64,
       "stock": 88,
-      "tags": [
-        "kitchen tools",
-        "organization"
-      ],
+      "tags": ["kitchen tools", "organization"],
       "sku": "KIT-BRD-TRE-067",
       "weight": 3,
       "dimensions": {
@@ -3639,10 +3479,7 @@
       "discountPercentage": 3,
       "rating": 2.79,
       "stock": 90,
-      "tags": [
-        "cookware",
-        "pans"
-      ],
+      "tags": ["cookware", "pans"],
       "sku": "KIT-BRD-PRD-068",
       "weight": 8,
       "dimensions": {
@@ -3698,10 +3535,7 @@
       "discountPercentage": 7.31,
       "rating": 3.65,
       "stock": 66,
-      "tags": [
-        "dinnerware",
-        "plates"
-      ],
+      "tags": ["dinnerware", "plates"],
       "sku": "KIT-BRD-PLA-069",
       "weight": 4,
       "dimensions": {
@@ -3757,10 +3591,7 @@
       "discountPercentage": 14.52,
       "rating": 4.42,
       "stock": 82,
-      "tags": [
-        "kitchen tools",
-        "tongs"
-      ],
+      "tags": ["kitchen tools", "tongs"],
       "sku": "KIT-BRD-TON-070",
       "weight": 7,
       "dimensions": {
@@ -3816,10 +3647,7 @@
       "discountPercentage": 5.7,
       "rating": 3.22,
       "stock": 40,
-      "tags": [
-        "cookware",
-        "pots"
-      ],
+      "tags": ["cookware", "pots"],
       "sku": "KIT-BRD-SIL-071",
       "weight": 7,
       "dimensions": {
@@ -3875,10 +3703,7 @@
       "discountPercentage": 9.75,
       "rating": 2.92,
       "stock": 80,
-      "tags": [
-        "kitchen tools",
-        "baking"
-      ],
+      "tags": ["kitchen tools", "baking"],
       "sku": "KIT-BRD-WOO-076",
       "weight": 7,
       "dimensions": {
@@ -3934,10 +3759,7 @@
       "discountPercentage": 12.48,
       "rating": 4.24,
       "stock": 35,
-      "tags": [
-        "kitchen tools",
-        "peelers"
-      ],
+      "tags": ["kitchen tools", "peelers"],
       "sku": "KIT-BRD-YEL-077",
       "weight": 7,
       "dimensions": {
@@ -3993,10 +3815,7 @@
       "discountPercentage": 4.69,
       "rating": 3.65,
       "stock": 24,
-      "tags": [
-        "laptops",
-        "apple"
-      ],
+      "tags": ["laptops", "apple"],
       "brand": "Apple",
       "sku": "LAP-APP-APP-078",
       "weight": 9,
@@ -4055,9 +3874,7 @@
       "discountPercentage": 11.14,
       "rating": 3.95,
       "stock": 45,
-      "tags": [
-        "laptops"
-      ],
+      "tags": ["laptops"],
       "brand": "Asus",
       "sku": "LAP-ASU-ASU-079",
       "weight": 9,
@@ -4116,9 +3933,7 @@
       "discountPercentage": 9.38,
       "rating": 4.98,
       "stock": 75,
-      "tags": [
-        "laptops"
-      ],
+      "tags": ["laptops"],
       "brand": "Huawei",
       "sku": "LAP-HUA-HUA-080",
       "weight": 9,
@@ -4177,9 +3992,7 @@
       "discountPercentage": 6.55,
       "rating": 2.86,
       "stock": 40,
-      "tags": [
-        "laptops"
-      ],
+      "tags": ["laptops"],
       "brand": "Lenovo",
       "sku": "LAP-LEN-LEN-081",
       "weight": 9,
@@ -4238,9 +4051,7 @@
       "discountPercentage": 11.89,
       "rating": 2.67,
       "stock": 74,
-      "tags": [
-        "laptops"
-      ],
+      "tags": ["laptops"],
       "brand": "Dell",
       "sku": "LAP-DEL-DEL-082",
       "weight": 2,
@@ -4299,10 +4110,7 @@
       "discountPercentage": 15.35,
       "rating": 3.64,
       "stock": 38,
-      "tags": [
-        "clothing",
-        "men's shirts"
-      ],
+      "tags": ["clothing", "men's shirts"],
       "brand": "Fashion Trends",
       "sku": "MEN-FAS-BLU-083",
       "weight": 4,
@@ -4362,10 +4170,7 @@
       "discountPercentage": 0.94,
       "rating": 3.18,
       "stock": 90,
-      "tags": [
-        "clothing",
-        "men's t-shirts"
-      ],
+      "tags": ["clothing", "men's t-shirts"],
       "brand": "Gigabyte",
       "sku": "MEN-GIG-GIG-084",
       "weight": 4,
@@ -4425,10 +4230,7 @@
       "discountPercentage": 19.5,
       "rating": 3.46,
       "stock": 82,
-      "tags": [
-        "clothing",
-        "men's shirts"
-      ],
+      "tags": ["clothing", "men's shirts"],
       "brand": "Classic Wear",
       "sku": "MEN-CLA-PLA-085",
       "weight": 3,
@@ -4484,14 +4286,11 @@
       "id": 88,
       "title": "Nike Air Jordan 1 Red And Black",
       "description": "The Nike Air Jordan 1 in Red and Black is an iconic basketball sneaker known for its stylish design and high-performance features, making it a favorite among sneaker enthusiasts and athletes.",
-      "price": 149.99,
+      "price": 169.99,
       "discountPercentage": 4.12,
       "rating": 4.77,
       "stock": 7,
-      "tags": [
-        "footwear",
-        "athletic shoes"
-      ],
+      "tags": ["footwear", "athletic shoes"],
       "brand": "Nike",
       "sku": "MEN-NIK-NIK-088",
       "weight": 3,
@@ -4547,14 +4346,11 @@
       "id": 89,
       "title": "Nike Baseball Cleats",
       "description": "Nike Baseball Cleats are designed for maximum traction and performance on the baseball field. They provide stability and support for players during games and practices.",
-      "price": 79.99,
+      "price": 799.99,
       "discountPercentage": 18.04,
       "rating": 3.88,
       "stock": 12,
-      "tags": [
-        "footwear",
-        "sports cleats"
-      ],
+      "tags": ["footwear", "sports cleats"],
       "brand": "Nike",
       "sku": "MEN-NIK-NIK-089",
       "weight": 9,
@@ -4607,6 +4403,120 @@
       "categoryId": 9
     },
     {
+      "id": 199,
+      "title": "Sports Sneakers Off White Red",
+      "description": "Step into the new season with these Sports Sneakers in Off White and Red. Featuring a fresh, light off-white base paired with vibrant red accents, these shoes are the perfect match for the bright energy of spring.",
+      "price": 1499.99,
+      "discountPercentage": 4.12,
+      "rating": 4.77,
+      "stock": 7,
+      "tags": ["footwear", "athletic shoes"],
+      "brand": "Offbrand",
+      "sku": "MEN-NIK-NIK-088",
+      "weight": 3,
+      "dimensions": {
+        "width": 17.44,
+        "height": 9.52,
+        "depth": 27
+      },
+      "warrantyInformation": "1 year warranty",
+      "shippingInformation": "Ships in 1 week",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Highly impressed!",
+          "date": "2025-04-30T09:41:02.053Z",
+          "reviewerName": "Elena Long",
+          "reviewerEmail": "elena.long@x.dummyjson.com"
+        },
+        {
+          "rating": 4,
+          "comment": "Very happy with my purchase!",
+          "date": "2025-04-30T09:41:02.053Z",
+          "reviewerName": "Addison Wright",
+          "reviewerEmail": "addison.wright@x.dummyjson.com"
+        },
+        {
+          "rating": 1,
+          "comment": "Waste of money!",
+          "date": "2025-04-30T09:41:02.053Z",
+          "reviewerName": "Mason Wright",
+          "reviewerEmail": "mason.wright@x.dummyjson.com"
+        }
+      ],
+      "returnPolicy": "No return policy",
+      "minimumOrderQuantity": 1,
+      "meta": {
+        "createdAt": "2025-04-30T09:41:02.053Z",
+        "updatedAt": "2025-04-30T09:41:02.053Z",
+        "barcode": "7631625812393",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://cdn.dummyjson.com/products/images/mens-shoes/Sports%20Sneakers%20Off%20White%20Red/thumbnail.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/mens-shoes/Sports%20Sneakers%20Off%20White%20Red/thumbnail.png",
+      "categoryId": 9
+    },
+    {
+      "id": 200,
+      "title": "Puma Future Rider Trainers",
+      "description": "Embrace the vibrant energy of the new season with the Puma Future Rider. These sneakers take a classic 80s silhouette and refresh it for spring with a lightweight design and a playful mix of materials.",
+      "price": 670,
+      "discountPercentage": 67,
+      "rating": 3.98,
+      "stock": 67,
+      "tags": ["footwear", "sports cleats"],
+      "brand": "Nike",
+      "sku": "MEN-NIK-NIK-089",
+      "weight": 9,
+      "dimensions": {
+        "width": 11.75,
+        "height": 26.65,
+        "depth": 19.6
+      },
+      "warrantyInformation": "6 months warranty",
+      "shippingInformation": "Ships in 2 weeks",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Would buy again!",
+          "date": "2025-04-30T09:41:02.053Z",
+          "reviewerName": "Aaron Cook",
+          "reviewerEmail": "aaron.cook@x.dummyjson.com"
+        },
+        {
+          "rating": 2,
+          "comment": "Very disappointed!",
+          "date": "2025-04-30T09:41:02.053Z",
+          "reviewerName": "Noah Lewis",
+          "reviewerEmail": "noah.lewis@x.dummyjson.com"
+        },
+        {
+          "rating": 3,
+          "comment": "Would not recommend!",
+          "date": "2025-04-30T09:41:02.053Z",
+          "reviewerName": "Michael Johnson",
+          "reviewerEmail": "michael.johnson@x.dummyjson.com"
+        }
+      ],
+      "returnPolicy": "No return policy",
+      "minimumOrderQuantity": 3,
+      "meta": {
+        "createdAt": "2025-04-30T09:41:02.053Z",
+        "updatedAt": "2025-04-30T09:41:02.053Z",
+        "barcode": "2449851358796",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://cdn.dummyjson.com/products/images/mens-shoes/Puma%20Future%20Rider%20Trainers/thumbnail.png"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/products/images/mens-shoes/Puma%20Future%20Rider%20Trainers/thumbnail.png",
+      "categoryId": 9
+    },
+    {
       "id": 94,
       "title": "Longines Master Collection",
       "description": "The Longines Master Collection is an elegant and refined watch known for its precision and craftsmanship. With a timeless design, it's a symbol of luxury and sophistication.",
@@ -4614,10 +4524,7 @@
       "discountPercentage": 17.24,
       "rating": 3.87,
       "stock": 100,
-      "tags": [
-        "watches",
-        "luxury watches"
-      ],
+      "tags": ["watches", "luxury watches"],
       "brand": "Longines",
       "sku": "MEN-LON-LON-094",
       "weight": 4,
@@ -4676,10 +4583,7 @@
       "discountPercentage": 8.88,
       "rating": 4.97,
       "stock": 40,
-      "tags": [
-        "watches",
-        "luxury watches"
-      ],
+      "tags": ["watches", "luxury watches"],
       "brand": "Rolex",
       "sku": "MEN-ROL-ROL-095",
       "weight": 2,
@@ -4738,10 +4642,7 @@
       "discountPercentage": 17.52,
       "rating": 2.58,
       "stock": 36,
-      "tags": [
-        "watches",
-        "luxury watches"
-      ],
+      "tags": ["watches", "luxury watches"],
       "brand": "Rolex",
       "sku": "MEN-ROL-ROL-096",
       "weight": 2,
@@ -4800,10 +4701,7 @@
       "discountPercentage": 3.73,
       "rating": 3.66,
       "stock": 86,
-      "tags": [
-        "watches",
-        "luxury watches"
-      ],
+      "tags": ["watches", "luxury watches"],
       "brand": "Rolex",
       "sku": "MEN-ROL-ROL-097",
       "weight": 4,
@@ -4862,10 +4760,7 @@
       "discountPercentage": 5.05,
       "rating": 2.69,
       "stock": 55,
-      "tags": [
-        "watches",
-        "luxury watches"
-      ],
+      "tags": ["watches", "luxury watches"],
       "brand": "Rolex",
       "sku": "MEN-ROL-ROL-098",
       "weight": 4,
@@ -4924,10 +4819,7 @@
       "discountPercentage": 12.07,
       "rating": 4.99,
       "stock": 61,
-      "tags": [
-        "electronics",
-        "smart speakers"
-      ],
+      "tags": ["electronics", "smart speakers"],
       "brand": "Amazon",
       "sku": "MOB-AMA-AMA-099",
       "weight": 5,
@@ -4985,10 +4877,7 @@
       "discountPercentage": 15.54,
       "rating": 4.15,
       "stock": 67,
-      "tags": [
-        "electronics",
-        "wireless earphones"
-      ],
+      "tags": ["electronics", "wireless earphones"],
       "brand": "Apple",
       "sku": "MOB-APP-APP-100",
       "weight": 4,
@@ -5047,10 +4936,7 @@
       "discountPercentage": 13.67,
       "rating": 3.47,
       "stock": 59,
-      "tags": [
-        "electronics",
-        "over-ear headphones"
-      ],
+      "tags": ["electronics", "over-ear headphones"],
       "brand": "Apple",
       "sku": "MOB-APP-APP-101",
       "weight": 2,
@@ -5107,10 +4993,7 @@
       "discountPercentage": 4.48,
       "rating": 3.68,
       "stock": 1,
-      "tags": [
-        "electronics",
-        "wireless chargers"
-      ],
+      "tags": ["electronics", "wireless chargers"],
       "brand": "Apple",
       "sku": "MOB-APP-APP-102",
       "weight": 5,
@@ -5167,10 +5050,7 @@
       "discountPercentage": 18.1,
       "rating": 4.62,
       "stock": 27,
-      "tags": [
-        "electronics",
-        "smart speakers"
-      ],
+      "tags": ["electronics", "smart speakers"],
       "brand": "Apple",
       "sku": "MOB-APP-APP-103",
       "weight": 10,
@@ -5227,10 +5107,7 @@
       "discountPercentage": 18.52,
       "rating": 4.15,
       "stock": 31,
-      "tags": [
-        "electronics",
-        "chargers"
-      ],
+      "tags": ["electronics", "chargers"],
       "brand": "Apple",
       "sku": "MOB-APP-APP-104",
       "weight": 1,
@@ -5288,10 +5165,7 @@
       "discountPercentage": 17.17,
       "rating": 3.62,
       "stock": 1,
-      "tags": [
-        "electronics",
-        "power banks"
-      ],
+      "tags": ["electronics", "power banks"],
       "brand": "Apple",
       "sku": "MOB-APP-APP-105",
       "weight": 6,
@@ -5349,10 +5223,7 @@
       "discountPercentage": 12.02,
       "rating": 2.74,
       "stock": 33,
-      "tags": [
-        "electronics",
-        "smartwatches"
-      ],
+      "tags": ["electronics", "smartwatches"],
       "brand": "Apple",
       "sku": "MOB-APP-APP-106",
       "weight": 6,
@@ -5411,10 +5282,7 @@
       "discountPercentage": 5.73,
       "rating": 4.24,
       "stock": 50,
-      "tags": [
-        "electronics",
-        "wireless earphones"
-      ],
+      "tags": ["electronics", "wireless earphones"],
       "brand": "Beats",
       "sku": "MOB-BEA-BEA-107",
       "weight": 8,
@@ -5471,10 +5339,7 @@
       "discountPercentage": 19.4,
       "rating": 3.55,
       "stock": 58,
-      "tags": [
-        "electronics",
-        "selfie accessories"
-      ],
+      "tags": ["electronics", "selfie accessories"],
       "brand": "GadgetMaster",
       "sku": "MOB-GAD-SEL-110",
       "weight": 10,
@@ -5531,10 +5396,7 @@
       "discountPercentage": 19.12,
       "rating": 3.88,
       "stock": 11,
-      "tags": [
-        "electronics",
-        "selfie accessories"
-      ],
+      "tags": ["electronics", "selfie accessories"],
       "brand": "SnapTech",
       "sku": "MOB-SNA-SEL-111",
       "weight": 2,
@@ -5591,10 +5453,7 @@
       "discountPercentage": 8.31,
       "rating": 2.78,
       "stock": 15,
-      "tags": [
-        "electronics",
-        "camera accessories"
-      ],
+      "tags": ["electronics", "camera accessories"],
       "brand": "ProVision",
       "sku": "MOB-PRO-STU-112",
       "weight": 4,
@@ -5651,9 +5510,7 @@
       "discountPercentage": 12.1,
       "rating": 4.91,
       "stock": 34,
-      "tags": [
-        "motorcycles"
-      ],
+      "tags": ["motorcycles"],
       "brand": "Generic Motors",
       "sku": "MOT-GEN-GEN-113",
       "weight": 8,
@@ -5713,10 +5570,7 @@
       "discountPercentage": 18.49,
       "rating": 3.19,
       "stock": 94,
-      "tags": [
-        "personal care",
-        "hand soap"
-      ],
+      "tags": ["personal care", "hand soap"],
       "brand": "Attitude",
       "sku": "SKI-ATT-ATT-118",
       "weight": 1,
@@ -5775,10 +5629,7 @@
       "discountPercentage": 16.39,
       "rating": 4.51,
       "stock": 34,
-      "tags": [
-        "personal care",
-        "body wash"
-      ],
+      "tags": ["personal care", "body wash"],
       "brand": "Olay",
       "sku": "SKI-OLA-OLA-119",
       "weight": 4,
@@ -5837,10 +5688,7 @@
       "discountPercentage": 13.39,
       "rating": 3.16,
       "stock": 95,
-      "tags": [
-        "personal care",
-        "body lotion"
-      ],
+      "tags": ["personal care", "body lotion"],
       "brand": "Vaseline",
       "sku": "SKI-VAS-VAS-120",
       "weight": 4,
@@ -5899,10 +5747,7 @@
       "discountPercentage": 12.91,
       "rating": 2.83,
       "stock": 25,
-      "tags": [
-        "smartphones",
-        "apple"
-      ],
+      "tags": ["smartphones", "apple"],
       "brand": "Apple",
       "sku": "SMA-APP-IPH-121",
       "weight": 2,
@@ -5961,10 +5806,7 @@
       "discountPercentage": 6.69,
       "rating": 3.41,
       "stock": 60,
-      "tags": [
-        "smartphones",
-        "apple"
-      ],
+      "tags": ["smartphones", "apple"],
       "brand": "Apple",
       "sku": "SMA-APP-IPH-122",
       "weight": 7,
@@ -6023,10 +5865,7 @@
       "discountPercentage": 9.37,
       "rating": 4.12,
       "stock": 56,
-      "tags": [
-        "smartphones",
-        "apple"
-      ],
+      "tags": ["smartphones", "apple"],
       "brand": "Apple",
       "sku": "SMA-APP-IPH-123",
       "weight": 8,
@@ -6085,10 +5924,7 @@
       "discountPercentage": 19.59,
       "rating": 2.51,
       "stock": 37,
-      "tags": [
-        "smartphones",
-        "apple"
-      ],
+      "tags": ["smartphones", "apple"],
       "brand": "Apple",
       "sku": "SMA-APP-IPH-124",
       "weight": 1,
@@ -6147,10 +5983,7 @@
       "discountPercentage": 2.43,
       "rating": 3.94,
       "stock": 19,
-      "tags": [
-        "smartphones",
-        "oppo"
-      ],
+      "tags": ["smartphones", "oppo"],
       "brand": "Oppo",
       "sku": "SMA-OPP-OPP-125",
       "weight": 5,
@@ -6209,10 +6042,7 @@
       "discountPercentage": 18.64,
       "rating": 3.51,
       "stock": 78,
-      "tags": [
-        "smartphones",
-        "oppo"
-      ],
+      "tags": ["smartphones", "oppo"],
       "brand": "Oppo",
       "sku": "SMA-OPP-OPP-126",
       "weight": 6,
@@ -6271,10 +6101,7 @@
       "discountPercentage": 18.29,
       "rating": 4.25,
       "stock": 55,
-      "tags": [
-        "smartphones",
-        "oppo"
-      ],
+      "tags": ["smartphones", "oppo"],
       "brand": "Oppo",
       "sku": "SMA-OPP-OPP-127",
       "weight": 5,
@@ -6334,10 +6161,7 @@
       "discountPercentage": 15.3,
       "rating": 4.2,
       "stock": 48,
-      "tags": [
-        "smartphones",
-        "realme"
-      ],
+      "tags": ["smartphones", "realme"],
       "brand": "Realme",
       "sku": "SMA-REA-REA-128",
       "weight": 2,
@@ -6396,10 +6220,7 @@
       "discountPercentage": 6.95,
       "rating": 3.7,
       "stock": 12,
-      "tags": [
-        "smartphones",
-        "realme"
-      ],
+      "tags": ["smartphones", "realme"],
       "brand": "Realme",
       "sku": "SMA-REA-REA-129",
       "weight": 4,
@@ -6458,10 +6279,7 @@
       "discountPercentage": 11.51,
       "rating": 4.58,
       "stock": 80,
-      "tags": [
-        "smartphones",
-        "realme"
-      ],
+      "tags": ["smartphones", "realme"],
       "brand": "Realme",
       "sku": "SMA-REA-REA-130",
       "weight": 3,
@@ -6520,10 +6338,7 @@
       "discountPercentage": 19.55,
       "rating": 3.3,
       "stock": 67,
-      "tags": [
-        "smartphones",
-        "samsung galaxy"
-      ],
+      "tags": ["smartphones", "samsung galaxy"],
       "brand": "Samsung",
       "sku": "SMA-SAM-SAM-131",
       "weight": 10,
@@ -6582,10 +6397,7 @@
       "discountPercentage": 19.45,
       "rating": 4.4,
       "stock": 0,
-      "tags": [
-        "smartphones",
-        "samsung galaxy"
-      ],
+      "tags": ["smartphones", "samsung galaxy"],
       "brand": "Samsung",
       "sku": "SMA-SAM-SAM-132",
       "weight": 6,
@@ -6644,10 +6456,7 @@
       "discountPercentage": 5.59,
       "rating": 3.06,
       "stock": 19,
-      "tags": [
-        "smartphones",
-        "samsung galaxy"
-      ],
+      "tags": ["smartphones", "samsung galaxy"],
       "brand": "Samsung",
       "sku": "SMA-SAM-SAM-133",
       "weight": 9,
@@ -6706,10 +6515,7 @@
       "discountPercentage": 10.17,
       "rating": 3.5,
       "stock": 50,
-      "tags": [
-        "smartphones",
-        "vivo"
-      ],
+      "tags": ["smartphones", "vivo"],
       "brand": "Vivo",
       "sku": "SMA-VIV-VIV-134",
       "weight": 4,
@@ -6768,10 +6574,7 @@
       "discountPercentage": 17.67,
       "rating": 3.6,
       "stock": 82,
-      "tags": [
-        "smartphones",
-        "vivo"
-      ],
+      "tags": ["smartphones", "vivo"],
       "brand": "Vivo",
       "sku": "SMA-VIV-VIV-135",
       "weight": 4,
@@ -6830,10 +6633,7 @@
       "discountPercentage": 17.41,
       "rating": 4.26,
       "stock": 7,
-      "tags": [
-        "smartphones",
-        "vivo"
-      ],
+      "tags": ["smartphones", "vivo"],
       "brand": "Vivo",
       "sku": "SMA-VIV-VIV-136",
       "weight": 10,
@@ -6892,10 +6692,7 @@
       "discountPercentage": 4.93,
       "rating": 4.91,
       "stock": 53,
-      "tags": [
-        "sports equipment",
-        "american football"
-      ],
+      "tags": ["sports equipment", "american football"],
       "sku": "SPO-BRD-AME-137",
       "weight": 2,
       "dimensions": {
@@ -6951,10 +6748,7 @@
       "discountPercentage": 1.71,
       "rating": 2.57,
       "stock": 100,
-      "tags": [
-        "sports equipment",
-        "baseball"
-      ],
+      "tags": ["sports equipment", "baseball"],
       "sku": "SPO-BRD-BAS-138",
       "weight": 5,
       "dimensions": {
@@ -7010,10 +6804,7 @@
       "discountPercentage": 2.9,
       "rating": 3.96,
       "stock": 22,
-      "tags": [
-        "sports equipment",
-        "baseball"
-      ],
+      "tags": ["sports equipment", "baseball"],
       "sku": "SPO-BRD-BAS-139",
       "weight": 1,
       "dimensions": {
@@ -7071,10 +6862,7 @@
       "discountPercentage": 7.44,
       "rating": 4.66,
       "stock": 75,
-      "tags": [
-        "sports equipment",
-        "basketball"
-      ],
+      "tags": ["sports equipment", "basketball"],
       "sku": "SPO-BRD-BAS-140",
       "weight": 7,
       "dimensions": {
@@ -7130,10 +6918,7 @@
       "discountPercentage": 7.74,
       "rating": 4.6,
       "stock": 43,
-      "tags": [
-        "sports equipment",
-        "basketball"
-      ],
+      "tags": ["sports equipment", "basketball"],
       "sku": "SPO-BRD-BAS-141",
       "weight": 1,
       "dimensions": {
@@ -7189,10 +6974,7 @@
       "discountPercentage": 8.63,
       "rating": 3.53,
       "stock": 30,
-      "tags": [
-        "sports equipment",
-        "cricket"
-      ],
+      "tags": ["sports equipment", "cricket"],
       "sku": "SPO-BRD-CRI-142",
       "weight": 7,
       "dimensions": {
@@ -7248,10 +7030,7 @@
       "discountPercentage": 3.29,
       "rating": 3.17,
       "stock": 98,
-      "tags": [
-        "sports equipment",
-        "cricket"
-      ],
+      "tags": ["sports equipment", "cricket"],
       "sku": "SPO-BRD-CRI-143",
       "weight": 10,
       "dimensions": {
@@ -7307,10 +7086,7 @@
       "discountPercentage": 9.64,
       "rating": 4.69,
       "stock": 10,
-      "tags": [
-        "sports equipment",
-        "cricket"
-      ],
+      "tags": ["sports equipment", "cricket"],
       "sku": "SPO-BRD-CRI-144",
       "weight": 10,
       "dimensions": {
@@ -7369,10 +7145,7 @@
       "discountPercentage": 16.93,
       "rating": 4.73,
       "stock": 25,
-      "tags": [
-        "sports equipment",
-        "cricket"
-      ],
+      "tags": ["sports equipment", "cricket"],
       "sku": "SPO-BRD-CRI-145",
       "weight": 5,
       "dimensions": {
@@ -7428,10 +7201,7 @@
       "discountPercentage": 2.95,
       "rating": 2.85,
       "stock": 95,
-      "tags": [
-        "sports equipment",
-        "badminton"
-      ],
+      "tags": ["sports equipment", "badminton"],
       "sku": "SPO-BRD-FEA-146",
       "weight": 4,
       "dimensions": {
@@ -7487,10 +7257,7 @@
       "discountPercentage": 5.15,
       "rating": 3.28,
       "stock": 96,
-      "tags": [
-        "sports equipment",
-        "football"
-      ],
+      "tags": ["sports equipment", "football"],
       "sku": "SPO-BRD-FOO-147",
       "weight": 1,
       "dimensions": {
@@ -7546,10 +7313,7 @@
       "discountPercentage": 17.37,
       "rating": 4.3,
       "stock": 84,
-      "tags": [
-        "sports equipment",
-        "golf"
-      ],
+      "tags": ["sports equipment", "golf"],
       "sku": "SPO-BRD-GOL-148",
       "weight": 3,
       "dimensions": {
@@ -7605,10 +7369,7 @@
       "discountPercentage": 6.53,
       "rating": 4.41,
       "stock": 90,
-      "tags": [
-        "sports equipment",
-        "golf"
-      ],
+      "tags": ["sports equipment", "golf"],
       "sku": "SPO-BRD-IRO-149",
       "weight": 2,
       "dimensions": {
@@ -7664,10 +7425,7 @@
       "discountPercentage": 19.51,
       "rating": 4.66,
       "stock": 16,
-      "tags": [
-        "sports equipment",
-        "baseball"
-      ],
+      "tags": ["sports equipment", "baseball"],
       "sku": "SPO-BRD-MET-150",
       "weight": 7,
       "dimensions": {
@@ -7723,10 +7481,7 @@
       "discountPercentage": 11.76,
       "rating": 4.06,
       "stock": 28,
-      "tags": [
-        "sports equipment",
-        "tennis"
-      ],
+      "tags": ["sports equipment", "tennis"],
       "sku": "SPO-BRD-TEN-151",
       "weight": 3,
       "dimensions": {
@@ -7782,10 +7537,7 @@
       "discountPercentage": 12.95,
       "rating": 4.05,
       "stock": 73,
-      "tags": [
-        "clothing",
-        "dresses"
-      ],
+      "tags": ["clothing", "dresses"],
       "sku": "TOP-BRD-TAR-166",
       "weight": 8,
       "dimensions": {
@@ -7844,10 +7596,7 @@
       "discountPercentage": 3.98,
       "rating": 4.05,
       "stock": 54,
-      "tags": [
-        "sedans",
-        "vehicles"
-      ],
+      "tags": ["sedans", "vehicles"],
       "brand": "Chrysler",
       "sku": "VEH-CHR-TOU-167",
       "weight": 9,
@@ -7909,11 +7658,7 @@
       "discountPercentage": 8.23,
       "rating": 2.58,
       "stock": 57,
-      "tags": [
-        "sedans",
-        "sports cars",
-        "vehicles"
-      ],
+      "tags": ["sedans", "sports cars", "vehicles"],
       "brand": "Dodge",
       "sku": "VEH-DOD-CHA-168",
       "weight": 6,
@@ -7975,11 +7720,7 @@
       "discountPercentage": 2.63,
       "rating": 2.65,
       "stock": 82,
-      "tags": [
-        "hatchbacks",
-        "compact cars",
-        "vehicles"
-      ],
+      "tags": ["hatchbacks", "compact cars", "vehicles"],
       "brand": "Dodge",
       "sku": "VEH-DOD-DOD-169",
       "weight": 8,
@@ -8041,10 +7782,7 @@
       "discountPercentage": 16.44,
       "rating": 4.07,
       "stock": 95,
-      "tags": [
-        "suvs",
-        "vehicles"
-      ],
+      "tags": ["suvs", "vehicles"],
       "brand": "Dodge",
       "sku": "VEH-DOD-DUR-170",
       "weight": 1,
@@ -8106,10 +7844,7 @@
       "discountPercentage": 14.76,
       "rating": 3.62,
       "stock": 53,
-      "tags": [
-        "minivans",
-        "vehicles"
-      ],
+      "tags": ["minivans", "vehicles"],
       "brand": "Chrysler",
       "sku": "VEH-CHR-PAC-171",
       "weight": 9,
@@ -8171,10 +7906,7 @@
       "discountPercentage": 17.88,
       "rating": 2.92,
       "stock": 76,
-      "tags": [
-        "fashion accessories",
-        "handbags"
-      ],
+      "tags": ["fashion accessories", "handbags"],
       "brand": "Fashionista",
       "sku": "WOM-FAS-BLU-172",
       "weight": 7,
@@ -8233,10 +7965,7 @@
       "discountPercentage": 3.87,
       "rating": 4.92,
       "stock": 99,
-      "tags": [
-        "fashion accessories",
-        "leather bags"
-      ],
+      "tags": ["fashion accessories", "leather bags"],
       "brand": "Heshe",
       "sku": "WOM-HES-HES-173",
       "weight": 3,
@@ -8295,10 +8024,7 @@
       "discountPercentage": 14.09,
       "rating": 2.71,
       "stock": 75,
-      "tags": [
-        "fashion accessories",
-        "designer bags"
-      ],
+      "tags": ["fashion accessories", "designer bags"],
       "brand": "Prada",
       "sku": "WOM-PRA-PRA-174",
       "weight": 4,
@@ -8357,10 +8083,7 @@
       "discountPercentage": 15.2,
       "rating": 3.36,
       "stock": 39,
-      "tags": [
-        "fashion accessories",
-        "backpacks"
-      ],
+      "tags": ["fashion accessories", "backpacks"],
       "brand": "Urban Chic",
       "sku": "WOM-URB-WHI-175",
       "weight": 7,
@@ -8419,10 +8142,7 @@
       "discountPercentage": 11.63,
       "rating": 2.89,
       "stock": 11,
-      "tags": [
-        "fashion accessories",
-        "handbags"
-      ],
+      "tags": ["fashion accessories", "handbags"],
       "brand": "Elegance Collection",
       "sku": "WOM-ELE-WOM-176",
       "weight": 6,
@@ -8481,10 +8201,7 @@
       "discountPercentage": 10.48,
       "rating": 3.64,
       "stock": 25,
-      "tags": [
-        "clothing",
-        "gowns"
-      ],
+      "tags": ["clothing", "gowns"],
       "sku": "WOM-BRD-BLA-177",
       "weight": 2,
       "dimensions": {
@@ -8543,11 +8260,7 @@
       "discountPercentage": 16.26,
       "rating": 3.05,
       "stock": 30,
-      "tags": [
-        "clothing",
-        "corsets",
-        "skirts"
-      ],
+      "tags": ["clothing", "corsets", "skirts"],
       "sku": "WOM-BRD-COR-178",
       "weight": 1,
       "dimensions": {
@@ -8606,11 +8319,7 @@
       "discountPercentage": 15.06,
       "rating": 4.52,
       "stock": 33,
-      "tags": [
-        "clothing",
-        "corsets",
-        "skirts"
-      ],
+      "tags": ["clothing", "corsets", "skirts"],
       "sku": "WOM-BRD-COR-179",
       "weight": 7,
       "dimensions": {
@@ -8669,10 +8378,7 @@
       "discountPercentage": 17.68,
       "rating": 4.88,
       "stock": 6,
-      "tags": [
-        "clothing",
-        "dresses"
-      ],
+      "tags": ["clothing", "dresses"],
       "sku": "WOM-BRD-DRE-180",
       "weight": 1,
       "dimensions": {
@@ -8731,10 +8437,7 @@
       "discountPercentage": 19.02,
       "rating": 4.48,
       "stock": 62,
-      "tags": [
-        "clothing",
-        "suits"
-      ],
+      "tags": ["clothing", "suits"],
       "sku": "WOM-BRD-MAR-181",
       "weight": 3,
       "dimensions": {
@@ -8793,10 +8496,7 @@
       "discountPercentage": 15.24,
       "rating": 3.96,
       "stock": 54,
-      "tags": [
-        "fashion accessories",
-        "earrings"
-      ],
+      "tags": ["fashion accessories", "earrings"],
       "sku": "WOM-BRD-GRE-182",
       "weight": 2,
       "dimensions": {
@@ -8854,10 +8554,7 @@
       "discountPercentage": 15.18,
       "rating": 3.57,
       "stock": 73,
-      "tags": [
-        "fashion accessories",
-        "earrings"
-      ],
+      "tags": ["fashion accessories", "earrings"],
       "sku": "WOM-BRD-GRE-183",
       "weight": 10,
       "dimensions": {
@@ -8915,10 +8612,7 @@
       "discountPercentage": 0.76,
       "rating": 4.4,
       "stock": 1,
-      "tags": [
-        "fashion accessories",
-        "earrings"
-      ],
+      "tags": ["fashion accessories", "earrings"],
       "sku": "WOM-BRD-TRO-184",
       "weight": 3,
       "dimensions": {
@@ -8976,10 +8670,7 @@
       "discountPercentage": 3.33,
       "rating": 2.53,
       "stock": 3,
-      "tags": [
-        "footwear",
-        "slippers"
-      ],
+      "tags": ["footwear", "slippers"],
       "brand": "Comfort Trends",
       "sku": "WOM-COM-BLA-185",
       "weight": 5,
@@ -9039,10 +8730,7 @@
       "discountPercentage": 3.19,
       "rating": 4.92,
       "stock": 93,
-      "tags": [
-        "footwear",
-        "heel shoes"
-      ],
+      "tags": ["footwear", "heel shoes"],
       "brand": "Calvin Klein",
       "sku": "WOM-CAL-CAL-186",
       "weight": 6,
@@ -9102,10 +8790,7 @@
       "discountPercentage": 13.93,
       "rating": 3.26,
       "stock": 88,
-      "tags": [
-        "footwear",
-        "women's shoes"
-      ],
+      "tags": ["footwear", "women's shoes"],
       "brand": "Fashion Diva",
       "sku": "WOM-FAS-GOL-187",
       "weight": 4,
@@ -9165,10 +8850,7 @@
       "discountPercentage": 14.14,
       "rating": 3.05,
       "stock": 49,
-      "tags": [
-        "footwear",
-        "casual shoes"
-      ],
+      "tags": ["footwear", "casual shoes"],
       "brand": "Pampi",
       "sku": "WOM-PAM-PAM-188",
       "weight": 7,
@@ -9228,10 +8910,7 @@
       "discountPercentage": 17.69,
       "rating": 3.25,
       "stock": 7,
-      "tags": [
-        "footwear",
-        "women's shoes"
-      ],
+      "tags": ["footwear", "women's shoes"],
       "brand": "Fashion Express",
       "sku": "WOM-FAS-SHO-189",
       "weight": 10,
@@ -9291,10 +8970,7 @@
       "discountPercentage": 9.45,
       "rating": 2.93,
       "stock": 90,
-      "tags": [
-        "watches",
-        "luxury watches"
-      ],
+      "tags": ["watches", "luxury watches"],
       "brand": "IWC",
       "sku": "WOM-IWC-ING-190",
       "weight": 3,
@@ -9353,10 +9029,7 @@
       "discountPercentage": 4.11,
       "rating": 3.83,
       "stock": 52,
-      "tags": [
-        "watches",
-        "luxury watches"
-      ],
+      "tags": ["watches", "luxury watches"],
       "brand": "Rolex",
       "sku": "WOM-ROL-ROL-191",
       "weight": 10,
@@ -9415,11 +9088,7 @@
       "discountPercentage": 15.94,
       "rating": 2.86,
       "stock": 4,
-      "tags": [
-        "watches",
-        "luxury watches",
-        "women's watches"
-      ],
+      "tags": ["watches", "luxury watches", "women's watches"],
       "brand": "Rolex",
       "sku": "WOM-ROL-ROL-192",
       "weight": 3,
@@ -9478,10 +9147,7 @@
       "discountPercentage": 18.34,
       "rating": 4.24,
       "stock": 0,
-      "tags": [
-        "watches",
-        "women's watches"
-      ],
+      "tags": ["watches", "women's watches"],
       "brand": "Fashion Gold",
       "sku": "WOM-FAS-WAT-193",
       "weight": 1,
@@ -9540,10 +9206,7 @@
       "discountPercentage": 12.6,
       "rating": 3.52,
       "stock": 12,
-      "tags": [
-        "watches",
-        "women's watches"
-      ],
+      "tags": ["watches", "women's watches"],
       "brand": "Fashion Co.",
       "sku": "WOM-FAS-WOM-194",
       "weight": 1,
