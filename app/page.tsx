@@ -1,9 +1,9 @@
-import CardGrid from "@/components/ui/card-grid";
-import Hero from "@/components/ui/hero";
-import FullWidthSection from "@/components/ui/full-width-section";
 import BannerSection from "@/components/ui/banner-section";
-import { getProducts } from "@/data/product";
+import CardGrid from "@/components/ui/card-grid";
+import FullWidthSection from "@/components/ui/full-width-section";
+import Hero from "@/components/ui/hero";
 import ProductCard from "@/components/ui/product-card";
+import { getProducts } from "@/data/product";
 
 export default async function Home() {
   // Fetches specific products that are later displayed below

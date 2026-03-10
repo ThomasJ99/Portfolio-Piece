@@ -39,19 +39,20 @@ export default function LikeButton({ pTitle }: LikeButtonProps) {
   return (
     <button
       onClick={(e) => {
-        (e.preventDefault(),
-          // https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation
-          // Stops the bubbling
-          e.stopPropagation(),
-          toggleLike());
+        e.preventDefault();
+        // https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation
+        // Stops the bubbling
+        e.stopPropagation();
+        toggleLike();
       }}
       className={`z-99 absolute top-3 right-0 w-10 h-10 flex items-center justify-center bg-white cursor-pointer`}
       type="button"
     >
       <svg
-        className={
-          `w-7 h-7 text-black fill-red-50 transition-all duration-200 ease-in 
+        className={`w-7 h-7 text-black fill-red-50 transition-all duration-200 ease-in 
           ${hasLiked ? "fill-red-500 scale-110" : "fill-red-50 scale-100"}`}
+        role="img"
+        aria-label="svg"
         fill="currentColor"
         stroke="currentColor"
         strokeWidth="2"

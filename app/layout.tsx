@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Oswald, Inter, Noto_Sans_JP } from "next/font/google";
+import { Inter, Noto_Sans_JP, Oswald } from "next/font/google";
 import "./globals.css";
-import MainNavigation from "@/components/navigation/main-navigation";
 import Footer from "@/components/navigation/footer";
+import MainNavigation from "@/components/navigation/main-navigation";
 
 const oswald = Oswald({
   variable: "--font-oswald",

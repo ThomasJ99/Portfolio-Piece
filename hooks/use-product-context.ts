@@ -1,5 +1,5 @@
-import { ProductContext } from "@/context/product-context";
 import { useState } from "react";
+import type { ProductContext } from "@/context/product-context";
 
 export default function useProductContext(
   defaultMin: number,

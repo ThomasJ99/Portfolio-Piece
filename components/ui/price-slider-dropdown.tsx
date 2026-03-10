@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import PriceSliderDual from "./price-slider-dual";
 
 // Need min/max from my price slider
@@ -40,6 +40,7 @@ export default function PriceFilterDropdown({
     // Knows our div is the one we refer to on useEffect to mimic a dropdown menu
     <div className="relative inline-block" ref={dropdownRef}>
       <button
+        type="button"
         onClick={() => setOpen(!open)}
         className={`border-2 px-4 h-12 font-bold hover:bg-slate-800 hover:border-slate-200
         transition-colors font-oswald
@@ -91,6 +92,7 @@ export default function PriceFilterDropdown({
 
           <div className="flex justify-between border-t-2 p-0">
             <button
+              type="button"
               className="p-3 border-e grow cursor-pointer hover:bg-slate-800 font-bold"
               onClick={() => setOpen(false)}
             >
@@ -98,6 +100,7 @@ export default function PriceFilterDropdown({
             </button>
 
             <button
+              type="button"
               className="p-3 border-s grow cursor-pointer bg-slate-200 text-black hover:bg-slate-800 hover:text-white font-bold"
               onClick={() => setOpen(false)}
             >

@@ -11,10 +11,12 @@ export default function MainNavigation() {
         >
           <svg
             version="1.1"
+            xlinkTitle="Logo"
             id="Layer_1"
+			role="img"
+			aria-label="svg"
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
-            width=""
             viewBox="0 0 464 320"
             enableBackground="new 0 0 464 320"
             xmlSpace="preserve"

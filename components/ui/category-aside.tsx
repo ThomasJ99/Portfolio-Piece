@@ -1,5 +1,5 @@
 import { getCategories } from "@/data/product";
-import { Category } from "@/types/products-json";
+import type { Category } from "@/types/products-json";
 import CategoryLink from "./category-link";
 
 export default async function CategoryAside() {

@@ -1,4 +1,4 @@
-import { Product, ProductsResponse } from "@/types/products-json";
+import type { Product, ProductsResponse } from "@/types/products-json";
 
 const URL_API = "http://localhost:4000/";
 
@@ -67,7 +67,7 @@ export async function getCategories() {
     return await data.json();
 
     // Another fail check if using try/catch, both is probably a bit much, so either remove the if statement or this one
-  } catch (error) {
+  } catch {
     throw new Error("Api not working...");
   }
 }

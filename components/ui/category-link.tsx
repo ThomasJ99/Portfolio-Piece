@@ -1,7 +1,7 @@
 "use client";
-import { Category } from "@/types/products-json";
 import Link from "next/link";
-import { useSearchParams, usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
+import type { Category } from "@/types/products-json";
 
 export default function CategoryLink({ category }: { category: Category }) {
   const searchParams = useSearchParams();

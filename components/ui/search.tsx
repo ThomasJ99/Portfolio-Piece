@@ -1,12 +1,12 @@
 "use client";
 
+import { SearchIcon } from "lucide-react";
 import Form from "next/form";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { ButtonGroup } from "@/components/ui/button-group";
 import { Input } from "@/components/ui/input";
-import { SearchIcon } from "lucide-react";
 
 export default function SearchForm() {
   const searchParams = useSearchParams();
@@ -43,11 +43,7 @@ export default function SearchForm() {
           required
         />
 
-        <Button
-          type="submit"
-          variant="outline"
-          aria-label="Search"
-        >
+        <Button type="submit" variant="outline" aria-label="Search">
           <SearchIcon />
         </Button>
       </ButtonGroup>

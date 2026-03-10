@@ -1,7 +1,7 @@
 "use client";
 
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { ITEMLIMITS } from "@/data/constants";
-import { useSearchParams, useRouter, usePathname } from "next/navigation";
 
 export default function LimitSelect() {
   const searchParams = useSearchParams();
