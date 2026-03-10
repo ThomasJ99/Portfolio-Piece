@@ -3,8 +3,8 @@ import SearchForm from "../ui/search";
 
 export default function MainNavigation() {
   return (
-    <div className="border-b sticky top-0 z-50 bg-black/80 backdrop-blur-xs">
-      <nav className="flex items-center justify-between container mx-auto align-center text-2xl font-bold">
+    <div className="border-b bg-black">
+      <nav className="flex flex-col pb-4 items-center container mx-auto text-2xl font-bold">
         <Link
           href="/"
           className="hover:opacity-85 transition-opacity text-2xl font-oswald flex gap-1"
@@ -13,14 +13,14 @@ export default function MainNavigation() {
             version="1.1"
             xlinkTitle="Logo"
             id="Layer_1"
-			role="img"
-			aria-label="svg"
+            role="img"
+            aria-label="svg"
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 464 320"
             enableBackground="new 0 0 464 320"
             xmlSpace="preserve"
-            className="h-20 w-auto"
+            className="h-16 w-auto"
           >
             <path
               fill="#fff"
@@ -123,13 +123,9 @@ M177.008606,251.420746
 z"
             />
           </svg>
-          {/* <span>
-            Company<span className="text-slate-600 text-[1.75rem]">X</span>
-          </span> */}
         </Link>
 
         <SearchForm />
-        <span></span>
       </nav>
     </div>
   );

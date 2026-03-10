@@ -40,7 +40,7 @@ export default async function productPage(params: PageProps<"/">) {
   return (
     // TODO: STUDY Root
     <Root defaultMin={minPriceNumber} defaultMax={maxPriceNumber}>
-      <div className="container mx-auto mt-5">
+      <div className="container mx-auto mt-4">
         <div className="grid grid-cols-4 gap-8">
           <section>
             <h1 className="text-4xl mb-5 font-oswald">Our sortiment</h1>

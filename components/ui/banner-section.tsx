@@ -20,7 +20,7 @@ export default function BannerSection({
       ${className ?? ""} 
       ${alignImgRight ? "flex-row" : "flex-row-reverse"}`}
     >
-      <header className="space-y-10 mb-10">
+      <header className="space-y-10">
         <h2 className="text-4xl font-bold font-oswald text-black uppercase">
           {title}
         </h2>
