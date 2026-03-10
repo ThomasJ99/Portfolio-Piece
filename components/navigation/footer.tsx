@@ -6,14 +6,11 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-8 flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
         {/* Brand Info */}
         <div className="text-xs text-white/60 leading-relaxed max-w-xl">
-          <p className="font-semibold text-white text-sm mb-2">Company x</p>
+          <p className="font-semibold text-white text-sm mb-2">CompanyX</p>
           <p>
-            Company x is a modern online store offering carefully selected
+            CompanyX is a modern online store offering carefully selected
             products with quality and affordability in mind. Browse our
             collection and discover items designed to fit your everyday needs.
-          </p>
-          <p className="mt-3 text-white/40">
-            © {new Date().getFullYear()} All rights reserved.
           </p>
         </div>
 
