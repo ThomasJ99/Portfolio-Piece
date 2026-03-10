@@ -46,6 +46,8 @@ export default async function ProductPage({
             className="w-full h-200 object-cover pb-4"
             src={product.images[0]}
             alt={`High quality image of ${product.title}`}
+            width={500}
+            height={500}
           />
 
           <div className="flex gap-4">
@@ -53,12 +55,16 @@ export default async function ProductPage({
               className="w-full h-80 object-cover"
               src={product.images[1]}
               alt=""
+              width={500}
+              height={500}
             />
 
             <Image
               className="w-full h-80 object-cover"
               src={product.images[2]}
               alt=""
+              width={500}
+              height={500}
             />
           </div>
         </figure>
