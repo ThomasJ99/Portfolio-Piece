@@ -1,20 +1,13 @@
 import Link from "next/link";
 import SearchForm from "../ui/search";
 
-// Array of objects
-const menu = [
-  { title: "Home", href: "/" },
-  { title: "About", href: "/about" },
-  { title: "Products", href: "/products" },
-];
-
 export default function MainNavigation() {
   return (
     <div className="border-b sticky top-0 z-50 bg-black/80 backdrop-blur-xs">
-      <nav className="flex items-center justify-between container mx-auto pt-5 align-center pb-5 text-2xl font-bold">
+      <nav className="flex items-center justify-between container mx-auto align-center text-2xl font-bold">
         <Link
           href="/"
-          className="hover:opacity-85 transition-opacity text-2xl mt-2 font-oswald flex gap-3"
+          className="hover:opacity-85 transition-opacity text-2xl font-oswald flex gap-1"
         >
           <svg
             version="1.1"
@@ -25,11 +18,11 @@ export default function MainNavigation() {
             viewBox="0 0 464 320"
             enableBackground="new 0 0 464 320"
             xmlSpace="preserve"
-            className="h-9 w-auto"
+            className="h-20 w-auto"
           >
             <path
-              fill="#ffffff"
-              opacity="1.000000"
+              fill="#fff"
+              opacity="1.0"
               stroke="none"
               d="
 M345.998291,62.064976 
@@ -128,25 +121,13 @@ M177.008606,251.420746
 z"
             />
           </svg>
-          <span>
-            Company<span className="text-slate-600">X</span>
-          </span>
+          {/* <span>
+            Company<span className="text-slate-600 text-[1.75rem]">X</span>
+          </span> */}
         </Link>
 
         <SearchForm />
-        {/* Change mt-2 if i keep changing the navbar */}
-        <ul className="flex gap-6 mt-2">
-          {menu.map((item, index) => (
-            <li key={index}>
-              <Link
-                className="text-white hover:text-slate-400 hover:underline underline-offset-2 transition-colors font-oswald"
-                href={item.href}
-              >
-                {item.title}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <span></span>
       </nav>
     </div>
   );
