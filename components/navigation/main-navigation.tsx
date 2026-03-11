@@ -4,7 +4,7 @@ import SearchForm from "../ui/search";
 export default function MainNavigation() {
   return (
     <div className="border-b bg-black">
-      <nav className="flex flex-col pb-4 items-center container mx-auto text-2xl font-bold">
+      <nav className="flex flex-col items-center container mx-auto pb-4 px-4 lg:px-0">
         <Link
           href="/"
           className="hover:opacity-85 transition-opacity text-2xl font-oswald flex gap-1"
