@@ -1,19 +1,18 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Platzki - About",
-  description: "Find out about Platzki",
+  title: "CompanyX - About",
+  description: "Find out about CompanyX",
 };
 
 export default function About() {
-  const title = "About Platzki";
+  const title = "About CompanyX";
   return (
     <main className="px-4 py-16">
       <article className="container mx-auto">
         <section>
-          <h1 className="text-4xl font-bold mb-6 text-balance font-josefin text-center">
+          <h1 className="text-4xl font-bold mb-6 text-balance font-oswald text-center">
             {title}
           </h1>
 
@@ -81,7 +80,7 @@ export default function About() {
         <section className="max-mx-2 grid grid-cols-3 gap-15">
           <span></span>
           <div>
-            <h2 className="text-4xl text-center mb-6">Overview</h2>
+            <h2 className="text-4xl text-center mb-6 font-oswald">Overview</h2>
             <p className="mb-12">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Pellentesque ac orci mi. Sed lacinia, eros sit amet sodales

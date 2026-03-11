@@ -1,7 +1,7 @@
 import Link from "next/link";
-import LikeButton from "./like-button";
+import type { Product } from "@/types/products-json";
 import ImageScroll from "./image-scroll";
-import { Product } from "@/types/products-json";
+import LikeButton from "./like-button";
 
 // My product info content thats inside a generic card-grid
 export default function ProductCard({ product }: { product: Product }) {

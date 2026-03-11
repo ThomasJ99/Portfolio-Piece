@@ -16,11 +16,11 @@ export default function BannerSection({
   return (
     <section
       // alginImgRight - first option is default/true, second is false
-      className={`flex sm:flex-wrap container mx-auto gap-6 pt-10 items-center justify-between 
+      className={`flex flex-wrap xl:flex-nowrap container mx-auto gap-6 pt-10 items-center justify-between text-pretty
       ${className ?? ""} 
       ${alignImgRight ? "flex-row" : "flex-row-reverse"}`}
     >
-      <header className="space-y-10 mb-10">
+      <header className="space-y-10">
         <h2 className="text-4xl font-bold font-oswald text-black uppercase">
           {title}
         </h2>
@@ -31,9 +31,9 @@ export default function BannerSection({
       <figure>
         {imgSrc && (
           <div className="flex">
-            {imgSrc.map((src, index) => (
+            {imgSrc.map((src) => (
               <Image
-                key={index}
+                key={src}
                 src={src}
                 alt=""
                 width={600}

@@ -1,18 +1,17 @@
 "use client";
 
-import { Product } from "@/types/products-json";
+import Image from "next/image";
 import { useState } from "react";
+import type { Product } from "@/types/products-json";
 
-export default function ImageScroll({ product }: {product: Product}) {
+export default function ImageScroll({ product }: { product: Product }) {
   // State with our current state and a function that updates the state
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // We handle currentIndex here and swap it depending
   const indexSwap = () => {
     // Updates our state
-    setCurrentIndex(
-      (prevIndex) => (prevIndex = (prevIndex + 1) % product.images.length), //Modulo operation loops between 0 and length + 1 ;)
-    );
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % product.images.length); //Modulo operation loops between 0 and length + 1
   };
 
   // ***** Might remove ***** //
@@ -24,7 +23,7 @@ export default function ImageScroll({ product }: {product: Product}) {
 
   return (
     <div>
-      <img
+      <Image
         src={product.images[currentIndex]}
         alt={`A product called ${product.title}`}
         className="w-full h-120 object-cover"
@@ -38,7 +37,9 @@ export default function ImageScroll({ product }: {product: Product}) {
         <button
           type="button"
           onClick={(e) => {
-            (e.preventDefault(), e.stopPropagation(), indexSwap());
+            e.preventDefault();
+            e.stopPropagation();
+            indexSwap();
           }}
           className={`
             absolute top-50 right-0 bg-white/90

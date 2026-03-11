@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import PriceSliderDual from "./price-slider-dual";
 
 // Need min/max from my price slider
@@ -40,18 +40,19 @@ export default function PriceFilterDropdown({
     // Knows our div is the one we refer to on useEffect to mimic a dropdown menu
     <div className="relative inline-block" ref={dropdownRef}>
       <button
+        type="button"
         onClick={() => setOpen(!open)}
-        className={`border-2 px-4 py-3 font-bold hover:bg-slate-800 hover:border-slate-200
-        transition-colors font-oswald uppercase
+        className={`border-2 px-4 h-12 font-bold hover:bg-slate-800 hover:border-slate-200
+        transition-colors font-oswald
         ${open ? "border-b-0" : ""}`}
       >
         <span className="flex gap-3">
           Price{" "}
           {open ? (
             <svg
-              className="mt-1"
+              className="mt-1.5"
               viewBox="0 0 24 24"
-              width="0.85em"
+              width="1.85em"
               height="1em"
               fill="currentColor"
               focusable="false"
@@ -61,10 +62,10 @@ export default function PriceFilterDropdown({
             </svg>
           ) : (
             <svg
-              className="mt-1"
+              className="mt-1.5"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
-              width="0.85em"
+              width="1.85em"
               height="1em"
               fill="none"
               focusable="false"
@@ -85,12 +86,13 @@ export default function PriceFilterDropdown({
       {/* Dropdown */}
       {open && (
         <div className="absolute left-0 w-85 bg-black border-2 border-slate-200 z-100">
-          <div className="p-6 ">
+          <div className="p-6">
             <PriceSliderDual min={min} max={max} />
           </div>
 
           <div className="flex justify-between border-t-2 p-0">
             <button
+              type="button"
               className="p-3 border-e grow cursor-pointer hover:bg-slate-800 font-bold"
               onClick={() => setOpen(false)}
             >
@@ -98,6 +100,7 @@ export default function PriceFilterDropdown({
             </button>
 
             <button
+              type="button"
               className="p-3 border-s grow cursor-pointer bg-slate-200 text-black hover:bg-slate-800 hover:text-white font-bold"
               onClick={() => setOpen(false)}
             >

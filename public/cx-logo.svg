@@ -1,32 +1,7 @@
-import Link from "next/link";
-import SearchForm from "../ui/search";
-
-export default function MainNavigation() {
-  return (
-    <div className="border-b bg-black">
-      <nav className="flex flex-col pb-4 items-center container mx-auto text-2xl font-bold">
-        <Link
-          href="/"
-          className="hover:opacity-85 transition-opacity text-2xl font-oswald flex gap-1"
-        >
-          <svg
-            version="1.1"
-            xlinkTitle="Logo"
-            id="Layer_1"
-            role="img"
-            aria-label="svg"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 464 320"
-            enableBackground="new 0 0 464 320"
-            xmlSpace="preserve"
-            className="h-16 w-auto"
-          >
-            <path
-              fill="#fff"
-              opacity="1.0"
-              stroke="none"
-              d="
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100%" viewBox="0 0 464 320" enable-background="new 0 0 464 320" xml:space="preserve">
+<path fill="#000000" opacity="1.000000" stroke="none" 
+	d="
 M345.998291,62.064976 
 	C352.415436,62.335514 358.401917,61.449512 364.232422,62.605022 
 	C365.015900,65.741219 363.086121,67.477798 361.996918,69.369148 
@@ -120,13 +95,5 @@ M177.008606,251.420746
 	C147.965576,261.074738 161.630859,261.135193 175.294678,261.045135 
 	C177.210083,261.032501 179.294876,261.596313 181.270096,259.889160 
 	C180.621841,257.005920 178.914474,254.563812 177.008606,251.420746 
-z"
-            />
-          </svg>
-        </Link>
-
-        <SearchForm />
-      </nav>
-    </div>
-  );
-}
+z"/>
+</svg>

@@ -1,12 +1,12 @@
 import CardGrid from "@/components/ui/card-grid";
-import { getProducts } from "@/data/product";
-import ProductCard from "@/components/ui/product-card";
-import { ensureString } from "@/util";
-import LimitSelect from "@/components/ui/limit-select";
-import Root from "@/components/ui/root";
-import Pagination from "@/components/ui/pagination";
 import CategoryAside from "@/components/ui/category-aside";
+import LimitSelect from "@/components/ui/limit-select";
+import Pagination from "@/components/ui/pagination";
 import PriceFilterDropdown from "@/components/ui/price-slider-dropdown";
+import ProductCard from "@/components/ui/product-card";
+import Root from "@/components/ui/root";
+import { getProducts } from "@/data/product";
+import { ensureString } from "@/util";
 
 // Component
 // This is where we call getProducts and render out the products
@@ -40,17 +40,20 @@ export default async function productPage(params: PageProps<"/">) {
   return (
     // TODO: STUDY Root
     <Root defaultMin={minPriceNumber} defaultMax={maxPriceNumber}>
-      <div className="container mx-auto mt-10">
+      <div className="container mx-auto mt-4">
         <div className="grid grid-cols-4 gap-8">
           <section>
-            <h1 className="text-4xl mt-15 mb-5 font-oswald">Our sortiment</h1>
+            <h1 className="text-4xl mb-5 font-oswald">Our sortiment</h1>
             <CategoryAside />
           </section>
 
           <section className="col-span-3">
             <section className="flex gap-6 mb-5">
               <LimitSelect />
-              <PriceFilterDropdown min={minPriceNumber} max={maxPriceNumber} />{" "}
+              <PriceFilterDropdown
+                min={minPriceNumber}
+                max={maxPriceNumber}
+              />{" "}
             </section>
 
             {/* Conditional rendering if products are > 0 */}

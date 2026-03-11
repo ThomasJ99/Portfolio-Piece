@@ -1,6 +1,6 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { getProduct } from "@/data/product";
-import { Metadata } from "next";
 import notFound from "./not-found";
 // From https://nextjs.org/docs/app/api-reference/file-conventions/page#reading-searchparams-and-params-in-client-components
 
@@ -42,23 +42,29 @@ export default async function ProductPage({
       <article className="grid md:grid-cols-2 gap-20">
         {/* TODO: FIX GRID/FLEX OR SMTH ON IMAGES SO THEY WORK CORRECTLY WHILE SCALING THE WINDOW DOWN */}
         <figure className="">
-          <img
+          <Image
             className="w-full h-200 object-cover pb-4"
             src={product.images[0]}
             alt={`High quality image of ${product.title}`}
+            width={500}
+            height={500}
           />
 
           <div className="flex gap-4">
-            <img
+            <Image
               className="w-full h-80 object-cover"
               src={product.images[1]}
               alt=""
+              width={500}
+              height={500}
             />
 
-            <img
+            <Image
               className="w-full h-80 object-cover"
               src={product.images[2]}
               alt=""
+              width={500}
+              height={500}
             />
           </div>
         </figure>
@@ -76,18 +82,29 @@ export default async function ProductPage({
 
             {/* TODO: FIX TOP BUTTON TO ALSO BE GROW*/}
             <div className="">
-              <button className="mt-10 p-3 text-white/60 text-left flex border-2 cursor-pointer hover:scale-101 active:border-slate-200 ">
+              <button
+                type="button"
+                className="mt-10 p-3 text-white/60 text-left flex border-2 cursor-pointer hover:scale-101 active:border-slate-200 "
+              >
                 Choose your size/model/type
               </button>
 
               <div className="flex gap-1 mb-15">
-                <button className="bg-slate-200 font-bold text-black border-2 border-slate-200 grow cursor-pointer hover:text-white hover:bg-black transition-colors">
+                <button
+                  type="button"
+                  className="bg-slate-200 font-bold text-black border-2 border-slate-200 grow cursor-pointer hover:text-white hover:bg-black transition-colors"
+                >
                   Add to bag
                 </button>
 
-                <button className="border-2 border-gray-200 p-3 cursor-pointer hover:scale-101 active:border-slate-200">
+                <button
+                  type="button"
+                  className="border-2 border-gray-200 p-3 cursor-pointer hover:scale-101 active:border-slate-200"
+                >
                   <svg
                     className={`w-7 h-7 transition-all duration-200 ease-in}`}
+                    role="img"
+                    aria-label="svg"
                     fill="none"
                     stroke="currentColor"
                     strokeWidth="2"

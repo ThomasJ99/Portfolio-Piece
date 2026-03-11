@@ -1,9 +1,9 @@
-import CardGrid from "@/components/ui/card-grid";
-import Hero from "@/components/ui/hero";
-import FullWidthSection from "@/components/ui/full-width-section";
 import BannerSection from "@/components/ui/banner-section";
-import { getProducts } from "@/data/product";
+import CardGrid from "@/components/ui/card-grid";
+import FullWidthSection from "@/components/ui/full-width-section";
+import Hero from "@/components/ui/hero";
 import ProductCard from "@/components/ui/product-card";
+import { getProducts } from "@/data/product";
 
 export default async function Home() {
   // Fetches specific products that are later displayed below
@@ -45,7 +45,7 @@ export default async function Home() {
       <Hero />
 
       {/* First section - Best Selling Products */}
-      <FullWidthSection className="bg-blue-400">
+      <FullWidthSection className="bg-blue-400 px-4 [1560px]:px-0">
         <BannerSection
           title="Spring Favorites"
           description="Discover the season's most-loved styles. Our trending top picks for a fresh spring look."
@@ -65,7 +65,7 @@ export default async function Home() {
       </FullWidthSection>
 
       {/* Second section - Running Shoes */}
-      <FullWidthSection className="bg-yellow-400">
+      <FullWidthSection className="bg-yellow-400 px-4 [1560px]:px-0">
         <BannerSection
           title="Spring Run Performance"
           description="Maximize your pace this spring! Discover lightweight gear designed for peak performance and ultimate comfort in the sun."
@@ -85,7 +85,7 @@ export default async function Home() {
       </FullWidthSection>
 
       {/* Third section */}
-      <FullWidthSection className="bg-teal-500">
+      <FullWidthSection className="bg-teal-500 px-4 [1560px]:px-0">
         <BannerSection
           title="Fresh Spring Scents"
           description="Light, airy, and invigorating. Find your signature spring fragrance and carry the freshness of the breeze with you."

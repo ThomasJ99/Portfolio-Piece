@@ -3,8 +3,8 @@
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useContext } from "react";
 import { useDebouncedCallback } from "use-debounce";
-import { Slider } from "./slider";
 import { ProductCtx } from "@/context/product-context";
+import { Slider } from "./slider";
 
 // Getter and Setter definition of the price value state
 type PriceValue = {
@@ -35,7 +35,7 @@ function PriceInputFields({ min, max }: PriceInputProps) {
 
         <input
           className="border-2 p-2 w-30"
-          type="text"
+          type="number"
           id="min-text"
           name="min"
           value={min.value}
@@ -99,7 +99,7 @@ export default function PriceSliderDual(props: PriceSliderDualProps) {
 
   return (
     <div className="my-5">
-      <label htmlFor="DualSlider" hidden>
+      <label htmlFor="DualSlider" className="sr-only">
         Min/Max Price
       </label>
 
@@ -127,7 +127,9 @@ export default function PriceSliderDual(props: PriceSliderDualProps) {
           <label
             htmlFor="switch-component"
             className="absolute -top-1 -left-2 w-7 h-7 bg-white rounded-full border-2 border-black shadow-sm transition-transform duration-300 peer-checked:translate-x-9 peer-checked:border-slate-800 cursor-pointer"
-          ></label>
+          >
+            {" "}
+          </label>
         </div>
       </div>
 
@@ -143,7 +145,9 @@ export default function PriceSliderDual(props: PriceSliderDualProps) {
           <label
             htmlFor="switch-component-2"
             className="absolute -top-1 -left-2 w-7 h-7 bg-white rounded-full border-2 border-black shadow-sm transition-transform duration-300 peer-checked:translate-x-9 peer-checked:border-slate-800 cursor-pointer"
-          ></label>
+          >
+            {" "}
+          </label>
         </div>
       </div>
     </div>

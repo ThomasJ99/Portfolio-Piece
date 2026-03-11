@@ -1,7 +1,7 @@
 "use client";
 
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { ITEMLIMITS } from "@/data/constants";
-import { useSearchParams, useRouter, usePathname } from "next/navigation";
 
 export default function LimitSelect() {
   const searchParams = useSearchParams();
@@ -30,14 +30,13 @@ export default function LimitSelect() {
   return (
     <form
       className={`border-2 px-4 py-3 font-bold hover:bg-slate-800 hover:border-slate-200
-        transition-colors uppercase`}
+        transition-colors w-30 h-12`}
     >
       <label className={`font-oswald`} htmlFor="limit-select">
-        Show:
+        Show
       </label>
 
       <select
-        className=""
         name="limit"
         id="limit-select"
         onChange={handleChange}
