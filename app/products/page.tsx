@@ -1,11 +1,13 @@
 import CardGrid from "@/components/ui/card-grid";
 import CategoryAside from "@/components/ui/category-aside";
+import CategoryDropdown from "@/components/ui/category-dropdown";
 import LimitSelect from "@/components/ui/limit-select";
 import Pagination from "@/components/ui/pagination";
 import PriceFilterDropdown from "@/components/ui/price-slider-dropdown";
 import ProductCard from "@/components/ui/product-card";
 import Root from "@/components/ui/root";
-import { getProducts } from "@/data/product";
+import { getCategories, getProducts } from "@/data/product";
+import type { Category } from "@/types/products-json";
 import { ensureString } from "@/util";
 
 // Component
@@ -36,19 +38,23 @@ export default async function productPage(params: PageProps<"/">) {
     minPriceNumber,
     maxPriceNumber,
   );
+  const categories: Category[] = await getCategories();
 
   return (
     // TODO: STUDY Root
     <Root defaultMin={minPriceNumber} defaultMax={maxPriceNumber}>
       <div className="container mx-auto mt-4">
         <div className="grid grid-cols-4 gap-8">
-          <section>
+          <section className="hidden lg:block">
             <h1 className="text-4xl mb-5 font-oswald">Our sortiment</h1>
-            <CategoryAside />
+            <CategoryAside categories={categories} />
           </section>
 
           <section className="col-span-3">
             <section className="flex gap-6 mb-5">
+              <div className="block lg:hidden">
+                <CategoryDropdown categories={categories} />
+              </div>
               <LimitSelect />
               <PriceFilterDropdown
                 min={minPriceNumber}
