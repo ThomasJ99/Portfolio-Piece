@@ -78,13 +78,18 @@ export default function CategoryDropdown({
         </span>
       </button>
 
+      {/* Dropdown */}
       {open && (
-        // Style ul like my pricedropdown
-        <div className="absolute left-0 w-50 bg-black border-2 border-slate-200 z-100">
-          <ul className="p-6 flex flex-col gap-3 max-h-50 overflow-y-auto">
-            {categories.map((categories) => (
-              <li key={categories.id} onClick={() => setOpen(false)}>
-                <CategoryLink key={categories.id} category={categories} />
+        <div className="absolute left-0 w-48 bg-black border-2 border-slate-200 z-100">
+          <ul
+            className={`p-6 flex flex-col gap-3 max-h-50 overflow-y-auto 
+          [&::-webkit-scrollbar]:w-[0.4rem]
+        [&::-webkit-scrollbar-thumb]:bg-slate-500 
+          [&::-webkit-scrollbar-thumb]:rounded-[3px]`}
+          >
+            {categories.map((category) => (
+              <li key={category.id} onClick={() => setOpen(false)}>
+                <CategoryLink key={category.id} category={category} />
               </li>
             ))}
           </ul>
