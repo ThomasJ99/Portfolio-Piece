@@ -1,3 +1,4 @@
+import Link from "next/link";
 import CardGrid from "@/components/ui/card-grid";
 import CategoryAside from "@/components/ui/category-aside";
 import CategoryDropdown from "@/components/ui/category-dropdown";
@@ -51,7 +52,7 @@ export default async function productPage(params: PageProps<"/">) {
           </section>
 
           <section className="col-span-3">
-            <section className="flex gap-6 mb-5">
+            <section className="flex gap-2 mb-5 flex-wrap max-w-140">
               <div className="block lg:hidden">
                 <CategoryDropdown categories={categories} />
               </div>
@@ -60,6 +61,13 @@ export default async function productPage(params: PageProps<"/">) {
                 min={minPriceNumber}
                 max={maxPriceNumber}
               />{" "}
+              <Link
+                className={`border-2 px-4 py-3 font-bold hover:bg-slate-800 hover:border-slate-200
+                transition-colors w-32 h-12 text-nowrap`}
+                href={"/products"}
+              >
+                Clear filters
+              </Link>
             </section>
 
             {/* Conditional rendering if products are > 0 */}
