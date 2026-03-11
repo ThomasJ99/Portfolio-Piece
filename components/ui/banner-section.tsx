@@ -16,7 +16,7 @@ export default function BannerSection({
   return (
     <section
       // alginImgRight - first option is default/true, second is false
-      className={`flex sm:flex-wrap container mx-auto gap-6 pt-10 items-center justify-between text-pretty
+      className={`flex flex-wrap xl:flex-nowrap container mx-auto gap-6 pt-10 items-center justify-between text-pretty
       ${className ?? ""} 
       ${alignImgRight ? "flex-row" : "flex-row-reverse"}`}
     >

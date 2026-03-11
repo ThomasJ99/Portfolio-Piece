@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <header className="bg-black text-white">
-      <section className="container mx-auto grid lg:grid-cols-2 gap-6 items-center py-24">
+      <section className="container mx-auto grid lg:grid-cols-2 gap-6 items-center py-24 px-4 2xl:px-0">
         <div className="space-y-10">
           <h1 className="text-5xl font-bold font-oswald uppercase">
             New Season.
