@@ -56,7 +56,7 @@ export default async function Home() {
         />
       </FullWidthSection>
 
-      <FullWidthSection className="bg-blue-200 text-black mb-20">
+      <FullWidthSection className="bg-blue-200 text-black mb-20 py-4">
         <CardGrid>
           {products.map((p) => (
             <ProductCard key={p.title} product={p} />
@@ -76,7 +76,7 @@ export default async function Home() {
         />
       </FullWidthSection>
 
-      <FullWidthSection className="bg-yellow-200 text-black mb-20">
+      <FullWidthSection className="bg-yellow-200 text-black mb-20 py-4">
         <CardGrid>
           {products2.map((p) => (
             <ProductCard key={p.title} product={p} />
@@ -97,7 +97,7 @@ export default async function Home() {
         />
       </FullWidthSection>
 
-      <FullWidthSection className="bg-teal-300 text-black">
+      <FullWidthSection className="bg-teal-300 text-black py-4">
         <CardGrid>
           {products3.slice(1).map((p) => (
             <ProductCard key={p.title} product={p} />
