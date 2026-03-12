@@ -103,31 +103,5 @@ export default function LimitSelect() {
         </div>
       )}
     </div>
-    // <form
-    //   className={`border-2 px-4 py-3 font-bold hover:bg-slate-800 hover:border-slate-200
-    //     transition-colors w-30 h-12 cursor-pointer`}
-    // >
-    //   <label className={`font-oswald`} htmlFor="limit-select">
-    //     Show
-    //   </label>
-
-    //   <select
-    //     name="limit"
-    //     id="limit-select"
-    //     onChange={handleChange}
-    //     // https://stackoverflow.com/questions/61480993/when-should-i-use-nullish-coalescing-vs-logical-or
-    //     defaultValue={currentLimit ?? 4}
-    //   >
-    //     {ITEMLIMITS.map((item) => (
-    //       <option
-    //         key={`limit-select${item}`}
-    //         value={item}
-    //         className="bg-black text-base text-white"
-    //       >
-    //         {item}
-    //       </option>
-    //     ))}
-    //   </select>
-    // </form>
   );
 }
