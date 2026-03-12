@@ -6,7 +6,7 @@ import LikeButton from "./like-button";
 // My product info content thats inside a generic card-grid
 export default function ProductCard({ product }: { product: Product }) {
   return (
-    <li key={product.id} className="">
+    <li key={product.id}>
       <Link className="z-1" href={`/products/${product.id}`}>
         <div className="relative group">
           <ImageScroll product={product} />
@@ -25,7 +25,7 @@ export default function ProductCard({ product }: { product: Product }) {
 
 export function ProductImage({ product }: { product: Product }) {
   return (
-    <li key={product.id} className="">
+    <li key={product.id}>
         <div className="relative group">
           <ImageScroll product={product} />
           <LikeButton pTitle={product.title} />
