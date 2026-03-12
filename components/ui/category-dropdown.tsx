@@ -80,16 +80,19 @@ export default function CategoryDropdown({
 
       {/* Dropdown */}
       {open && (
-        <div className="absolute left-0 w-48 bg-black border-2 border-slate-200 z-100">
+        <div className="absolute w-40 bg-black border-2 border-slate-200 z-100">
           <ul
-            className={`p-6 flex flex-col gap-3 max-h-50 overflow-y-auto 
+            className={`flex flex-col max-h-50 group overflow-y-auto 
           [&::-webkit-scrollbar]:w-[0.4rem]
         [&::-webkit-scrollbar-thumb]:bg-slate-500 
           [&::-webkit-scrollbar-thumb]:rounded-[3px]`}
           >
             {categories.map((category) => (
-              <li key={category.id} onClick={() => setOpen(false)}>
-                <CategoryLink key={category.id} category={category} />
+              <li key={category.id} className="hover:bg-slate-800">
+                <CategoryLink
+                  category={category}
+                  onClick={() => setOpen(false)}
+                />
               </li>
             ))}
           </ul>

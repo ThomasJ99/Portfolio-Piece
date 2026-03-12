@@ -3,7 +3,13 @@ import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import type { Category } from "@/types/products-json";
 
-export default function CategoryLink({ category }: { category: Category }) {
+export default function CategoryLink({
+  category,
+  onClick,
+}: {
+  category: Category;
+  onClick?: () => void;
+}) {
   const searchParams = useSearchParams();
 
   // Active check for conditional styling
@@ -20,8 +26,9 @@ export default function CategoryLink({ category }: { category: Category }) {
 
   return (
     <Link
-      key={category.id}
-      className={`hover:text-slate-400 hover:underline underline-offset-2 w-[15ch] ${isActive ? " text-slate-400" : ""}`}
+      onClick={onClick}
+      className={`block p-3 hover:text-slate-400 group underline-offset-2 w-[15ch] 
+      ${isActive ? " text-slate-400 hover:cursor-default" : ""}`}
       aria-current={isActive ? "page" : undefined}
       href={`${pathName}?${params.toString()}`}
     >
