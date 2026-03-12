@@ -125,7 +125,7 @@ z"
               />
             </svg>
           </Link>
-          <div className="flex gap-4 items-end pb-3 md:hidden">
+          <div className="flex gap-6 items-end pb-3 md:hidden">
             <svg
               viewBox="0 0 24 24"
               width="1.75em"
@@ -181,7 +181,7 @@ z"
           <SearchForm />
         </div>
 
-        <div className="gap-4 hidden md:flex">
+        <div className="gap-6 hidden md:flex">
           <svg
             viewBox="0 0 24 24"
             width="1.75em"
