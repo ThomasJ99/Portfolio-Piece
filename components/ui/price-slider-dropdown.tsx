@@ -42,8 +42,8 @@ export default function PriceFilterDropdown({
       <button
         type="button"
         onClick={() => setOpen(!open)}
-        className={`border-2 px-4 h-12 font-bold hover:bg-slate-800 hover:border-slate-200
-        transition-colors font-oswald cursor-pointer
+        className={`border-2 px-4 py-2 h-12 font-bold hover:bg-slate-800 hover:border-slate-200
+        transition-colors  cursor-pointer
         ${open ? "border-b-0" : ""}`}
       >
         <span className="flex gap-3">

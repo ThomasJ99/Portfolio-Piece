@@ -37,7 +37,7 @@ export default function CategoryDropdown({
       <button
         type="button"
         onClick={() => setOpen(!open)}
-        className={`border-2 px-4 py-3 font-bold hover:bg-slate-800 hover:border-slate-200
+        className={`border-2 px-4 py-2 font-bold hover:bg-slate-800 hover:border-slate-200
         transition-colors w-40 h-12 cursor-pointer
         ${open ? "border-b-0" : ""}`}
       >

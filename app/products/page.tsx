@@ -64,7 +64,7 @@ export default async function productPage(params: PageProps<"/">) {
               </div>
               <LimitSelect />
               <Link
-                className={`border-2 px-4 py-3 font-bold hover:bg-slate-800 hover:border-slate-200
+                className={`border-2 px-4 py-2.5 font-bold hover:bg-slate-800 hover:border-slate-200
                 transition-colors w-32 h-12 text-nowrap`}
                 href={"/products"}
               >
