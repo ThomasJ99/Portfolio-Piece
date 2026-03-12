@@ -47,20 +47,22 @@ export default async function productPage(params: PageProps<"/">) {
       <main className="container mx-auto mt-4 ps-4 lg:px-0">
         <div className="grid grid-cols-3 lg:grid-cols-4 gap-8">
           <section className="hidden lg:block">
-            <h1 className="text-4xl mb-5 font-oswald">Our sortiment</h1>
+            <h1 className="sr-only">Our sortiment</h1>
+            {/* Hide from screenreader - experiment, test around */}
+            <span className="text-4xl mb-5 block font-oswald">Our sortiment</span>
             <CategoryAside categories={categories} />
           </section>
 
           <section className="col-span-3">
             <section className="flex gap-2 mb-5 flex-wrap max-w-140 ">
-              <div className="block lg:hidden">
-                <CategoryDropdown categories={categories} />
-              </div>
-              <LimitSelect />
               <PriceFilterDropdown
                 min={minPriceNumber}
                 max={maxPriceNumber}
               />{" "}
+              <div className="block lg:hidden">
+                <CategoryDropdown categories={categories} />
+              </div>
+              <LimitSelect />
               <Link
                 className={`border-2 px-4 py-3 font-bold hover:bg-slate-800 hover:border-slate-200
                 transition-colors w-32 h-12 text-nowrap`}
