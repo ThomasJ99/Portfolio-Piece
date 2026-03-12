@@ -40,75 +40,80 @@ export default async function ProductPage({
   //else return below..
   return (
     <main className="container mx-auto">
-      <article className="flex lg:flex-nowrap flex-wrap-reverse gap-20 pt-4">
-        <figure className="">
+      <article className="flex lg:flex-nowrap flex-wrap-reverse xl:gap-50 gap-20 justify-center pt-4 px-4 xl:px-0">
+        <figure>
           <Image
-            className="w-full h-160 object-cover"
+            className="lg:w-full lg:h-160 lg:object-cover h-80 w-80 xl:min-w-160"
             src={product.images[0]}
             alt={`High quality image of ${product.title}`}
             width={500}
             height={500}
           />
 
-          <div className="flex gap-4">
-            <Image
-              className="w-full h-80 object-cover"
-              src={product.images[1]}
-              alt=""
-              width={500}
-              height={500}
-            />
-
-            <Image
-              className="w-full h-80 object-cover"
-              src={product.images[2]}
-              alt=""
-              width={500}
-              height={500}
-            />
-          </div>
+          {/* Check if theres any images, if not, dont render them */}
+          {product.images.length > 1 && (
+            <div className="grid lg:grid-cols-2 gap-4">
+              {product.images.slice(1, 3).map((img, i) => (
+                <Image
+                  key={img}
+                  src={img}
+                  alt={`${product.title} detail ${i + 1}`}
+                  width={500}
+                  height={500}
+                  className="w-full sm:h-80 h-60 xl:min-w-80 object-cover"
+                />
+              ))}
+            </div>
+          )}
         </figure>
-        {/* TODO: FIX STYLING ON H1, ITS A BIT INCONSISTENT DEPENDING ON NAME LENGTH */}
-        <div className="mx-50 leading-tight">
-          <Link
-            className="flex gap-2 hover:text-slate-400 hover:underline underline-offset-2"
-            href={"/products"}
-          >
-            <svg
-              viewBox="0 0 24 24"
-              width="1em"
-              height="1em"
-              fill="currentColor"
-              focusable="false"
-              aria-hidden="true"
-            >
-              <path d="M22.807 11.25H1.938l7.72-7.72a.75.75 0 0 0-1.06-1.06l-7.94 7.94a2.25 2.25 0 0 0 0 3.18l7.94 7.94a.747.747 0 0 0 1.06 0 .75.75 0 0 0 0-1.06l-7.72-7.72h20.87a.75.75 0 0 0 0-1.5"></path>
-            </svg>
-            Back to Products
-          </Link>
-          <h1 className="text-4xl my-5 font-oswald font-bold">
-            {product.title}
-          </h1>
 
-          <div className="space-y-5">
+        <section className="max-w-100">
+          <div className="leading-tight">
+            <div className="flex gap-2">
+              <Link href={"/products"}>
+                <svg
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  focusable="false"
+                  aria-hidden="true"
+                >
+                  <path d="M22.807 11.25H1.938l7.72-7.72a.75.75 0 0 0-1.06-1.06l-7.94 7.94a2.25 2.25 0 0 0 0 3.18l7.94 7.94a.747.747 0 0 0 1.06 0 .75.75 0 0 0 0-1.06l-7.72-7.72h20.87a.75.75 0 0 0 0-1.5"></path>
+                </svg>
+              </Link>
+              <Link
+                className="hover:text-slate-400 hover:underline underline-offset-2"
+                href={"/products"}
+              >
+                Back to Products
+              </Link>
+            </div>
+            <h1 className="text-4xl mt-1 mb-2 font-oswald font-bold">
+              {product.title}
+            </h1>
+          </div>
+
+          <div className="lg:space-y-15 space-y-10">
             <span className="text-2xl font-semibold">
               {product.price} kr{" "}
-              <span className="text-sm opacity-60">VAT included</span>
+              <span className="text-sm font-normal opacity-60">
+                VAT included
+              </span>
             </span>
 
-            {/* TODO: FIX TOP BUTTON TO ALSO BE GROW*/}
-            <div className="">
+            <div>
               <button
                 type="button"
-                className="mt-10 p-3 text-white/60 text-left flex border-2 cursor-pointer hover:scale-101 active:border-slate-200 "
+                className="mt-10 p-3 text-white/60 text-left flex border-2 border-b-0 cursor-pointer hover:scale-101 active:border-slate-200 "
               >
                 Choose your size/model/type
               </button>
 
-              <div className="flex gap-1 mb-15">
+              <div className="flex gap-1">
                 <button
                   type="button"
-                  className="bg-slate-200 font-bold text-black border-2 border-slate-200 grow cursor-pointer hover:text-white hover:bg-black transition-colors"
+                  className="bg-slate-200 font-bold text-black border-2 border-slate-200 grow cursor-pointer hover:text-white hover:bg-slate-800 transition-colors"
                 >
                   Add to bag
                 </button>
@@ -198,11 +203,12 @@ export default async function ProductPage({
                 </svg>
               </div>
             </section>
-
-            <h2 className="font-oswald text-4xl pt-15">Product Description</h2>
-            <p className=" text-balance">{product.description}</p>
+            <div>
+              <h2 className="font-oswald text-4xl pb-5">Product Description</h2>
+              <p className=" text-balance">{product.description}</p>
+            </div>
           </div>
-        </div>
+        </section>
       </article>
     </main>
   );

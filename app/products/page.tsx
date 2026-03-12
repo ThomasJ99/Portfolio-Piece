@@ -44,7 +44,7 @@ export default async function productPage(params: PageProps<"/">) {
   return (
     // TODO: STUDY Root
     <Root defaultMin={minPriceNumber} defaultMax={maxPriceNumber}>
-      <div className="container mx-auto mt-4 ps-4 lg:px-0">
+      <main className="container mx-auto mt-4 ps-4 lg:px-0">
         <div className="grid grid-cols-3 lg:grid-cols-4 gap-8">
           <section className="hidden lg:block">
             <h1 className="text-4xl mb-5 font-oswald">Our sortiment</h1>
@@ -88,7 +88,7 @@ export default async function productPage(params: PageProps<"/">) {
             <Pagination totalPages={pages} />
           </section>
         </div>
-      </div>
+      </main>
     </Root>
   );
 }
