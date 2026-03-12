@@ -4,29 +4,30 @@ import SearchForm from "../ui/search";
 export default function MainNavigation() {
   return (
     <div className="border-b bg-black">
-      <nav className="flex flex-col items-center container mx-auto pb-4 px-4 lg:px-0">
-        <Link
-          href="/"
-          className="hover:opacity-85 transition-opacity text-2xl font-oswald flex gap-1"
-        >
-          <svg
-            version="1.1"
-            xlinkTitle="Logo"
-            id="Layer_1"
-            role="img"
-            aria-label="svg"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 464 320"
-            enableBackground="new 0 0 464 320"
-            xmlSpace="preserve"
-            className="h-16 w-auto"
+      <nav className="container mx-auto px-4 md:px-0 pb-4 md:py-2 flex flex-col md:gap-3 md:flex-row md:items-center md:justify-between">
+        <div className="flex justify-between">
+          <Link
+            href="/"
+            className="hover:opacity-85 transition-opacity text-2xl font-oswald"
           >
-            <path
-              fill="#fff"
-              opacity="1.0"
-              stroke="none"
-              d="
+            <svg
+              version="1.1"
+              xlinkTitle="Logo"
+              id="Layer_1"
+              role="img"
+              aria-label="svg"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 464 320"
+              enableBackground="new 0 0 464 320"
+              xmlSpace="preserve"
+              className="h-16 w-auto"
+            >
+              <path
+                fill="#fff"
+                opacity="1.0"
+                stroke="none"
+                d="
 M345.998291,62.064976 
 	C352.415436,62.335514 358.401917,61.449512 364.232422,62.605022 
 	C365.015900,65.741219 363.086121,67.477798 361.996918,69.369148 
@@ -121,11 +122,115 @@ M177.008606,251.420746
 	C177.210083,261.032501 179.294876,261.596313 181.270096,259.889160 
 	C180.621841,257.005920 178.914474,254.563812 177.008606,251.420746 
 z"
-            />
-          </svg>
-        </Link>
+              />
+            </svg>
+          </Link>
+          <div className="flex gap-4 items-end pb-3 md:hidden">
+            <svg
+              viewBox="0 0 24 24"
+              width="1.75em"
+              height="1.75em"
+              fill="currentColor"
+              aria-labelledby="your-account"
+              focusable="false"
+              aria-hidden="false"
+              role="img"
+              data-testid="user-account"
+              className="cursor-pointer hover:scale-110 active:scale-100 transition-all"
+            >
+              <title id="your-account">Your account</title>
+              <path d="M21.645 22.866a28.7 28.7 0 0 0-6.46-7.817c-2.322-1.892-4.048-1.892-6.37 0a28.7 28.7 0 0 0-6.46 7.817.75.75 0 0 0 1.294.76 27.3 27.3 0 0 1 6.113-7.413A3.98 3.98 0 0 1 12 15.125a3.8 3.8 0 0 1 2.236 1.088 27.3 27.3 0 0 1 6.115 7.412.75.75 0 1 0 1.294-.76M12 12.002A6.01 6.01 0 0 0 18.003 6 6.003 6.003 0 1 0 12 12.002m0-10.505a4.502 4.502 0 1 1 0 9.005 4.502 4.502 0 0 1 0-9.005"></path>
+            </svg>
 
-        <SearchForm />
+            <svg
+              viewBox="0 0 24 24"
+              width="1.75em"
+              height="1.75em"
+              fill="currentColor"
+              aria-labelledby="your-wishlist"
+              focusable="false"
+              aria-hidden="true"
+              data-testid="wishlist"
+              className="cursor-pointer hover:scale-110 active:scale-100 transition-all"
+            >
+              <title id="your-wishlist">Your wishlist</title>
+
+              <path d="M17.488 1.11h-.146a6.55 6.55 0 0 0-5.35 2.81A6.57 6.57 0 0 0 6.62 1.116 6.406 6.406 0 0 0 .09 7.428c0 7.672 11.028 15.028 11.497 15.338a.75.75 0 0 0 .826 0c.47-.31 11.496-7.666 11.496-15.351a6.43 6.43 0 0 0-6.42-6.306M12 21.228C10.018 19.83 1.59 13.525 1.59 7.442c.05-2.68 2.246-4.826 4.934-4.826h.088c2.058-.005 3.93 1.251 4.684 3.155.226.572 1.168.572 1.394 0 .755-1.907 2.677-3.17 4.69-3.16h.02c2.7-.069 4.96 2.118 5.01 4.817 0 6.089-8.429 12.401-10.41 13.8"></path>
+            </svg>
+
+            <svg
+              viewBox="0 0 24 24"
+              width="1.75em"
+              height="1.75em"
+              fill="currentColor"
+              aria-labelledby="your-bag"
+              focusable="false"
+              aria-hidden="true"
+              data-testid="cart"
+              aria-label="Your bag"
+              className="cursor-pointer hover:scale-110 active:scale-100 transition-all"
+            >
+              <title id="your-bag">Your bag</title>
+
+              <path d="M21.193 8.712a2.984 2.984 0 0 0-2.986-2.726h-.952v-.751a5.255 5.255 0 0 0-10.51 0v.75h-.951a2.983 2.983 0 0 0-2.986 2.727L1.715 20.73q-.012.135-.012.27A3 3 0 0 0 4.7 24h.005l14.599-.026q.133 0 .265-.012a3 3 0 0 0 2.715-3.258zM8.246 5.235a3.754 3.754 0 0 1 7.508 0v.75H8.246zm11.056 17.238-14.599.025h-.002q-.067 0-.135-.006a1.496 1.496 0 0 1-1.355-1.625l1.093-12.02a1.49 1.49 0 0 1 1.49-1.36h.95V9.74a.75.75 0 0 0 1.502 0V7.487h7.508V9.74c0 .415.336.75.75.75h.002a.75.75 0 0 0 .75-.75V7.487h.951a1.49 1.49 0 0 1 1.49 1.361l1.092 11.993q.006.067.007.133a1.496 1.496 0 0 1-1.494 1.499"></path>
+            </svg>
+          </div>
+        </div>
+
+        <div className="">
+          <SearchForm />
+        </div>
+
+        <div className="gap-4 hidden md:flex">
+          <svg
+            viewBox="0 0 24 24"
+            width="1.75em"
+            height="1.75em"
+            fill="currentColor"
+            aria-labelledby="your-account"
+            focusable="false"
+            aria-hidden="false"
+            role="img"
+            data-testid="user-account"
+            className="cursor-pointer hover:scale-110 active:scale-100 transition-all"
+          >
+            <title id="your-account">Your account</title>
+            <path d="M21.645 22.866a28.7 28.7 0 0 0-6.46-7.817c-2.322-1.892-4.048-1.892-6.37 0a28.7 28.7 0 0 0-6.46 7.817.75.75 0 0 0 1.294.76 27.3 27.3 0 0 1 6.113-7.413A3.98 3.98 0 0 1 12 15.125a3.8 3.8 0 0 1 2.236 1.088 27.3 27.3 0 0 1 6.115 7.412.75.75 0 1 0 1.294-.76M12 12.002A6.01 6.01 0 0 0 18.003 6 6.003 6.003 0 1 0 12 12.002m0-10.505a4.502 4.502 0 1 1 0 9.005 4.502 4.502 0 0 1 0-9.005"></path>
+          </svg>
+
+          <svg
+            viewBox="0 0 24 24"
+            width="1.75em"
+            height="1.75em"
+            fill="currentColor"
+            aria-labelledby="your-wishlist"
+            focusable="false"
+            aria-hidden="true"
+            data-testid="wishlist"
+            className="cursor-pointer hover:scale-110 active:scale-100 transition-all"
+          >
+            <title id="your-wishlist">Your wishlist</title>
+
+            <path d="M17.488 1.11h-.146a6.55 6.55 0 0 0-5.35 2.81A6.57 6.57 0 0 0 6.62 1.116 6.406 6.406 0 0 0 .09 7.428c0 7.672 11.028 15.028 11.497 15.338a.75.75 0 0 0 .826 0c.47-.31 11.496-7.666 11.496-15.351a6.43 6.43 0 0 0-6.42-6.306M12 21.228C10.018 19.83 1.59 13.525 1.59 7.442c.05-2.68 2.246-4.826 4.934-4.826h.088c2.058-.005 3.93 1.251 4.684 3.155.226.572 1.168.572 1.394 0 .755-1.907 2.677-3.17 4.69-3.16h.02c2.7-.069 4.96 2.118 5.01 4.817 0 6.089-8.429 12.401-10.41 13.8"></path>
+          </svg>
+
+          <svg
+            viewBox="0 0 24 24"
+            width="1.75em"
+            height="1.75em"
+            fill="currentColor"
+            aria-labelledby="your-bag"
+            focusable="false"
+            aria-hidden="true"
+            data-testid="cart"
+            aria-label="Your bag"
+            className="cursor-pointer hover:scale-110 active:scale-100 transition-all"
+          >
+            <title id="your-bag">Your bag</title>
+
+            <path d="M21.193 8.712a2.984 2.984 0 0 0-2.986-2.726h-.952v-.751a5.255 5.255 0 0 0-10.51 0v.75h-.951a2.983 2.983 0 0 0-2.986 2.727L1.715 20.73q-.012.135-.012.27A3 3 0 0 0 4.7 24h.005l14.599-.026q.133 0 .265-.012a3 3 0 0 0 2.715-3.258zM8.246 5.235a3.754 3.754 0 0 1 7.508 0v.75H8.246zm11.056 17.238-14.599.025h-.002q-.067 0-.135-.006a1.496 1.496 0 0 1-1.355-1.625l1.093-12.02a1.49 1.49 0 0 1 1.49-1.36h.95V9.74a.75.75 0 0 0 1.502 0V7.487h7.508V9.74c0 .415.336.75.75.75h.002a.75.75 0 0 0 .75-.75V7.487h.951a1.49 1.49 0 0 1 1.49 1.361l1.092 11.993q.006.067.007.133a1.496 1.496 0 0 1-1.494 1.499"></path>
+          </svg>
+        </div>
       </nav>
     </div>
   );
