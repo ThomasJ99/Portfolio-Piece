@@ -1,9 +1,7 @@
-import { getCategories } from "@/data/product";
 import type { Category } from "@/types/products-json";
 import CategoryLink from "./category-link";
 
-export default async function CategoryAside() {
-  const categories: Category[] = await getCategories();
+export default async function CategoryAside({categories}: {categories: Category[]}) {
 
   return (
     <aside className="border-r border-white/10">

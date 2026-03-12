@@ -1,11 +1,14 @@
+import Link from "next/link";
 import CardGrid from "@/components/ui/card-grid";
 import CategoryAside from "@/components/ui/category-aside";
+import CategoryDropdown from "@/components/ui/category-dropdown";
 import LimitSelect from "@/components/ui/limit-select";
 import Pagination from "@/components/ui/pagination";
 import PriceFilterDropdown from "@/components/ui/price-slider-dropdown";
 import ProductCard from "@/components/ui/product-card";
 import Root from "@/components/ui/root";
-import { getProducts } from "@/data/product";
+import { getCategories, getProducts } from "@/data/product";
+import type { Category } from "@/types/products-json";
 import { ensureString } from "@/util";
 
 // Component
@@ -36,30 +39,43 @@ export default async function productPage(params: PageProps<"/">) {
     minPriceNumber,
     maxPriceNumber,
   );
+  const categories: Category[] = await getCategories();
 
   return (
     // TODO: STUDY Root
     <Root defaultMin={minPriceNumber} defaultMax={maxPriceNumber}>
-      <div className="container mx-auto mt-4">
-        <div className="grid grid-cols-4 gap-8">
-          <section>
+      <main className="container mx-auto mt-4 ps-4 lg:px-0">
+        <div className="grid grid-cols-3 lg:grid-cols-4 gap-8">
+          <section className="hidden lg:block">
             <h1 className="text-4xl mb-5 font-oswald">Our sortiment</h1>
-            <CategoryAside />
+            <CategoryAside categories={categories} />
           </section>
 
           <section className="col-span-3">
-            <section className="flex gap-6 mb-5">
+            <section className="flex gap-2 mb-5 flex-wrap max-w-140 ">
+              <div className="block lg:hidden">
+                <CategoryDropdown categories={categories} />
+              </div>
               <LimitSelect />
               <PriceFilterDropdown
                 min={minPriceNumber}
                 max={maxPriceNumber}
               />{" "}
+              <Link
+                className={`border-2 px-4 py-3 font-bold hover:bg-slate-800 hover:border-slate-200
+                transition-colors w-32 h-12 text-nowrap`}
+                href={"/products"}
+              >
+                Clear filters
+              </Link>
             </section>
+            <span className="text-sm opacity-40 ">
+              Showing {total} products
+            </span>
 
             {/* Conditional rendering if products are > 0 */}
             {products.length > 0 ? (
               <ul>
-                <span className="text-sm opacity-40">{total} products</span>
                 <CardGrid>
                   {products.map((p) => (
                     <ProductCard key={p.title} product={p} />
@@ -67,12 +83,12 @@ export default async function productPage(params: PageProps<"/">) {
                 </CardGrid>
               </ul>
             ) : (
-              <p>no products found</p>
+              <p className="text-2xl text-center">No products found</p>
             )}
             <Pagination totalPages={pages} />
           </section>
         </div>
-      </div>
+      </main>
     </Root>
   );
 }

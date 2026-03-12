@@ -1,21 +1,17 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import PriceSliderDual from "./price-slider-dual";
+import type { Category } from "@/types/products-json";
+import CategoryLink from "./category-link";
 
-// Need min/max from my price slider
-export default function PriceFilterDropdown({
-  min,
-  max,
+export default function CategoryDropdown({
+  categories,
 }: {
-  min: number;
-  max: number;
+  categories: Category[];
 }) {
-  // State if the dropdown is open or closed, closed by default
   const [open, setOpen] = useState(false);
 
-  // Ref that points to the dropdown container element in the DOM
-  // Used to detect clicks outside of the dropdown
+  // Entire section below is from price-slider-dropdown, this could be made into a utility component
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   // Logic for closing the button if you click outside
@@ -34,20 +30,19 @@ export default function PriceFilterDropdown({
     // Theres definitely some better solution for this...
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
-  });
+  }, []);
 
   return (
-    // Knows our div is the one we refer to on useEffect to mimic a dropdown menu
-    <div className="relative inline-block" ref={dropdownRef}>
+    <div className="" ref={dropdownRef}>
       <button
         type="button"
         onClick={() => setOpen(!open)}
-        className={`border-2 px-4 h-12 font-bold hover:bg-slate-800 hover:border-slate-200
-        transition-colors font-oswald cursor-pointer
+        className={`border-2 px-4 py-3 font-bold hover:bg-slate-800 hover:border-slate-200
+        transition-colors w-40 h-12 cursor-pointer
         ${open ? "border-b-0" : ""}`}
       >
         <span className="flex gap-3">
-          Price{" "}
+          Categories{" "}
           {open ? (
             <svg
               className="mt-1.5"
@@ -85,28 +80,19 @@ export default function PriceFilterDropdown({
 
       {/* Dropdown */}
       {open && (
-        <div className="absolute left-0 w-85 bg-black border-2 border-slate-200 z-100">
-          <div className="p-6">
-            <PriceSliderDual min={min} max={max} />
-          </div>
-
-          <div className="flex justify-between border-t-2 p-0">
-            <button
-              type="button"
-              className="p-3 border-e grow cursor-pointer hover:bg-slate-800 font-bold"
-              onClick={() => setOpen(false)}
-            >
-              Reset
-            </button>
-
-            <button
-              type="button"
-              className="p-3 border-s grow cursor-pointer bg-slate-200 text-black hover:bg-slate-800 hover:text-white font-bold"
-              onClick={() => setOpen(false)}
-            >
-              Save
-            </button>
-          </div>
+        <div className="absolute left-0 w-48 bg-black border-2 border-slate-200 z-100">
+          <ul
+            className={`p-6 flex flex-col gap-3 max-h-50 overflow-y-auto 
+          [&::-webkit-scrollbar]:w-[0.4rem]
+        [&::-webkit-scrollbar-thumb]:bg-slate-500 
+          [&::-webkit-scrollbar-thumb]:rounded-[3px]`}
+          >
+            {categories.map((category) => (
+              <li key={category.id} onClick={() => setOpen(false)}>
+                <CategoryLink key={category.id} category={category} />
+              </li>
+            ))}
+          </ul>
         </div>
       )}
     </div>
