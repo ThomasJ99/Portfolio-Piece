@@ -22,3 +22,14 @@ export default function ProductCard({ product }: { product: Product }) {
     </li>
   );
 }
+
+export function ProductImage({ product }: { product: Product }) {
+  return (
+    <li key={product.id} className="">
+        <div className="relative group">
+          <ImageScroll product={product} />
+          <LikeButton pTitle={product.title} />
+        </div>
+    </li>
+  );
+}
