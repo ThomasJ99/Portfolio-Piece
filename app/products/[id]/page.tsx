@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
+import CardGrid from "@/components/ui/card-grid";
+import { ProductImage } from "@/components/ui/product-card";
 import { getProduct } from "@/data/product";
 import notFound from "./not-found";
 // From https://nextjs.org/docs/app/api-reference/file-conventions/page#reading-searchparams-and-params-in-client-components
@@ -40,32 +41,12 @@ export default async function ProductPage({
   //else return below..
   return (
     <main className="container mx-auto">
-      <article className="flex lg:flex-nowrap flex-wrap-reverse xl:gap-50 gap-20 justify-center pt-4 px-4 xl:px-0">
-        <figure>
-          <Image
-            className="lg:w-full lg:h-160 lg:object-cover h-80 w-80 xl:min-w-160"
-            src={product.images[0]}
-            alt={`High quality image of ${product.title}`}
-            width={500}
-            height={500}
-          />
-
-          {/* Check if theres any images, if not, dont render them */}
-          {product.images.length > 1 && (
-            <div className="grid lg:grid-cols-2 gap-4">
-              {product.images.slice(1, 3).map((img, i) => (
-                <Image
-                  key={img}
-                  src={img}
-                  alt={`${product.title} detail ${i + 1}`}
-                  width={500}
-                  height={500}
-                  className="w-full sm:h-80 h-60 xl:min-w-80 object-cover"
-                />
-              ))}
-            </div>
-          )}
-        </figure>
+      <article className="flex lg:flex-nowrap flex-wrap xl:gap-50 gap-8 justify-center pt-4 px-4 xl:px-0 items-center">
+        <div>
+          <CardGrid>
+            <ProductImage key={product.title} product={product} />
+          </CardGrid>
+        </div>
 
         <section className="max-w-100">
           <div className="leading-tight">
