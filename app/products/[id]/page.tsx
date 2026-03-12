@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { getProduct } from "@/data/product";
 import notFound from "./not-found";
 // From https://nextjs.org/docs/app/api-reference/file-conventions/page#reading-searchparams-and-params-in-client-components
@@ -39,11 +40,10 @@ export default async function ProductPage({
   //else return below..
   return (
     <main className="container mx-auto">
-      <article className="grid md:grid-cols-2 gap-20">
-        {/* TODO: FIX GRID/FLEX OR SMTH ON IMAGES SO THEY WORK CORRECTLY WHILE SCALING THE WINDOW DOWN */}
+      <article className="flex lg:flex-nowrap flex-wrap-reverse gap-20 pt-4">
         <figure className="">
           <Image
-            className="w-full h-200 object-cover pb-4"
+            className="w-full h-160 object-cover"
             src={product.images[0]}
             alt={`High quality image of ${product.title}`}
             width={500}
@@ -69,13 +69,29 @@ export default async function ProductPage({
           </div>
         </figure>
         {/* TODO: FIX STYLING ON H1, ITS A BIT INCONSISTENT DEPENDING ON NAME LENGTH */}
-        <div className="">
-          <h1 className="text-5xl my-5 text-center font-oswald font-bold">
+        <div className="mx-50 leading-tight">
+          <Link
+            className="flex gap-2 hover:text-slate-400 hover:underline underline-offset-2"
+            href={"/products"}
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="1em"
+              height="1em"
+              fill="currentColor"
+              focusable="false"
+              aria-hidden="true"
+            >
+              <path d="M22.807 11.25H1.938l7.72-7.72a.75.75 0 0 0-1.06-1.06l-7.94 7.94a2.25 2.25 0 0 0 0 3.18l7.94 7.94a.747.747 0 0 0 1.06 0 .75.75 0 0 0 0-1.06l-7.72-7.72h20.87a.75.75 0 0 0 0-1.5"></path>
+            </svg>
+            Back to Products
+          </Link>
+          <h1 className="text-4xl my-5 font-oswald font-bold">
             {product.title}
           </h1>
 
-          <div className="mx-25 space-y-5">
-            <span className="text-3xl font-semibold">
+          <div className="space-y-5">
+            <span className="text-2xl font-semibold">
               {product.price} kr{" "}
               <span className="text-sm opacity-60">VAT included</span>
             </span>
@@ -116,11 +132,12 @@ export default async function ProductPage({
               </div>
             </div>
 
-            <section className="grid border-2">
+            {/* Shipping card */}
+            <section className="grid border-2 min-w-82.5">
               <p className="border-b-2 p-5">
                 Sold and shipped by{" "}
                 <span className="font-bold underline hover:text-gray-400 cursor-pointer">
-                  The Cool Company
+                  CompanyX
                 </span>
               </p>
 
