@@ -4,7 +4,7 @@ CompanyX is a modern e-commerce storefront prototype built with **Next.js** and 
 
 The project focuses on **scalable frontend architecture**, **URL-driven filtering**, and **reusable component design** inspired by modern online retail platforms.
 
-My goal was to show how a product catalogue can be built with clean component separation, **server rendering**, and **state driven by the URL** — no heavy client state management needed.
+My goal with this project was to create a website that I could say was complete and I am very pleased with the result.
 
 > 🔗 **Live Demo:** [your-demo-link.vercel.app](#) &nbsp;|&nbsp; 📸 **Screenshots below**
 
@@ -88,7 +88,7 @@ The app is built around reusable, generic building blocks:
 | `Pagination` | URL-driven pagination |
 | `SearchForm` | Product search |
 
-Each component is designed to be **generic and reusable** across pages — drop it in and it just works.
+Each component is designed to be **generic and reusable** across pages.
 
 ---
 
@@ -147,13 +147,12 @@ npm run dev:full
 
 ## 👋 About Me
 
-I'm a frontend developer who genuinely enjoys building things that feel good to use. I care about clean architecture and readable code just as much as the end result looking polished.
+I am a Frontend Developer with solid knowledge of **HTML**, **CSS**, **Tailwind**, **TypeScript**, and **React**, experienced working in agile team environments. I build modular and reusable solutions with a focus on clean, readable code and user-centered design. 
 
-My background in game development gave me a strong visual eye and a problem-solving mindset — I'm used to working in multidisciplinary teams where communication and collaboration matter as much as the code itself.
+Through my background in game development, I have developed a strong visual eye, solid problem-solving skills, and the ability to collaborate effectively in multidisciplinary teams.
 
-I work with **HTML, CSS, TypeScript, and React**, and I like building modular, reusable solutions that other developers can actually enjoy maintaining.
 
 **Let's connect:**
 
-- 📧 [thomas.jarnroth@gmail.com](mailto:thomas.jarnroth@gmail.com)
-- 💼 [linkedin.com/in/thomasjarnroth](https://www.linkedin.com/in/thomasjarnroth)
+- [thomas.jarnroth@gmail.com](mailto:thomas.jarnroth@gmail.com)
+- [linkedin.com/in/thomasjarnroth](https://www.linkedin.com/in/thomasjarnroth)
