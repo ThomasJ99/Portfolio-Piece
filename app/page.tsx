@@ -53,6 +53,9 @@ export default async function Home() {
           imgSrc={[
             "https://plus.unsplash.com/premium_photo-1769857281671-a942028ea91b?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           ]}
+          ctaLink="/products"
+          ctaStyle="uppercase font-bold flex gap-2 items-center text-black w-[10ch] hover:underline underline-offset-2"
+          ctaDesc="Explore"
         />
       </FullWidthSection>
 
@@ -65,7 +68,7 @@ export default async function Home() {
       </FullWidthSection>
 
       {/* Second section - Running Shoes */}
-      <FullWidthSection className="bg-yellow-400 px-4 [1560px]:px-0">
+      <FullWidthSection className="bg-yellow-400 px-4 [1560px]:px-0 ">
         <BannerSection
           title="Spring Run Performance"
           description="Maximize your pace this spring! Discover lightweight gear designed for peak performance and ultimate comfort in the sun."
@@ -73,6 +76,10 @@ export default async function Home() {
           imgSrc={[
             "https://plus.unsplash.com/premium_photo-1663100693083-e259b2684b63?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fHNwcmluZyUyMHJ1bm5pbmclMjBzaG9lc3xlbnwwfHwwfHx8MA%3D%3D",
           ]}
+          ctaLink="/products?category=9"
+          ctaStyle={`border-2 border-black bg-white/10 text-black px-6 py-3 uppercase font-bold
+            hover:bg-slate-200/40 transition-colors inline-block [&>svg]:hidden`}
+          ctaDesc="Get your gear"
         />
       </FullWidthSection>
 
@@ -94,6 +101,9 @@ export default async function Home() {
             "https://images.unsplash.com/photo-1650984312007-2258bc07b03e?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "https://images.unsplash.com/photo-1583710320217-6c72a6d7d2e1?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           ]}
+          ctaLink="/products?category=2"
+          ctaStyle="uppercase font-bold flex gap-2 items-center text-black w-[16ch] hover:underline underline-offset-2"
+          ctaDesc="Feel the breeze"
         />
       </FullWidthSection>
 
