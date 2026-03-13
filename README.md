@@ -1,4 +1,4 @@
-# Chainsaw Man
+# CompanyX E-commerce site
 A dark, fan-made web experience inspired by the Chainsaw Man manga.
 Built with **Next.js** and **React**, this project focuses on *modern frontend structure* and performance while channeling the series’ brutal aesthetic.
 
