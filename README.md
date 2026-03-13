@@ -1,4 +1,4 @@
-# CompanyX 🛍️
+# 🛍️ CompanyX 
 
 CompanyX is a modern e-commerce storefront prototype built with **Next.js** and **React**.
 
@@ -32,16 +32,12 @@ Instead of reaching for a state management library, I wanted to explore how **Ne
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![URLSearchParams](https://img.shields.io/badge/URL--Driven_State-F97316?style=for-the-badge&logo=googlechrome&logoColor=white)
+![Server & Client Components](https://img.shields.io/badge/Server_%26_Client_Components-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000000?style=for-the-badge&logo=shadcnui&logoColor=white)
+![Git & GitHub](https://img.shields.io/badge/Git_%26_GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![Biome](https://img.shields.io/badge/Biome-60A5FA?style=for-the-badge&logo=biome&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
-- **Next.js (App Router)**
-- **React**
-- **TypeScript**
-- **Tailwind CSS**
-- **URLSearchParams-based filtering**
-- **Server & Client Component architecture**
-- **Git & GitHub**
 
 ---
 
@@ -155,7 +151,7 @@ I'm a frontend developer who genuinely enjoys building things that feel good to 
 
 My background in game development gave me a strong visual eye and a problem-solving mindset — I'm used to working in multidisciplinary teams where communication and collaboration matter as much as the code itself.
 
-I work with **HTML, CSS, JavaScript, and React**, and I like building modular, reusable solutions that other developers can actually enjoy maintaining.
+I work with **HTML, CSS, TypeScript, and React**, and I like building modular, reusable solutions that other developers can actually enjoy maintaining.
 
 **Let's connect:**
 
