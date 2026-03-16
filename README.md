@@ -38,6 +38,23 @@ Instead of reaching for a state management library, I wanted to explore how **Ne
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
 ---
+## 📸 Screenshots
+
+### 🖥️ Desktop
+| Home | Products | Product Page |
+|------|----------|--------------|
+| ![Homepage Desktop](homepage-desktop.png) | ![Products Desktop](products-desktop.png) | ![Product Page Desktop](product-id-desktop.png) |
+
+### 📱 Tablet
+| Home | Products | Product Page |
+|------|----------|--------------|
+| ![Homepage Tablet](homepage-tablet.png) | ![Products Tablet](products-tablet.png) | ![Product Page Tablet](product-id-tablet.png) |
+
+### 📲 Mobile
+| Home | Products | Product Page |
+|------|----------|--------------|
+| ![Homepage Mobile](homepage-mobile.png) | ![Products Mobile](products-mobile.png) | ![Product Page Mobile](product-id-mobile.png) |
+---
 
 ## ✨ Features
 
