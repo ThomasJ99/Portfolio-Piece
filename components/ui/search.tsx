@@ -32,14 +32,13 @@ export default function SearchForm() {
   }
 
   return (
-    <Form action="" onSubmit={handleSubmit} ref={ref}>
-      <ButtonGroup>
+    <Form action="" onSubmit={handleSubmit} ref={ref} className="w-full">
+      <ButtonGroup className="flex">
         <Input
           name="query"
           placeholder="Search..."
           defaultValue={query || ""}
-          // Turnery to turn it into grow instead on wrap
-          className="w-75"
+          className="w-95 xs:w-70 sm:w-143 md:w-75"
           required
         />
 

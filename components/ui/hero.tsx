@@ -23,7 +23,7 @@ export default function Hero() {
           </p>
 
           <Link
-            className="border-2 border-slate-200 px-6 py-3 uppercase font-bold font-oswald
+            className="border-2 border-slate-200 px-6 py-3 uppercase font-bold
             hover:bg-slate-800 transition-colors inline-block"
             href={"/products"}
           >

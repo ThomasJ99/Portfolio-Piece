@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
+import CardGrid from "@/components/ui/card-grid";
+import { ProductImage } from "@/components/ui/product-card";
 import { getProduct } from "@/data/product";
+import { calculateDiscountedPrice, formatPrice } from "@/lib/pricing";
 import notFound from "./not-found";
 // From https://nextjs.org/docs/app/api-reference/file-conventions/page#reading-searchparams-and-params-in-client-components
 
@@ -19,7 +21,7 @@ export async function generateMetadata({
   const product = await getProduct(idNumber);
 
   return {
-    title: `Product - ${product.title}`,
+    title: `Product | ${product.title}`,
   };
 }
 
@@ -35,37 +37,24 @@ export default async function ProductPage({
   //   const volume = data.volumes.find((volume) => volume.id === Number(id));
   const product = await getProduct(idNumber);
 
+  const discountedPrice = calculateDiscountedPrice(
+    product.price,
+    product.discountPercentage,
+  );
+
+  const discount = product.discountPercentage ?? 0;
+
   // If theres no product, call the notFound function and return
   if (!product) notFound();
   //else return below..
   return (
     <main className="container mx-auto">
-      <article className="flex lg:flex-nowrap flex-wrap-reverse xl:gap-50 gap-20 justify-center pt-4 px-4 xl:px-0">
-        <figure>
-          <Image
-            className="lg:w-full lg:h-160 lg:object-cover h-80 w-80 xl:min-w-160"
-            src={product.images[0]}
-            alt={`High quality image of ${product.title}`}
-            width={500}
-            height={500}
-          />
-
-          {/* Check if theres any images, if not, dont render them */}
-          {product.images.length > 1 && (
-            <div className="grid lg:grid-cols-2 gap-4">
-              {product.images.slice(1, 3).map((img, i) => (
-                <Image
-                  key={img}
-                  src={img}
-                  alt={`${product.title} detail ${i + 1}`}
-                  width={500}
-                  height={500}
-                  className="w-full sm:h-80 h-60 xl:min-w-80 object-cover"
-                />
-              ))}
-            </div>
-          )}
-        </figure>
+      <article className="flex lg:flex-nowrap flex-wrap xl:gap-50 gap-8 justify-center pt-4 px-4 xl:px-0 items-center">
+        <div>
+          <CardGrid>
+            <ProductImage key={product.title} product={product} />
+          </CardGrid>
+        </div>
 
         <section className="max-w-100">
           <div className="leading-tight">
@@ -82,6 +71,7 @@ export default async function ProductPage({
                   <path d="M22.807 11.25H1.938l7.72-7.72a.75.75 0 0 0-1.06-1.06l-7.94 7.94a2.25 2.25 0 0 0 0 3.18l7.94 7.94a.747.747 0 0 0 1.06 0 .75.75 0 0 0 0-1.06l-7.72-7.72h20.87a.75.75 0 0 0 0-1.5"></path>
                 </svg>
               </Link>
+
               <Link
                 className="hover:text-slate-400 hover:underline underline-offset-2"
                 href={"/products"}
@@ -95,22 +85,28 @@ export default async function ProductPage({
           </div>
 
           <div className="lg:space-y-15 space-y-10">
-            <span className="text-2xl font-semibold">
-              {product.price} kr{" "}
-              <span className="text-sm font-normal opacity-60">
+            <span
+              className={`text-2xl font-semibold 
+              ${discount > 0 ? "text-red-600" : "text-white"}`}
+            >
+              {formatPrice(discountedPrice)}{" "}
+              <span className="text-sm font-normal text-gray-500">
                 VAT included
               </span>
             </span>
 
-            <div>
-              <button
-                type="button"
-                className="mt-10 p-3 text-white/60 text-left flex border-2 border-b-0 cursor-pointer hover:scale-101 active:border-slate-200 "
-              >
-                Choose your size/model/type
-              </button>
+            {discount > 0 && (
+              <span className="flex gap-1 text-sm text-gray-500">
+                Originally:
+                <span className="line-through block">
+                  {formatPrice(product.price)}
+                </span>
+                <span className="text-red-600 block"> -{discount}%</span>
+              </span>
+            )}
 
-              <div className="flex gap-1">
+            <div>
+              <div className="flex gap-1 mt-10">
                 <button
                   type="button"
                   className="bg-slate-200 font-bold text-black border-2 border-slate-200 grow cursor-pointer hover:text-white hover:bg-slate-800 transition-colors"
@@ -141,14 +137,17 @@ export default async function ProductPage({
             <section className="grid border-2 min-w-82.5">
               <p className="border-b-2 p-5">
                 Sold and shipped by{" "}
-                <span className="font-bold underline hover:text-gray-400 cursor-pointer">
+                <Link
+                  href={"/about"}
+                  className="font-bold underline hover:text-gray-400 cursor-pointer"
+                >
                   CompanyX
-                </span>
+                </Link>
               </p>
 
               <div className="border-b-2 p-5">
                 <div className="flex justify-between">
-                  <p className="font-bold ">Fri 07 July</p>
+                  <p className="font-bold ">{product.shippingInformation}</p>
                   <p>free</p>
                 </div>
                 <p>Fast delivery</p>
@@ -168,7 +167,7 @@ export default async function ProductPage({
                   <path d="M20.5 22.8h-17c-1.2 0-2.2-1-2.2-2.2V19c0-.4.3-.8.8-.8s.8.3.8.8v1.5c0 .4.3.8.8.8h17c.4 0 .8-.3.8-.8V7.3c0-.1 0-.2-.1-.3l-1.5-3.8c-.1-.3-.4-.5-.7-.5H5c-.3 0-.6.2-.7.5L2.8 7c0 .1-.1.2-.1.3V10c0 .4-.3.8-.8.8s-.7-.4-.7-.8V7.3c0-.3.1-.6.2-.8l1.5-3.8c.4-.9 1.2-1.5 2.1-1.5h14c.9 0 1.7.6 2.1 1.4l1.5 3.8c.1.3.2.5.2.8v13.2c0 1.3-1.1 2.4-2.3 2.4"></path>
                   <path d="M2 7h20v1.5H2zm2.8 6.8h-4c-.5 0-.8-.4-.8-.8s.3-.8.8-.8h4c.4 0 .8.3.8.8s-.4.8-.8.8m0 3h-4c-.5 0-.8-.4-.8-.8s.3-.8.8-.8h4c.4 0 .8.3.8.8-.1.4-.4.8-.8.8"></path>
                 </svg>
-                <p className=" p-5">Free delivery and free returns</p>
+                <p className=" p-5">{product.warrantyInformation}</p>
               </div>
 
               <div className="flex border-b-2">
@@ -183,7 +182,7 @@ export default async function ProductPage({
                 >
                   <path d="M14.25 4.33H1.939l3.056-3.055A.75.75 0 0 0 3.934.215L.658 3.49a2.25 2.25 0 0 0 0 3.182l3.276 3.275a.75.75 0 0 0 1.06-1.06L1.94 5.83h12.31c4.557 0 8.251 3.694 8.251 8.25s-3.695 8.42-8.251 8.42h-12a.75.75 0 0 0 0 1.5h12c5.385 0 9.75-4.534 9.75-9.919s-4.365-9.75-9.75-9.75"></path>
                 </svg>
-                <p className=" p-5">30 day return policy</p>
+                <p className=" p-5">{product.returnPolicy}</p>
               </div>
 
               <div className="flex justify-between">
