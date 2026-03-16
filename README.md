@@ -40,20 +40,48 @@ Instead of reaching for a state management library, I wanted to explore how **Ne
 ---
 ## 📸 Screenshots
 
-### 🖥️ Desktop
-| Home | Products | Product Page |
-|------|----------|--------------|
-| ![Homepage Desktop](homepage-desktop.png) | ![Products Desktop](products-desktop.png) | ![Product Page Desktop](product-id-desktop.png) |
+### 🏠 Home
+<table>
+  <tr>
+    <th>Mobile</th>
+    <th>Tablet</th>
+    <th>Desktop</th>
+  </tr>
+  <tr>
+    <td valign="top"><img width="200" alt="homepage-mobile" src="https://github.com/user-attachments/assets/dbed29af-a17d-41f6-b6fd-447244518e93" /></td>
+    <td valign="top"><img width="400" alt="homepage-tablet" src="https://github.com/user-attachments/assets/cf2d235e-221c-4ad1-a115-f6a5933f60f4" /></td>
+    <td valign="top"><img width="600" alt="homepage-desktop" src="https://github.com/user-attachments/assets/80e53f32-7262-45a9-94d9-b4197241b3a1" /></td>
+  </tr>
+</table>
 
-### 📱 Tablet
-| Home | Products | Product Page |
-|------|----------|--------------|
-| ![Homepage Tablet](homepage-tablet.png) | ![Products Tablet](products-tablet.png) | ![Product Page Tablet](product-id-tablet.png) |
+### 🗂️ Products
+<table>
+  <tr>
+    <th>Mobile</th>
+    <th>Tablet</th>
+    <th>Desktop</th>
+  </tr>
+  <tr>
+    <td valign="top"><img width="200" alt="products-mobile" src="https://github.com/user-attachments/assets/3cbd2402-d98c-442a-9f23-abdcb97f3c00" /></td>
+    <td valign="top"><img width="400" alt="products-tablet" src="https://github.com/user-attachments/assets/48d28a97-04a1-40de-a1d7-5207b5c97c43" /></td>
+    <td valign="top"><img width="600" alt="products-desktop" src="https://github.com/user-attachments/assets/311314f4-e19c-41a6-884a-320c83131467" /></td>
+  </tr>
+</table>
 
-### 📲 Mobile
-| Home | Products | Product Page |
-|------|----------|--------------|
-| ![Homepage Mobile](homepage-mobile.png) | ![Products Mobile](products-mobile.png) | ![Product Page Mobile](product-id-mobile.png) |
+### 🛒 Product Page
+<table>
+  <tr>
+    <th>Mobile</th>
+    <th>Tablet</th>
+    <th>Desktop</th>
+  </tr>
+  <tr>
+    <td valign="top"><img width="200" alt="product-id-mobile" src="https://github.com/user-attachments/assets/0528e895-f22d-41ef-9757-418aee418a9d" /></td>
+    <td valign="top"><img width="400" alt="product-id-tablet" src="https://github.com/user-attachments/assets/c9c4e3fe-41b5-48e2-a407-0f3fc4ec1534" /></td>
+    <td valign="top"><img width="600" alt="product-id-desktop" src="https://github.com/user-attachments/assets/4757849b-a468-44aa-b6fd-8dcb47b46907" /></td>
+  </tr>
+</table>
+
 ---
 
 ## ✨ Features
