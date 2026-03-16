@@ -5,6 +5,13 @@ import Hero from "@/components/ui/hero";
 import ProductCard from "@/components/ui/product-card";
 import { getProducts } from "@/data/product";
 
+export const metadata = {
+  title: "CompanyX",
+  description:
+    "A modern e-commerce storefront built with Next.js and React. Features URL-driven filtering, server-rendered product queries, and a fully reusable component system.",
+  keywords: ["Next.js", "React", "TypeScript", "e-commerce", "frontend"],
+};
+
 export default async function Home() {
   // Fetches specific products that are later displayed below
   const { products } = await getProducts(
@@ -59,7 +66,7 @@ export default async function Home() {
         />
       </FullWidthSection>
 
-      <FullWidthSection className="bg-blue-200 text-black mb-20 py-4">
+      <FullWidthSection className="bg-blue-200 text-black py-4">
         <CardGrid>
           {products.map((p) => (
             <ProductCard key={p.title} product={p} />
@@ -83,7 +90,7 @@ export default async function Home() {
         />
       </FullWidthSection>
 
-      <FullWidthSection className="bg-yellow-200 text-black mb-20 py-4">
+      <FullWidthSection className="bg-yellow-200 text-black py-4">
         <CardGrid>
           {products2.map((p) => (
             <ProductCard key={p.title} product={p} />

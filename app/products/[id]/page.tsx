@@ -21,7 +21,7 @@ export async function generateMetadata({
   const product = await getProduct(idNumber);
 
   return {
-    title: `Product - ${product.title}`,
+    title: `Product | ${product.title}`,
   };
 }
 

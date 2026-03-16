@@ -24,13 +24,6 @@ export default function Footer() {
           </Link>
 
           <Link
-            href="/about"
-            className="hover:text-slate-400 hover:underline underline-offset-2 transition-colors"
-          >
-            About
-          </Link>
-
-          <Link
             href="/products"
             className="hover:text-slate-400 hover:underline underline-offset-2 transition-colors"
           >

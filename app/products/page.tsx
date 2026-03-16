@@ -11,6 +11,13 @@ import { getCategories, getProducts } from "@/data/product";
 import type { Category } from "@/types/products-json";
 import { ensureString } from "@/util";
 
+export const metadata = {
+  title: "Products | CompanyX",
+  description:
+    "Browse the full product catalogue. Filter by category, price range, and more — all driven through the URL with zero client state.",
+  keywords: ["products", "catalogue", "filter", "e-commerce"],
+};
+
 // Component
 // This is where we call getProducts and render out the products
 export default async function productPage(params: PageProps<"/">) {
@@ -42,23 +49,21 @@ export default async function productPage(params: PageProps<"/">) {
   const categories: Category[] = await getCategories();
 
   return (
-    // TODO: STUDY Root
     <Root defaultMin={minPriceNumber} defaultMax={maxPriceNumber}>
       <main className="container mx-auto mt-4 ps-4 lg:px-0">
         <div className="grid grid-cols-3 lg:grid-cols-4 gap-8">
           <section className="hidden lg:block">
             <h1 className="sr-only">Our sortiment</h1>
-            {/* Hide from screenreader - experiment, test around */}
-            <span className="text-4xl mb-5 block font-oswald">Our sortiment</span>
+            {/* Hide from screenreader */}
+            <span className="text-4xl mb-5 block font-oswald">
+              Our sortiment
+            </span>
             <CategoryAside categories={categories} />
           </section>
 
           <section className="col-span-3">
             <section className="flex gap-2 mb-5 flex-wrap max-w-140 ">
-              <PriceFilterDropdown
-                min={minPriceNumber}
-                max={maxPriceNumber}
-              />{" "}
+              <PriceFilterDropdown min={minPriceNumber} max={maxPriceNumber} />{" "}
               <div className="block lg:hidden">
                 <CategoryDropdown categories={categories} />
               </div>
