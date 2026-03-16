@@ -38,7 +38,7 @@ export default function CategoryDropdown({
         type="button"
         onClick={() => setOpen(!open)}
         className={`border-2 px-4 py-2 font-bold hover:bg-slate-800 hover:border-slate-200
-        transition-colors w-40 h-12 cursor-pointer
+        transition-colors w-42 h-12 cursor-pointer
         ${open ? "border-b-0" : ""}`}
       >
         <span className="flex gap-3">
@@ -80,15 +80,15 @@ export default function CategoryDropdown({
 
       {/* Dropdown */}
       {open && (
-        <div className="absolute w-40 bg-black border-2 border-slate-200 z-100">
+        <div className="absolute w-42 bg-black border-2 border-slate-200 z-100">
           <ul
-            className={`flex flex-col max-h-50 group overflow-y-auto 
-          [&::-webkit-scrollbar]:w-[0.4rem]
+            className={`flex flex-col max-h-50 overflow-y-auto 
+          [&::-webkit-scrollbar]:w-[0.35rem]
         [&::-webkit-scrollbar-thumb]:bg-slate-500 
           [&::-webkit-scrollbar-thumb]:rounded-[3px]`}
           >
             {categories.map((category) => (
-              <li key={category.id} className="hover:bg-slate-800">
+              <li key={category.id} className="hover:bg-slate-800 ps-1 py-3 cursor-pointer hover:text">
                 <CategoryLink
                   category={category}
                   onClick={() => setOpen(false)}

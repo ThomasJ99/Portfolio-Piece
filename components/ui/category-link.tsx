@@ -6,9 +6,11 @@ import type { Category } from "@/types/products-json";
 export default function CategoryLink({
   category,
   onClick,
+  hoverColor,
 }: {
   category: Category;
   onClick?: () => void;
+  hoverColor?: boolean;
 }) {
   const searchParams = useSearchParams();
 
@@ -27,7 +29,8 @@ export default function CategoryLink({
   return (
     <Link
       onClick={onClick}
-      className={`block p-3 hover:text-slate-400 group underline-offset-2 w-[15ch] 
+      className={`block underline-offset-2 w-[15ch] 
+      ${hoverColor ? "hover:text-slate-400" : ""}
       ${isActive ? " text-slate-400 hover:cursor-default" : ""}`}
       aria-current={isActive ? "page" : undefined}
       href={`${pathName}?${params.toString()}`}

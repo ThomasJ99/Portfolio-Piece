@@ -1,6 +1,6 @@
 import type { Product, ProductsResponse } from "@/types/products-json";
 
-const URL_API = "http://localhost:4000/";
+const URL_API = process.env.URL_API;
 
 // New version of product fetch that uses URLSearchParams instead of manually building a long query string
 // This makes the query(title) easier to read, maintain, and extend

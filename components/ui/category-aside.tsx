@@ -9,9 +9,9 @@ export default async function CategoryAside({categories}: {categories: Category[
         Categories
       </h2>
 
-      <ul className="flex flex-col gap-3 ps-5 text-sm font-bold">
+      <ul className="flex flex-col gap-2 ps-5 text-sm font-bold">
         {categories.map((c) => (
-          <CategoryLink key={c.id} category={c} />
+          <CategoryLink key={c.id} category={c} hoverColor />
         ))}
       </ul>
     </aside>
