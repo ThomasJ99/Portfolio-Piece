@@ -181,7 +181,7 @@ z"
           <SearchForm />
         </div>
 
-        <div className="gap-6 hidden md:flex">
+        <div className="gap-6 hidden md:flex pt-2">
           <svg
             viewBox="0 0 24 24"
             width="1.75em"
